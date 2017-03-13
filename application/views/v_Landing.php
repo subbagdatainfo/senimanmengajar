@@ -22,7 +22,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="css/agency.min.css" rel="stylesheet">
+    <link href="assets/css/agency.min.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -56,7 +56,10 @@
                         <a class="page-scroll" href="#pelaksanaan">Pelaksanaan</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#about">About</a>
+                        <a class="page-scroll" href="#timeline">Timeline</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#about">Tentang</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Hubungi Kami</a>
@@ -81,7 +84,7 @@
             <div class="intro-text">
                 <!--<div class="intro-lead-in">Welcome To Our Studio!</div>
                 <div class="intro-heading">It's Nice To Meet You</div>-->
-                <a href="#services" class="page-scroll btn btn-xl">Tempat Pelaksanaan</a>
+                <a href="#pelaksanaan" class="page-scroll btn btn-xl">Tempat Pelaksanaan</a>
             </div>
         </div>
     </header>
@@ -92,33 +95,51 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tempat Pelaksanaan</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading">Tempat Pelaksanaan Seniman Mengajar Gelombang 1.</h3>
                 </div>
             </div>
-            <div class="row text-center">
+            <div class ="row text-center">
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
+                        <img src="assets/img/106px-Lambang_Kabupaten_Kapuas_Hulu.png" alt="kapuashulu" height="128" width="90">
                     </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Kapuas Hulu, Kalimantan Barat</h4>
+                    <p align="left" >
+                        Bidang yang dibutuhkan untuk daerah Kapuas Hulu, Kalimantan Barat<br>
+                        1. Seni tari<br>
+                        2. Seni Musik<br>
+                        3. Seni Rupa (ukir)<br>
+                        4. Seni Media.
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+                        <img src="assets/img/118px-Lambang_Kabupaten_Natuna.png" alt="natuna" height="128" width="90">
                     </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Natuna, Kepulauan Riau</h4>
+                    <p align="left" >
+                        Bidang yang dibutuhkan untuk daerah Natuna, Kepulauan Riau<br>
+                        1. Seni Tari<br>
+                        2. Seni Musik<br>
+                        3. Seni Teater<br>
+                        4. Seni Rupa<br>
+                        5. Seni Media.
+                    </p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
+                      <img src="assets/img/Lambang_Kabupaten_Belu.jpg" alt="belu" height="128" width="90">
                     </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">Belu, Nusa Tenggara Timur</h4>
+                    <p align="left" >
+                        Bidang yang dibutuhkan untuk daerah Belu, Nusa Tenggara Timur<br>
+                        1. Seni Rupa (Ukir)<br>
+                        2. Seni Rupa (Grafiti)<br>
+                        3. Seni Tari<br>
+                        4. Seni Teater<br>
+                        5. Seni Musik (Vokal)<br>
+                        5. Seni Media
+                    </p>
                 </div>
             </div>
         </div>
@@ -127,13 +148,13 @@
     
 
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Timeline Section -->
+    <section id="timeline">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">About</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Timeline</h2>
+                    <h3 class="section-subheading text-muted">Jadwal Pelaksaan Seniman Mengajar Gelombang 1</h3>
                 </div>
             </div>
             <div class="row">
@@ -141,67 +162,51 @@
                     <ul class="timeline">
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/1.jpg" alt="">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/daftar.jpg" alt="" height="200" width="200">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>2009-2011</h4>
-                                    <h4 class="subheading">Our Humble Beginnings</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <h4>Penutupan Pendaftaran</h4>
+                                    <h4 class="subheading">3 April 2017</h4>
                                 </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/2.jpg" alt="">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/seleksi.jpg" alt="" height="200" width="200">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>March 2011</h4>
-                                    <h4 class="subheading">An Agency is Born</h4>
-                                </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
+                                    <h4>Seleksi Oleh Tim Penyeleksi</h4>
+                                    <h4 class="subheading">4 April 2017 - 14 April 2017</h4>
                                 </div>
                             </div>
                         </li>
                         <li>
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/3.jpg" alt="">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/pengumuman.png" alt="" height="200" width="200">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>December 2012</h4>
-                                    <h4 class="subheading">Transition to Full Service</h4>
+                                    <h4>Pengumuman Hasil Seleksi</h4>
+                                    <h4 class="subheading">15 April 2017</h4>
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
+                               
                             </div>
                         </li>
                         <li class="timeline-inverted">
                             <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="img/about/4.jpg" alt="">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>July 2014</h4>
-                                    <h4 class="subheading">Phase Two Expansion</h4>
+                                    <h4>1 Mei 2017</h4>
+                                    <h4 class="subheading">Pelaksanaan Kegiatan</h4>
                                 </div>
-                                <div class="timeline-body">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                                </div>
+                                
                             </div>
                         </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <h4>Be Part
-                                    <br>Of Our
-                                    <br>Story!</h4>
-                            </div>
-                        </li>
+                        
                     </ul>
                 </div>
             </div>
@@ -209,97 +214,76 @@
     </section>
 
     <!-- Daftrar -->
-    <section id="team" class="bg-light-gray">
+    <section id="about" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">Tentang Kegiatan Seniman Mengajar</h2>   
                 </div>
+            </div>
+            <div class="row-lg-12">
+                <pa allign="left">
+                    Seniman Mengajar adalah program yang diselenggarakan Direktorat Kesenian, Direktorat Jenderal Kebudayaan, Kementerian Pendidikan dan Kebudayaan, yaitu program seniman mengajar kesenian kepada masyarakat/ komunitas/ sanggar yang berada di daerah dengan predikat 3T yang berada di Indonesia. <br><br>
+                    Program ini pada prinsipnya mendorong para seniman berbagi ilmu dan pengalamannya kepada masyarakat yang berada daerah 3T. Dengan program ini masyarakat di daerah 3T dapat terbuka wawasannya dan dapat menjalin kerjasama dengan para seniman sehingga dapat meningkatkan kualitas ekspresi seni dan penguatan identitas budaya di daerah 3T. Pada akhir masa belajar, para seniman dapat mempresentasikan apa yang telah dikerjakannya di daerah pelaksanaan kegiatan. <br><br>
+                    Dalam melaksanakan program Seniman Mengajar ditekankan prinsip – prinsip : partisipatif, dialogis, dan transformasi. Format kegiatan residensi seniman dalam kurun waktu yang ditentukan dengan target paket kegiatan selesai. Seniman berbagi ilmu dan keahlian dengan  seniman lokal yang mewakili sanggar/ komunitas.
+                </p>
             </div>
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/1.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Kay Garland</h4>
-                        <p class="text-muted">Lead Designer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <h4>Syarat Pendaftar</h4>
+                        <!-- <p class="text-muted">Lead Designer</p> -->
+                        <p align="left">
+                            <br>a.  Warga Negara Indonesia<br>
+                            b.  Usia 30 – 50 tahun<br>
+                            c.  Non PNS<br>
+                            d.  Profesional dan berdedikasi tinggi terhadap seni<br>
+                            e.  Memiliki pengalaman minimal 5 tahun dalam berkesenian<br>
+                            f.  Mampu beradaptasi dengan lingkungan di lokasi tempat mengajar<br>
+                            g.  Dapat berkomunikasi dengan baik dan aktif<br>
+                            h.  Sehat jasmani dan rohani<br>
+                        </p>  
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/2.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Larry Parker</h4>
-                        <p class="text-muted">Lead Marketer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <h4>Hak Seniman</h4>
+                        <p align="left">
+                            <br>a.  mendapatkan insentif<br> 
+                            b.  sertifikat<br>
+                            c.  sarana pendukung/ keperluan belajar<br> 
+                            d.  akomodasi<br>
+                            e.  transportasi dari daerah asal ke lokasi kegiatan<br>
+                            f.  asuransi kesehatan selama kegiatan<br>
+                        </p>                        
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="img/team/3.jpg" class="img-responsive img-circle" alt="">
-                        <h4>Diana Pertersen</h4>
-                        <p class="text-muted">Lead Developer</p>
-                        <ul class="list-inline social-buttons">
-                            <li><a href="#"><i class="fa fa-twitter"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-facebook"></i></a>
-                            </li>
-                            <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                            </li>
-                        </ul>
+                        <h4>Kewajiban Seniman</h4>
+                        <p align="left">
+                            <br>a.  membuat rancangan bahan ajar<br>
+                            b.  membuat materi ajar<br>
+                            c.  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2.)<br>
+                            d.  mempresentasikan materi ajar<br>
+                            e.  berkoordinasi dengan pihak Dinas<br>
+                            f.  melaksanakan aturan yang berlaku sesuai juknis<br>
+                            g.  menandatangani kontrak kerja<br>
+                            h.  wajib mengikuti proses kegiatan dari awal sampai akhir<br>
+                            i.  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi<br>
+                            j.  menyusun laporan teknis dan administrasi kegiatan<br>
+                            k.  seniman mengajar per kelas antara 10-30 orang
+
+                        </p>
+                        
                     </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-                </div>
-            </div>
+            
         </div>
     </section>
 
-    <!-- Clients Aside 
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside> -->
-
+    
 
     <!-- daftar form -->
     <section id="daftar">
@@ -334,24 +318,22 @@
                                     <input type ="email" class ="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="silakan masukan email Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
-                                <div class="container">
-                                    <div class"row">
-                                        <h3>Jenis Kesenian</h3>
-                                        <div class ="form-group">
-                                             <input type="radio" name="jenis_seni" id="jenis_seni" value="musik"> Musik
-                                        </div>
-                                        <div class ="form-group">
-                                             <input type="radio" name="jenis_seni" id="jenis_seni" value="teater"> Teater
-                                        </div>
-                                        <div class ="form-group">
-                                             <input type="radio" name="jenis_seni" id="jenis_seni" value="kriya"> Kriya
-                                        </div>
-                                        <div class ="form-group">
-                                             <input type="radio" name="jenis_seni" id="jenis_seni" value="tari"> Tari
-                                        </div>
+                               
+                                <div class"row">
+                                     <h3>Jenis Kesenian</h3>
+                                    <div class ="form-group">
+                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="musik"> Musik
+                                     </div>
+                                    <div class ="form-group">
+                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="teater"> Teater
                                     </div>
-                                </div>
-
+                                     <div class ="form-group">
+                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="kriya"> Kriya
+                                     </div>
+                                    <div class ="form-group">
+                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="tari"> Tari
+                                    </div>
+                                 </div>
                             </div>
                            
                             <div class="col-lg-12 text-center">
@@ -469,7 +451,7 @@
                     <ul class="list-inline quicklinks">
                         <li><a href="kebudayaan.kemdikbud.go.id">Website Resmi Ditjen Kebudayaan</a>
                         </li>
-                        <li><a href="kebudayaanindonesia.net">Website Kebudayaan/a>
+                        <li><a href="kebudayaanindonesia.net">Website Kebudayaan</a>
                         </li>
                     </ul>
                 </div>

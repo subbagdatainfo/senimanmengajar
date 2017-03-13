@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url('../img/header-bg.jpg');
+  background-image: url("./assets/img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -548,6 +548,7 @@ section h3.section-subheading {
   text-transform: none;
 }
 .team-member p {
+  
   margin-top: 0;
 }
 aside.clients img {
@@ -555,7 +556,7 @@ aside.clients img {
 }
 section#contact {
   background-color: #222222;
-  background-image: url('../img/map-image.png');
+  background-image: url('../assets/img/map-image.png');
   background-position: center;
   background-repeat: no-repeat;
 }
