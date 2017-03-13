@@ -65,7 +65,8 @@
                         <a class="page-scroll" href="#daftar">Daftar</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#masuk">Masuk</a>
+                        <!--<a class="page-scroll" href="#masuk">Masuk</a>-->
+                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Masuk</button>
                     </li>
                 </ul>
             </div>
@@ -364,6 +365,44 @@
 
             </div>
     </section>
+
+    <!-- login section -->
+    <section id="masuk">
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <form>
+                                <div class ="form-group">
+                                    <input type ="text" class ="form-control" placeholder="Nama" id="nama" name="nama" required data-validation-required-message="silakan masukan nama Anda">
+                                    <p class ="help-block text-danger"></p>
+                                </div>
+                                <div class ="form-group">
+                                    <input type ="text" class ="form-control" placeholder="Password" id="password" name="password" required data-validation-required-message="silakan masukan Password Anda">
+                                    <p class ="help-block text-danger"></p>
+                                </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </section>
+
+
+
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
