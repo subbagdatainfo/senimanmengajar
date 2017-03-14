@@ -30,6 +30,48 @@
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
     <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script>
+                                    var belu = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'Seni Media', value:'Seni Media', value:'senimedia'}];
+
+                                    var natuna = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Rupa', value:'senirupa'}, {name:'Seni Media', value:'senimedia'}];
+
+                                    var kapuashulu = [{name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'seni Rupa (Grafiti)',value:'senirupagrafiti'}, {name:'Seni Tari', value:'senitari'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Musik (Vokal)', value:'senimusikvokal'}, {name:'Seni Media', value:'senimedia'}]
+                                    $(document).ready( function() {
+                                      $("input[name='chk']").on('change',function() {
+
+                                          if($(this).is(':checked') && $(this).val() == 'belu')
+                                          {
+                                            $('#jenis_seni').empty()
+                                            $.each(belu, function(index, value) {
+                                             $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
+                                            });                  
+                                          }
+                                          else if($(this).is(':checked') && $(this).val() == 'natuna')
+                                          {
+                                            $('#jenis_seni').empty()
+                                            $.each(natuna, function(index, value) {
+                                             $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
+                                            }); 
+                                          }
+                                          else if($(this).is(':checked') && $(this).val() == 'kapuashulu')
+                                          {
+                                            $('#jenis_seni').empty()
+                                            $.each(kapuashulu, function(index, value) {
+                                             $('#jenis_seni').append('<option value="'+value.value+'" >'+value.name+'</option>');
+                                            }); 
+                                          }
+                                          else 
+                                          {
+
+                                          }
+                                          {
+
+                                          }
+
+                                      });
+                                    });  
+                                </script>
 
 </head>
 
@@ -56,20 +98,20 @@
                         <a class="page-scroll" href="#pelaksanaan">Pelaksanaan</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#timeline">Timeline</a>
-                    </li>
-                    <li>
                         <a class="page-scroll" href="#about">Tentang</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                        <a class="page-scroll" href="#timeline">Timeline</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#daftar">Daftar</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                    </li>
+                    <li>
                         <!--<a class="page-scroll" href="#masuk">Masuk</a>-->
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Masuk</button>
+                        <a href="<?=site_url('c_Peserta/login');?>">Login</a>
                     </li>
                 </ul>
             </div>
@@ -82,9 +124,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <!--<div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>-->
-                <a href="#pelaksanaan" class="page-scroll btn btn-xl">Tempat Pelaksanaan</a>
+                <div class="intro-lead-in">Seniman Mengajar</div>
+                <div class="intro-heading">Gelombang 1</div>
+                <a href="#daftar" class="page-scroll btn btn-xl">Daftar</a>
             </div>
         </div>
     </header>
@@ -105,7 +147,7 @@
                     </span>
                     <h4 class="service-heading">Kapuas Hulu, Kalimantan Barat</h4>
                     <p align="left" >
-                        Bidang yang dibutuhkan untuk daerah Kapuas Hulu, Kalimantan Barat<br>
+                        Bidang Seni yang dibutuhkan untuk daerah Kapuas Hulu, Kalimantan Barat<br>
                         1. Seni tari<br>
                         2. Seni Musik<br>
                         3. Seni Rupa (ukir)<br>
@@ -118,7 +160,7 @@
                     </span>
                     <h4 class="service-heading">Natuna, Kepulauan Riau</h4>
                     <p align="left" >
-                        Bidang yang dibutuhkan untuk daerah Natuna, Kepulauan Riau<br>
+                        Bidang Seni yang dibutuhkan untuk daerah Natuna, Kepulauan Riau<br>
                         1. Seni Tari<br>
                         2. Seni Musik<br>
                         3. Seni Teater<br>
@@ -132,88 +174,20 @@
                     </span>
                     <h4 class="service-heading">Belu, Nusa Tenggara Timur</h4>
                     <p align="left" >
-                        Bidang yang dibutuhkan untuk daerah Belu, Nusa Tenggara Timur<br>
+                        Bidang Seni yang dibutuhkan untuk daerah Belu, Nusa Tenggara Timur<br>
                         1. Seni Rupa (Ukir)<br>
                         2. Seni Rupa (Grafiti)<br>
                         3. Seni Tari<br>
                         4. Seni Teater<br>
                         5. Seni Musik (Vokal)<br>
-                        5. Seni Media
+                        6. Seni Media
                     </p>
                 </div>
             </div>
         </div>
     </section>
 
-    
-
-
-    <!-- Timeline Section -->
-    <section id="timeline">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Timeline</h2>
-                    <h3 class="section-subheading text-muted">Jadwal Pelaksaan Seniman Mengajar Gelombang 1</h3>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/daftar.jpg" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Penutupan Pendaftaran</h4>
-                                    <h4 class="subheading">3 April 2017</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/seleksi.jpg" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Seleksi Oleh Tim Penyeleksi</h4>
-                                    <h4 class="subheading">4 April 2017 - 14 April 2017</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/pengumuman.png" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Pengumuman Hasil Seleksi</h4>
-                                    <h4 class="subheading">15 April 2017</h4>
-                                </div>
-                               
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>1 Mei 2017</h4>
-                                    <h4 class="subheading">Pelaksanaan Kegiatan</h4>
-                                </div>
-                                
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Daftrar -->
+    <!-- page-section tentang seniman mengajar -->
     <section id="about" class="bg-light-gray">
         <div class="container">
             <div class="row">
@@ -283,7 +257,71 @@
         </div>
     </section>
 
-    
+    <!--Timeline pelaksanaan Seniman Mengajar -->
+    <!-- Timeline Section -->
+    <section id="timeline">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Timeline</h2>
+                    <h3 class="section-subheading text-muted">Jadwal Pelaksaan Seniman Mengajar Gelombang 1</h3>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <ul class="timeline">
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/daftar.jpg" alt="" height="200" width="200">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Penutupan Pendaftaran</h4>
+                                    <h4 class="subheading">3 April 2017</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/seleksi.jpg" alt="" height="200" width="200">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Seleksi Oleh Tim Penyeleksi</h4>
+                                    <h4 class="subheading">4 April 2017 - 10 April 2017</h4>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/pengumuman.png" alt="" height="200" width="200">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Pengumuman Hasil Seleksi</h4>
+                                    <h4 class="subheading">12 April 2017</h4>
+                                </div>
+                               
+                            </div>
+                        </li>
+                        <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Pelaksanaan Kegiatan</h4>
+                                    <h4 class="subheading">1 Mei 2017</h4>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>    
 
     <!-- daftar form -->
     <section id="daftar">
@@ -318,22 +356,30 @@
                                     <input type ="email" class ="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="silakan masukan email Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
+
                                
                                 <div class"row">
-                                     <h3>Jenis Kesenian</h3>
+                                     <h3>Daerah yang Dipilih</h3>
                                     <div class ="form-group">
-                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="musik"> Musik
+                                          <input type="radio" id="region" name="chk" value="belu" checked>Belu <br/>
                                      </div>
                                     <div class ="form-group">
-                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="teater"> Teater
+                                         <input type="radio" id="region" name="chk" value="natuna" >Natuna<br/>
                                     </div>
-                                     <div class ="form-group">
-                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="kriya"> Kriya
-                                     </div>
                                     <div class ="form-group">
-                                         <input type="radio" name="jenis_seni" id="jenis_seni" value="tari"> Tari
+                                         <input type="radio" id="region" name="chk" value="kapuashulu" >Kapuas Hulu<br/>
                                     </div>
-                                 </div>
+                                     <!-- <div class ="form-group">
+                                         <input type="radio" name="bb" value="kapuashulu"   onclick="setSelect('kapuashulu')" checked > Kapuas Hulu <br>
+                                     </div>  -->   
+                                </div>
+                                <div class="form-group">
+                                    <h3>Bidang Seni</h3>
+                                    <select id="jenis_seni" name="jenis_seni">
+                                        <option name="name" value="1">Jenis Seni</option>
+                                    </select>
+                                </div>
+
                             </div>
                            
                             <div class="col-lg-12 text-center">
@@ -348,40 +394,6 @@
             </div>
     </section>
 
-    <!-- login section -->
-    <section id="masuk">
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="close-modal" data-dismiss="modal">
-                    <div class="lr">
-                        <div class="rl">
-                        </div>
-                    </div>
-                </div>
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-8 col-lg-offset-2">
-                            <div class="modal-body">
-                                <form>
-                                <div class ="form-group">
-                                    <input type ="text" class ="form-control" placeholder="Nama" id="nama" name="nama" required data-validation-required-message="silakan masukan nama Anda">
-                                    <p class ="help-block text-danger"></p>
-                                </div>
-                                <div class ="form-group">
-                                    <input type ="text" class ="form-control" placeholder="Password" id="password" name="password" required data-validation-required-message="silakan masukan Password Anda">
-                                    <p class ="help-block text-danger"></p>
-                                </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    </section>
 
 
 
@@ -433,10 +445,10 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan, Kementrian Pendidikan dan Kebudayaan</span>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <ul class="list-inline social-buttons">
                         <li><a href="#"><i class="fa fa-twitter"></i></a>
                         </li>
@@ -446,8 +458,8 @@
                         <li><a href="#"><i class="fa fa-instagram"></i></a>
                         </li>
                     </ul>
-                </div>
-                <div class="col-md-4">
+                </div> -->
+                <div class="col-md-6">
                     <ul class="list-inline quicklinks">
                         <li><a href="kebudayaan.kemdikbud.go.id">Website Resmi Ditjen Kebudayaan</a>
                         </li>
@@ -475,6 +487,7 @@
 
     <!-- Theme JavaScript -->
     <script src="js/agency.min.js"></script>
+    
 
 </body>
 
