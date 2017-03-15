@@ -481,7 +481,7 @@
                                     <li>4. Seni Media</li>
                                 </ul>
                                 
-                                    <?php echo $map['html'];?>
+                                    
                                 
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
