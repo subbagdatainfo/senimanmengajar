@@ -686,7 +686,7 @@ ul.social-buttons li a:active {
 }
 .portfolio-modal .modal-content ul.list-inline {
   margin-bottom: 30px;
-  margin-top: 0;
+  
 }
 .portfolio-modal .modal-content img {
   margin-bottom: 30px;
@@ -746,4 +746,18 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #fed136;
+}
+ .background-modal {
+    background-image: url("assets/img/bg-modal.jpg");
+ }
+
+ html, body, #map-canvas  {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#map-canvas {
+  width:500px;
+  height:480px;
 }

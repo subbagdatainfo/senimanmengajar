@@ -12,16 +12,16 @@
     <title>Seniman Mengajar</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="../assets/admin/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo HTTP_VENDOR_PATH;?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- MetisMenu CSS -->
-    <link href="../assets/admin/vendor/metisMenu/metisMenu.min.css" rel="stylesheet">
+    <link href="<?php echo HTTP_VENDOR_PATH;?>metisMenu/metisMenu.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="../assets/admin/dist/css/sb-admin-2.css" rel="stylesheet">
+    <link href="<?php echo HTTP_CSS_PATH; ?>sb-admin-2.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href="../assets/admin/vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="<?php echo HTTP_VENDOR_PATH;?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -61,16 +61,16 @@
     </div>
 
     <!-- jQuery -->
-    <script src="../assets/admin/vendor/jquery/jquery.min.js"></script>
+    <script src="<?php echo HTTP_VENDOR_PATH;?>jquery/jquery.min.js"></script>
 
     <!-- Bootstrap Core JavaScript -->
-    <script src="../assets/admin/vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="<?php echo HTTP_VENDOR_PATH;?>bootstrap/js/bootstrap.min.js"></script>
 
     <!-- Metis Menu Plugin JavaScript -->
-    <script src="../assets/admin/vendor/metisMenu/metisMenu.min.js"></script>
+    <script src="<?php echo HTTP_VENDOR_PATH;?>metisMenu/metisMenu.min.js"></script>
 
     <!-- Custom Theme JavaScript -->
-    <script src="../assets/admin/dist/js/sb-admin-2.js"></script>
+    <script src="<?php echo HTTP_JS_PATH; ?>sb-admin-2.js"></script>
 
 </body>
 

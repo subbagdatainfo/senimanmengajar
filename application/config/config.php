@@ -23,7 +23,17 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 | a PHP script and you can easily do that on your own.
 |
 */
-$config['base_url'] = 'http://localhost';
+$config['base_url'] = 'http://localhost/dev';
+define('HTTP_CSS_PATH', $config['base_url'].'/assets/css/');
+define('HTTP_IMAGES_PATH', $config['base_url'].'/assets/images/');
+define('HTTP_JS_PATH', $config['base_url'].'/assets/js/');
+
+define('HTTP_ASSETS_PATH_ADMIN', $config['base_url'].'/assets/');
+
+define('HTTP_CSS_PATH_ADMIN', $config['base_url'].'/assets/admin/css/');
+define('HTTP_IMAGES_PATH_ADMIN', $config['base_url'].'/assets/admin/images/');
+define('HTTP_JS_PATH_ADMIN', $config['base_url'].'/assets/js/');
+define('HTTP_VENDOR_PATH', $config['base_url'].'/vendor/admin/');
 
 /*
 |--------------------------------------------------------------------------

@@ -23,6 +23,8 @@
 
     <!-- Theme CSS -->
     <link href="assets/css/agency.min.css" rel="stylesheet">
+    <!-- load google maps library -->
+    <?php echo $map['js']; ?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -32,11 +34,11 @@
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
-                                    var belu = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'Seni Media', value:'Seni Media', value:'senimedia'}];
+                                    var kapuashulu = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'Seni Media', value:'Seni Media', value:'senimedia'}];
 
                                     var natuna = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Rupa', value:'senirupa'}, {name:'Seni Media', value:'senimedia'}];
 
-                                    var kapuashulu = [{name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'seni Rupa (Grafiti)',value:'senirupagrafiti'}, {name:'Seni Tari', value:'senitari'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Musik (Vokal)', value:'senimusikvokal'}, {name:'Seni Media', value:'senimedia'}]
+                                    var belu = [{name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'Seni Tari', value:'senitari'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Musik (Vokal)', value:'senimusikvokal'}, {name:'Seni Media', value:'senimedia'}]
                                     $(document).ready( function() {
                                       $("input[name='chk']").on('change',function() {
 
@@ -111,7 +113,7 @@
                     </li>
                     <li>
                         <!--<a class="page-scroll" href="#masuk">Masuk</a>-->
-                        <a href="<?=site_url('c_Peserta/login');?>">Login</a>
+                        <a href="<?=site_url('C_Peserta/login');?>">Login</a>
                     </li>
                 </ul>
             </div>
@@ -131,7 +133,7 @@
         </div>
     </header>
 
-    <!-- Services Section -->
+    <!-- Tempat Pelaksanaan -->
     <section id="pelaksanaan">
         <div class="container">
             <div class="row">
@@ -142,46 +144,38 @@
             </div>
             <div class ="row text-center">
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/106px-Lambang_Kabupaten_Kapuas_Hulu.png" alt="kapuashulu" height="128" width="90">
-                    </span>
-                    <h4 class="service-heading">Kapuas Hulu, Kalimantan Barat</h4>
-                    <p align="left" >
-                        Bidang Seni yang dibutuhkan untuk daerah Kapuas Hulu, Kalimantan Barat<br>
-                        1. Seni tari<br>
-                        2. Seni Musik<br>
-                        3. Seni Rupa (ukir)<br>
-                        4. Seni Media.
-                    </p>
+                    <img src="assets/img/106px-Lambang_Kabupaten_Kapuas_Hulu.png" alt="kapuashulu"  height="128" width="90"><br><h4>Kabupaten Kapuas Hulu<br>Kalimantan Barat</h4><br><br>
+                    <a href="#portfolioModal1" class="portfolio-link btn-xl" data-toggle="modal">
+                        <!-- <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div> -->
+                        DETAIL
+                    </a>
+                </div>
+
+                <div class="col-md-4">
+                    <img src="assets/img/118px-Lambang_Kabupaten_Natuna.png" alt="natuna"  height="128" width="90" align ="center"><br><h4>Kabupaten Natuna<br>Kepulauan Riau</h4><br><br>
+                    <a href="#portfolioModal2" class="portfolio-link btn-xl" data-toggle="modal">
+                        <!-- <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div> -->
+                        DETAIL
+                    </a>
                 </div>
                 <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <img src="assets/img/118px-Lambang_Kabupaten_Natuna.png" alt="natuna" height="128" width="90">
-                    </span>
-                    <h4 class="service-heading">Natuna, Kepulauan Riau</h4>
-                    <p align="left" >
-                        Bidang Seni yang dibutuhkan untuk daerah Natuna, Kepulauan Riau<br>
-                        1. Seni Tari<br>
-                        2. Seni Musik<br>
-                        3. Seni Teater<br>
-                        4. Seni Rupa<br>
-                        5. Seni Media.
-                    </p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                      <img src="assets/img/Lambang_Kabupaten_Belu.jpg" alt="belu" height="128" width="90">
-                    </span>
-                    <h4 class="service-heading">Belu, Nusa Tenggara Timur</h4>
-                    <p align="left" >
-                        Bidang Seni yang dibutuhkan untuk daerah Belu, Nusa Tenggara Timur<br>
-                        1. Seni Rupa (Ukir)<br>
-                        2. Seni Rupa (Grafiti)<br>
-                        3. Seni Tari<br>
-                        4. Seni Teater<br>
-                        5. Seni Musik (Vokal)<br>
-                        6. Seni Media
-                    </p>
+                    <img src="assets/img/Lambang_Kabupaten_Belu.jpg" alt="belu"  height="128" width="90"><br><h4>Kabupaten Belu<br>Nusa Tenggara Timur</h4><br><br>
+                    <a href="#portfolioModal3" class="portfolio-link btn-xl" data-toggle="modal">
+                        <!-- <div class="portfolio-hover">
+                            <div class="portfolio-hover-content">
+                                <i class="fa fa-plus fa-3x"></i>
+                            </div>
+                        </div> -->
+                        DETAIL
+                    </a>
                 </div>
             </div>
         </div>
@@ -203,7 +197,7 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-sm-4">
+                <div class="col-md-3">
                     <div class="team-member">
                         <h4>Syarat Pendaftar</h4>
                         <!-- <p class="text-muted">Lead Designer</p> -->
@@ -219,20 +213,19 @@
                         </p>  
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-3">
                     <div class="team-member">
                         <h4>Hak Seniman</h4>
                         <p align="left">
                             <br>a.  mendapatkan insentif<br> 
                             b.  sertifikat<br>
                             c.  sarana pendukung/ keperluan belajar<br> 
-                            d.  akomodasi<br>
+                            d.  akomodasi (tinggal bersama masyarakat setempat dan makan)<br>
                             e.  transportasi dari daerah asal ke lokasi kegiatan<br>
-                            f.  asuransi kesehatan selama kegiatan<br>
                         </p>                        
                     </div>
                 </div>
-                <div class="col-sm-4">
+                <div class="col-md-3">
                     <div class="team-member">
                         <h4>Kewajiban Seniman</h4>
                         <p align="left">
@@ -240,16 +233,25 @@
                             b.  membuat materi ajar<br>
                             c.  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2.)<br>
                             d.  mempresentasikan materi ajar<br>
-                            e.  berkoordinasi dengan pihak Dinas<br>
+                            e.  berkoordinasi dengan pihak Dinas Kebudayaan<br>
                             f.  melaksanakan aturan yang berlaku sesuai juknis<br>
                             g.  menandatangani kontrak kerja<br>
                             h.  wajib mengikuti proses kegiatan dari awal sampai akhir<br>
                             i.  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi<br>
                             j.  menyusun laporan teknis dan administrasi kegiatan<br>
                             k.  seniman mengajar per kelas antara 10-30 orang
-
+                        </p>   
+                    </div>
+                </div>
+                <div class="col-md3">
+                    <div class="team-member">
+                        <h4>Berkas Kelengkapan</h4>
+                        <p align="left">
+                            1.  Mengirimkan daftar riwayat hidup <br>
+                            2.  Surat keterangan sehat dari dokter<br>
+                            3.  Foto diri seluruh badan terbaru ukuran 4R<br>
+                            4.  Foto karya atau video karya<br>
                         </p>
-                        
                     </div>
                 </div>
             </div>
@@ -276,8 +278,8 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Penutupan Pendaftaran</h4>
-                                    <h4 class="subheading">3 April 2017</h4>
+                                    <h4>Pendaftaran</h4>
+                                    <h4 class="subheading">15 Maret 2017- 10 April 2017</h4>
                                 </div>
                             </div>
                         </li>
@@ -287,8 +289,8 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Seleksi Oleh Tim Penyeleksi</h4>
-                                    <h4 class="subheading">4 April 2017 - 10 April 2017</h4>
+                                    <h4>Seleksi</h4>
+                                    <h4 class="subheading">11 April 2017 - 17 April 2017</h4>
                                 </div>
                             </div>
                         </li>
@@ -299,12 +301,24 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pengumuman Hasil Seleksi</h4>
-                                    <h4 class="subheading">12 April 2017</h4>
+                                    <h4 class="subheading">21 April 2017</h4>
                                 </div>
                                
                             </div>
                         </li>
                         <li class="timeline-inverted">
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Pembekalan di Jakarta</h4>
+                                    <h4 class="subheading">28 April 2017 - 30 April 2017</h4>
+                                </div>
+                                
+                            </div>
+                        </li>
+                        <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
                             </div>
@@ -395,8 +409,6 @@
     </section>
 
 
-
-
     <!-- Contact Section -->
     <section id="contact">
         <div class="container">
@@ -442,6 +454,134 @@
         </div>
     </section>
 
+    <!-- modal Kapuas Hulu -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Kabupaten Kapuas Hulu, Kalimantan Barat</h2>
+                                <p align="justify">Pelaksanaan kegiatan Seniman Mengajar di Kab. Kapuas Hulu tepatnya di Desa Sungai Antu, Kec. Puring Kencana merupakan wilayah perbatasan Indonesia dengan Malaysia. Jarak dari Putussibau (Ibu Kota Kabupaten) ke Desa Sungai Antu cukup jauh, dapat di tempuh dengan jalur darat 7 – 8 Jam melewati hutan dan perkebunan sawit. Desa ini beriklim tropis, mata pencaharian masyarakatnya sebagian besar yaitu berkebun. Selain itu, nelayan dan penenun juga menjadi mata pencaharian masyarakat sekitar. Desa ini kental akan adat suku Dayak Iban. Tidak ada kendaraan umum di desa tersebut, sehingga transportasi yang digunakan dengan kendaraan pribadi jalur darat ataupun laut. Kesenian yang berkembang dimasyarakat yaitu Seni Tari, Seni Musik Tradisional, Seni Ukir, dan sastra.</p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kapuas Hulu, Kalimantan Barat</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Tari</li>
+                                    <li>2. Seni Musik</li>
+                                    <li>3. Seni Rupa (Ukir)</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                
+                                    <?php echo $map['html'];?>
+                                
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/kapuashulu1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/kapuashulu2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/kapuashulu3.jpg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal Natuna -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Kabupaten Natuna, Kepulauan Riau</h2>
+                                <p align="justify">Pelaksanaan kegiatan Seniman Mengajar  di Desa Sebadai Hulu, Kec. Bunguran Timur Laut, Kab. Natuna, Kepulauan Riau. Berdasarkan kondisi fisiknya, daerah ini merupakan tanah berbukit dan bergunung batu yang berbatasan dengan laut Cina Selatan dengan iklim tropis namun sangat dipengaruhi oleh arah mata angin. Mata Pencaharian penduduknya sebagian besar adalah nelayan dan berkebun. Sistem transportasi di kabupaten ini belum tersedianya angkutan umum, sehingga masyarakat sekitar menggunakan kendaraan pribadi. Jenis kesenian yang berkembang di masyarakat yaitu Seni Teater Tradisional, Seni Tari Zapin, Seni Musik Alu, Seni Rupa Ukir.</p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Natuna, Kepulauan Riau</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Tari</li>
+                                    <li>2. Seni Musik</li>
+                                    <li>3. Seni Teater</li>
+                                    <li>4. Seni Rupa</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/natuna1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/natuna2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/natuna3.jpg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal Belu -->
+    <div class="portfolio-modal modal fade background-modal" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Kabupaten Belu, Nusa Tengara Timur</h2>
+                                <p align="justify">Pelaksanaan kegiatan Seniman Mengajar di Kab. Belu, NTT dipusatkan di Kec. Lamaknen tepatnya di Desa Duarato dan Desa Kabuna Kecamatan Kakuluk Mesak. Desa Duarato merupakan sebuah kerajaan kecil dibawah kerajaan  Lamaknen yang dipimpin oleh seorang Na’I yang mana masyarakatnya masih kental dengan adatnya. Desa ini berbatsan dengan Negara Timor Leste  dengan jarak batas 1km. Topografi wilayah yang berbukit-bukit, jurang terjal, da tanah liat berbatu-batu. Kabupaten Belu memiliki iklim tropis dengan musim hujan yang sangat pendek dan musim kemarau yang panjang. Masyarakatnya bermatapencaharian penenun dan petani dengan salah satu komoditas pertaniannya jagung. Transportasi yang digunakan masyarakat yaitu melalui jalur darat dengan kendaraan roda dua dan roda empat.</p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Belu, Nusa Tenggara Timur</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Rupa (Ukir)</li>
+                                    <li>2. Seni Tari</li>
+                                    <li>3. Seni Teater</li>
+                                    <li>4. Seni Musik (Vokal)</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/belu1.jpeg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/belu2.jpeg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/belu3.jpeg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <div class="container">
             <div class="row">
@@ -482,11 +622,11 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js" integrity="sha384-mE6eXfrb8jxl0rzJDBRanYqgBxtJ6Unn4/1F7q4xRRyIw7Vdg9jP4ycT7x1iVsgb" crossorigin="anonymous"></script>
 
     <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+    <script src="<?php echo HTTP_JS_PATH;?>jqBootstrapValidation.js"></script>
+    <script src="<?php echo HTTP_JS_PATH;?>contact_me.js"></script>
 
     <!-- Theme JavaScript -->
-    <script src="js/agency.min.js"></script>
+    <script src="<?php echo HTTP_JS_PATH;?>agency.min.js"></script>
     
 
 </body>
