@@ -1,5 +1,5 @@
 <?php
-	class c_Peserta extends CI_Controller{
+	class C_Peserta extends CI_Controller{
 
 		public function __construct(){
 			parent::__construct();
@@ -15,9 +15,11 @@
 			$data['jenis_seni'] = $this->input->post('jenis_seni');
 			$data['region']=$this->input->post('chk');
 
+			// echo base_url();
+			// echo $data['nama_seniman'];
 			
-			$this->m_Peserta->create($data);
-			redirect('http://localhost#daftar','refresh');
+			$this->M_Peserta->create($data);
+			redirect(base_url().'#daftar','refresh');
 		}
 
 		function upload() {
@@ -49,7 +51,7 @@
 		}
 
 		public function getdetailseniman($id_seniman){
-			$data=$this->m_Peserta->getdetailseniman($id_seniman);
+			$data=$this->M_Peserta->getdetailseniman($id_seniman);
 			$this->load->view('v_form', $data);
 		}
 
