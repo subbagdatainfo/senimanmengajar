@@ -50,9 +50,9 @@
 	        redirect('c_Peserta/detail');
 		}
 
-		public function getdetailseniman($id_seniman){
-			$data=$this->M_Peserta->getdetailseniman($id_seniman);
-			$this->load->view('v_form', $data);
+		public function getdetailseniman(){
+			
+			$this->load->view('forms', $data);
 		}
 
 		public function login(){

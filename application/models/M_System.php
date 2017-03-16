@@ -1,12 +1,16 @@
-<?php
+<?php 
 	class M_System extends CI_Model{
-		/* login controller untuk pendaftar*/
+		public function __construct(){
+			$table = 'peserta';
+			parent::__construct();
+		} 
 		public function auth_peserta($username,$password){
-			$data = $this->db->query("select * from peserta where username ='$username' and password='$password'");
-			if($data->num_rows>0){
-				return TRUE;
+			$data = $this->db->query("SELECT * FROM peserta WHERE username='$username' AND password='$password'");
+			if($data->num_rows()>0){
+				return $data;
 			}else{
-				return FALSE;
+				return $data;
 			}
 		}
+
 	}

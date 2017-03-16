@@ -42,10 +42,10 @@
                         <h3 class="panel-title">Silakan Log in</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" action ="<?=site_url('C_Peserta/createpeserta'); ?>">
+                        <form role="form" name="login" action ="<?=site_url('C_System/auth'); ?>" method="post">
                             <fieldset>
                                 <div class="form-group">
-                                    <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                    <input class="form-control" placeholder="username" name="username" type="text" autofocus>
                                 </div>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="Password" name="password" type="password" value="">
@@ -55,6 +55,11 @@
                                 <button type="submit" name ="submit" value="submit" class="btn btn-lg btn-success btn-block">Masuk</button>
                             </fieldset>
                         </form>
+                        <div class="clear"></div>
+                        <?php if(isset($message)){
+                            echo $message; 
+                        }
+                        ?>
                     </div>
                 </div>
             </div>
