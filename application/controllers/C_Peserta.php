@@ -9,7 +9,7 @@
 			$data = array();
 			$data['nama_seniman'] = $this->input->post('nama');
 			$data['username'] = $this->input->post('username');
-			$data['password'] = $this->input->post('password');
+			$data['password'] = $this->encrypt->encode($this->input->post('password'));
 			$data['no_telpon'] = $this->input->post('no_telpon');
 			$data['email'] = $this->input->post('email');
 			$data['jenis_seni'] = $this->input->post('jenis_seni');
@@ -51,7 +51,7 @@
 		}
 
 		public function getdetailseniman(){
-			
+			$data = array();
 			$this->load->view('forms', $data);
 		}
 

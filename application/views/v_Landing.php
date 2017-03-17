@@ -410,17 +410,16 @@
 
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="hubungi">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Hubungi Kami</h2>
-                    <!--<h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>-->
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="sentMessage" id="contactForm" novalidate>
+                    <!-- <form name="sentMessage" id="contactForm" novalidate>
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
@@ -448,7 +447,27 @@
                                 <button type="submit" class="btn btn-xl">Send Message</button>
                             </div>
                         </div>
-                    </form>
+                    </form> -->
+                    <div class ="col-md-6">
+                        <div class="container">
+                            <p align="left"> 
+                                Untuk layanan informasi bisa menguhubungi: <br>
+                                <ul>
+                                    <li>Afrilia : 0857-24262511</li>
+                                    <li>Dewilisa    : 0812-82723295</li>
+                                    <li>Kantor  : 021-5725518</li>
+                                    <li>Email: pembinaantenaga.kesenian@gmail.com</li>
+                                </ul>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        
+                            <?php echo $map['html']; ?>
+                       
+                            <strong>Jln. Jenderal Sudirman, Komplek Kementrian Pendidikan dan Kebudayaan <br>Gedung E Lantai 9<br>Senayan Jakarta 10270</strong>
+                       
+                    </div>
                 </div>
             </div>
         </div>
