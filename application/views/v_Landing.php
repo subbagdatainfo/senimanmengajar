@@ -109,7 +109,7 @@
                         <a class="page-scroll" href="#daftar">Daftar</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Hubungi Kami</a>
+                        <a class="page-scroll" href="#hubungi">Hubungi Kami</a>
                     </li>
                     <li>
                         <!--<a class="page-scroll" href="#masuk">Masuk</a>-->
