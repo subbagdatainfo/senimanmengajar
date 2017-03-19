@@ -19,6 +19,7 @@
 
     <!-- Custom CSS -->
     <link href="<?php echo HTTP_CSS_PATH; ?>sb-admin-2.css" rel="stylesheet">
+    
 
     <!-- Custom Fonts -->
     <link href="<?php echo HTTP_VENDOR_PATH;?>font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">

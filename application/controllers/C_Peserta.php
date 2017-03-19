@@ -56,6 +56,8 @@
 		}
 
 		public function login(){
+			$this->load->view('/template/header');
 			$this->load->view('v_login');
+			$this->load->view('/template/footer');
 		}
 	}

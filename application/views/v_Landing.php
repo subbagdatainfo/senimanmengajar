@@ -77,7 +77,7 @@
 
 </head>
 
-<body id="page-top" class="index">
+<body id="page-top" class="index" >
 
     <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -145,7 +145,7 @@
             <div class ="row text-center">
                 <div class="col-md-4">
                     <img src="assets/img/106px-Lambang_Kabupaten_Kapuas_Hulu.png" alt="kapuashulu"  height="128" width="90"><br><h4>Kabupaten Kapuas Hulu<br>Kalimantan Barat</h4><br><br>
-                    <a href="#portfolioModal1" class="portfolio-link btn-xl" data-toggle="modal">
+                    <a href="#kapuashulu" class="portfolio-link btn-xl" data-toggle="modal">
                         <!-- <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -157,7 +157,7 @@
 
                 <div class="col-md-4">
                     <img src="assets/img/118px-Lambang_Kabupaten_Natuna.png" alt="natuna"  height="128" width="90" align ="center"><br><h4>Kabupaten Natuna<br>Kepulauan Riau</h4><br><br>
-                    <a href="#portfolioModal2" class="portfolio-link btn-xl" data-toggle="modal">
+                    <a href="#natuna" class="portfolio-link btn-xl" data-toggle="modal">
                         <!-- <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -168,7 +168,7 @@
                 </div>
                 <div class="col-md-4">
                     <img src="assets/img/Lambang_Kabupaten_Belu.jpg" alt="belu"  height="128" width="90"><br><h4>Kabupaten Belu<br>Nusa Tenggara Timur</h4><br><br>
-                    <a href="#portfolioModal3" class="portfolio-link btn-xl" data-toggle="modal">
+                    <a href="#belu" class="portfolio-link btn-xl" data-toggle="modal">
                         <!-- <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
                                 <i class="fa fa-plus fa-3x"></i>
@@ -474,11 +474,10 @@
     </section>
 
     <!-- modal Kapuas Hulu -->
-    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="kapuashulu" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
 
             <div class="modal-content">
-                <img id="print-background" src="assets/img/bg-modal.jpg"/>
                 <div class="close-modal" data-dismiss="modal">
                     <div class="lr">
                         <div class="rl">
@@ -520,7 +519,7 @@
     </div>
 
     <!-- modal Natuna -->
-    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade" id="natuna" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -562,7 +561,7 @@
     </div>
 
     <!-- modal Belu -->
-    <div class="portfolio-modal modal fade background-modal" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="portfolio-modal modal fade background-modal" id="belu" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -607,7 +606,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan, Kementrian Pendidikan dan Kebudayaan</span>
+                    <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan<br> Kementrian Pendidikan dan Kebudayaan</span>
                 </div>
                 <!-- <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -622,9 +621,9 @@
                 </div> -->
                 <div class="col-md-6">
                     <ul class="list-inline quicklinks">
-                        <li><a href="kebudayaan.kemdikbud.go.id">Website Resmi Ditjen Kebudayaan</a>
+                        <li><a href="kebudayaan.kemdikbud.go.id" class=" btn btn-primary">Website Resmi Ditjen Kebudayaan</a>
                         </li>
-                        <li><a href="kebudayaanindonesia.net">Website Kebudayaan</a>
+                        <li><a href="kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
                         </li>
                     </ul>
                 </div>

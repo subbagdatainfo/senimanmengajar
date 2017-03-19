@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url("../assets/img/header-bg.jpg");
+  background-image: url("../img/header-bg.jpg");
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -238,6 +238,12 @@ header {
   color: #FF0000;
   padding-top: 100px;
   padding-bottom: 50px;
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
 }
 header .intro-text {
   padding-top: 100px;
@@ -747,9 +753,7 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #fed136;
 }
- .background-modal {
-    background-image: url("assets/img/bg-modal.jpg");
- }
+ 
 
  html, body, #map-canvas  {
   margin: 0;
@@ -761,3 +765,4 @@ body {
   width:500px;
   height:480px;
 }
+.
