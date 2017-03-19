@@ -1,8 +1,8 @@
-<footer class="navbar navbar-fixed-bottom bg-light-gray">
+<nav class="nnavbar navbar-default navbar-fixed-bottom bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan<br> Kementrian Pendidikan dan Kebudayaan</span>
+                    <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan,<br> Kementrian Pendidikan dan Kebudayaan</span>
                 </div>
                 <!-- <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -17,12 +17,12 @@
                 </div> -->
                 <div class="col-md-6">
                     <ul class="list-inline quicklinks">
-                        <li><a href="kebudayaan.kemdikbud.go.id" class=" btn btn-primary">Website Resmi Ditjen Kebudayaan</a>
+                        <li><a href="http://kebudayaan.kemdikbud.go.id" class=" btn btn-primary">Website Ditjen Kebudayaan</a>
                         </li>
-                        <li><a href="kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
+                        <li><a href="http://kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-</footer>
+</nav>

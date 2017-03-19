@@ -1,5 +1,6 @@
+
 <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
@@ -16,7 +17,7 @@
                         <a href="<?=site_url('#page-top');?>"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="<?=site_url('#pelaksanaan');?>">Pelaksanaan</a>
+                        <a class="page-scroll" href="<?=site_url('#lokasi');?>">Pelaksanaan</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="<?=site_url('#about');?>">Tentang</a>

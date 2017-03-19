@@ -199,7 +199,7 @@ fieldset[disabled] .btn-xl.active {
 }
 @media (min-width: 768px) {
   .navbar-custom {
-    background-color: transparent;
+    
     padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
@@ -226,7 +226,7 @@ fieldset[disabled] .btn-xl.active {
   }
 }
 header {
-  background-image: url("../img/header-bg.jpg");
+  background-image: url('../img/header-bg.jpg');
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -235,15 +235,7 @@ header {
   background-size: cover;
   -o-background-size: cover;
   text-align: center;
-  color: #FF0000;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  min-height: 100%;
-  min-width: 1024px;
-  
-  /* Set up proportionate scaling */
-  width: 100%;
-  height: auto;
+  color: #ff0000;
 }
 header .intro-text {
   padding-top: 100px;
@@ -562,59 +554,61 @@ section h3.section-subheading {
 aside.clients img {
   margin: 50px auto;
 }
-section#contact {
-  background-color: #222222;
+section#daftar {
+  background-color: transparent;
   
   background-position: center;
   background-repeat: no-repeat;
 }
-section#contact .section-heading {
-  color: white;
+section#daftar .section-heading {
+  color: black;
 }
-section#contact .form-group {
+section#daftar .form-group {
   margin-bottom: 25px;
 }
-section#contact .form-group input,
-section#contact .form-group textarea {
+section#daftar .form-group input,
+section#daftar .form-group textarea {
+  background-color: #808080;
   padding: 20px;
 }
-section#contact .form-group input.form-control {
+section#daftar .form-group input.form-control {
   height: auto;
+  color: #ffffff;
 }
-section#contact .form-group textarea.form-control {
+section#daftar .form-group textarea.form-control {
   height: 236px;
 }
-section#contact .form-control:focus {
+section#daftar .form-control:focus {
   border-color: #fed136;
   box-shadow: none;
 }
-section#contact ::-webkit-input-placeholder {
+section#daftar ::-webkit-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
-section#contact :-moz-placeholder {
+section#daftar :-moz-placeholder {
   /* Firefox 18- */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
-section#contact ::-moz-placeholder {
+section#daftar ::-moz-placeholder {
   /* Firefox 19+ */
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
-section#contact :-ms-input-placeholder {
+section#daftar :-ms-input-placeholder {
   font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
   text-transform: uppercase;
   font-weight: 700;
   color: #eeeeee;
 }
-section#contact .text-danger {
+section#daftar .text-danger {
   color: #e74c3c;
 }
 footer {
@@ -765,4 +759,13 @@ body {
   width:500px;
   height:480px;
 }
-.
+
+section#hubungi{
+  background-color: #222222;
+  background-image: url('../img/map-image.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fed136;
+  font-family: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bolder;
+}

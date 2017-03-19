@@ -22,9 +22,9 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="assets/css/agency.min.css" rel="stylesheet">
+    <link href="assets/css/agency.css" rel="stylesheet">
     <!-- load google maps library -->
-    <?php echo $map['js']; ?>
+    <?php echo $map['js']?>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -76,10 +76,8 @@
                                 </script>
 
 </head>
-
-<body id="page-top" class="index" >
-
-    <!-- Navigation -->
+<body id="page-top" class="index">
+<!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -87,17 +85,17 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Seniman Mengajar</a>
+                <a class="navbar-brand page-scroll" href="<?=site_url('#page-top');?>">Seniman Mengajar</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden">
-                        <a href="#page-top"></a>
+                        <a href="<?=site_url('#page-top');?>"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#pelaksanaan">Pelaksanaan</a>
+                        <a class="page-scroll" href="#lokasi">Lokasi</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#about">Tentang</a>
@@ -121,20 +119,24 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
+<body id="page-top" class="index" >
+
+    
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-fluid">
             <div class="intro-text">
                 <div class="intro-lead-in">Seniman Mengajar</div>
                 <div class="intro-heading">Gelombang 1</div>
                 <a href="#daftar" class="page-scroll btn btn-xl">Daftar</a>
             </div>
+            
         </div>
     </header>
 
     <!-- Tempat Pelaksanaan -->
-    <section id="pelaksanaan">
+    <section id="lokasi" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -182,15 +184,15 @@
     </section>
 
     <!-- page-section tentang seniman mengajar -->
-    <section id="about" class="bg-light-gray">
-        <div class="container">
+    <section id="about" >
+        <div class="container ">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tentang Kegiatan Seniman Mengajar</h2>   
                 </div>
             </div>
             <div class="row-lg-12">
-                <pa allign="left">
+                <p allign="left">
                     Seniman Mengajar adalah program yang diselenggarakan Direktorat Kesenian, Direktorat Jenderal Kebudayaan, Kementerian Pendidikan dan Kebudayaan, yaitu program seniman mengajar kesenian kepada masyarakat/ komunitas/ sanggar yang berada di daerah dengan predikat 3T yang berada di Indonesia. <br><br>
                     Program ini pada prinsipnya mendorong para seniman berbagi ilmu dan pengalamannya kepada masyarakat yang berada daerah 3T. Dengan program ini masyarakat di daerah 3T dapat terbuka wawasannya dan dapat menjalin kerjasama dengan para seniman sehingga dapat meningkatkan kualitas ekspresi seni dan penguatan identitas budaya di daerah 3T. Pada akhir masa belajar, para seniman dapat mempresentasikan apa yang telah dikerjakannya di daerah pelaksanaan kegiatan. <br><br>
                     Dalam melaksanakan program Seniman Mengajar ditekankan prinsip – prinsip : partisipatif, dialogis, dan transformasi. Format kegiatan residensi seniman dalam kurun waktu yang ditentukan dengan target paket kegiatan selesai. Seniman berbagi ilmu dan keahlian dengan  seniman lokal yang mewakili sanggar/ komunitas.
@@ -261,7 +263,7 @@
 
     <!--Timeline pelaksanaan Seniman Mengajar -->
     <!-- Timeline Section -->
-    <section id="timeline">
+    <section id="timeline" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -338,19 +340,20 @@
     </section>    
 
     <!-- daftar form -->
-    <section id="daftar">
+    <section id="daftar" >
         <div class="container">
-            <div clas ="row">
-                <div class ="col-lg-12 text-center">
-                    <h2 class ="section-heading">Daftar</h2>
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Daftar</h2>
+                    <h3 class="section-subheading text-muted">  </h3>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="daftar" id="daftarform" action ="<?=site_url('C_Peserta/createpeserta'); ?>" method="post">
+                    <form name="daftar" id="contactForm" action ="<?=site_url('C_Peserta/createpeserta'); ?>" method="post" >
                         <div class="row">
-                            <div class ="col-md6">
-                                <div class ="form-group">
+                            <div class ="col-lg-12">
+                                <div class="form-group">
                                     <input type ="text" class ="form-control" placeholder="Nama" id="nama" name="nama" required data-validation-required-message="silakan masukan nama Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
@@ -370,32 +373,35 @@
                                     <input type ="email" class ="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="silakan masukan email Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
+                            </div>    
+                        </div>
+                        <div class"row">
+                            <div class="col-md-6">
+                                <h3>Daerah Pilihan</h3>
 
-                               
-                                <div class"row">
-                                     <h3>Daerah yang Dipilih</h3>
-                                    <div class ="form-group">
-                                          <input type="radio" id="region" name="chk" value="belu" checked>Belu <br/>
-                                     </div>
-                                    <div class ="form-group">
-                                         <input type="radio" id="region" name="chk" value="natuna" >Natuna<br/>
-                                    </div>
-                                    <div class ="form-group">
-                                         <input type="radio" id="region" name="chk" value="kapuashulu" >Kapuas Hulu<br/>
-                                    </div>
+                                <div class ="form-group">
+                                      <input type="radio" id="region" name="chk" value="belu" checked>Belu <br/>
+                                </div>
+                                <div class ="form-group">
+                                    <input type="radio" id="region" name="chk" value="natuna" >Natuna<br/>
+                                </div>
+                                <div class ="form-group">
+                                    <input type="radio" id="region" name="chk" value="kapuashulu" >Kapuas Hulu<br/>
+                                </div>
                                      <!-- <div class ="form-group">
                                          <input type="radio" name="bb" value="kapuashulu"   onclick="setSelect('kapuashulu')" checked > Kapuas Hulu <br>
-                                     </div>  -->   
-                                </div>
+                                     </div>  -->  
+                            </div>
+                            <div class="col-md-6">
                                 <div class="form-group">
                                     <h3>Bidang Seni</h3>
-                                    <select id="jenis_seni" name="jenis_seni">
+                                    <select id="jenis_seni" name="jenis_seni" class="btn btn-default dropdown-toggle">
                                         <option name="name" value="1">Jenis Seni</option>
                                     </select>
                                 </div>
-
                             </div>
-                           
+                        </div>
+                        <div class="row">   
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
                                 <button type="submit" name ="submit" value="submit" class="btn btn-xl">Daftar</button>
@@ -404,13 +410,12 @@
                     </form>
                 </div>
             </div>
-
-            </div>
+        </div>
     </section>
 
 
     <!-- Contact Section -->
-    <section id="hubungi">
+    <section id="hubungi" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -450,14 +455,17 @@
                     </form> -->
                     <div class ="col-md-6">
                         <div class="container">
-                            <p align="left"> 
-                                Untuk layanan informasi bisa menguhubungi: <br>
-                                <ul>
-                                    <li>Afrilia : 0857-24262511</li>
-                                    <li>Dewilisa    : 0812-82723295</li>
-                                    <li>Kantor  : 021-5725518</li>
-                                    <li>Email: pembinaantenaga.kesenian@gmail.com</li>
-                                </ul>
+                            <p align="justify"> 
+                                <strong>
+                                     Untuk Layanan Informasi Hubungi: <br>
+                                    <ul>
+                                        <li><span class="glyphicon glyphicon-phone"></span> Afrilia : 0857-24262511</li>
+                                        <li><span class="glyphicon glyphicon-phone"></span> Dewilisa : 0812-82723295</li>
+                                        <li><span class="glyphicon glyphicon-phone"></span> Kantor : 021-5725518</li>
+                                        <li><span class="glyphicon glyphicon-envelope"></span> Email : pembinaantenaga.kesenian@gmail.com</li>
+                                    </ul>
+                                </strong>
+                               
                             </p>
                         </div>
                     </div>
@@ -601,35 +609,35 @@
             </div>
         </div>
     </div>
-
     <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan<br> Kementrian Pendidikan dan Kebudayaan</span>
-                </div>
-                <!-- <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        
-                        <li><a href="#"><i class="fa fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div> -->
-                <div class="col-md-6">
-                    <ul class="list-inline quicklinks">
-                        <li><a href="kebudayaan.kemdikbud.go.id" class=" btn btn-primary">Website Resmi Ditjen Kebudayaan</a>
-                        </li>
-                        <li><a href="kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
-                        </li>
-                    </ul>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6">
+                        <span class="copyright">Hak Cipta &copy; Direktorat Jenderal Kebudayaan,<br> Kementrian Pendidikan dan Kebudayaan</span>
+                    </div>
+                    <!-- <div class="col-md-4">
+                        <ul class="list-inline social-buttons">
+                            <li><a href="#"><i class="fa fa-twitter"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            
+                            <li><a href="#"><i class="fa fa-instagram"></i></a>
+                            </li>
+                        </ul>
+                    </div> -->
+                    <div class="col-md-6">
+                        <ul class="list-inline quicklinks">
+                            <li><a href="http://kebudayaan.kemdikbud.go.id" class=" btn btn-primary">Website Ditjen Kebudayaan</a>
+                            </li>
+                            <li><a href="http://kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-        </div>
-</footer>
+    </footer>
+    
 
     
     <!-- jQuery -->
