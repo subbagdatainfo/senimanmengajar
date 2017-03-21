@@ -16,10 +16,10 @@
 			$data['region']=$this->input->post('chk');
 
 			// echo base_url();
-			// echo $data['nama_seniman'];
+			 echo $data['nama_seniman'];
 			
-			$this->M_Peserta->create($data);
-			redirect(base_url().'#daftar','refresh');
+			//$this->M_Peserta->create($data);
+			//redirect(base_url().'#daftar','refresh');
 		}
 
 		function upload() {

@@ -76,6 +76,7 @@
                                 </script>
 
 </head>
+
 <body id="page-top" class="index">
 <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
@@ -119,9 +120,6 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-<body id="page-top" class="index" >
-
-    
 
     <!-- Header -->
     <header>
@@ -375,7 +373,7 @@
                                 </div>
                             </div>    
                         </div>
-                        <div class"row">
+                        <div class="row">
                             <div class="col-md-6">
                                 <h3>Daerah Pilihan</h3>
 
@@ -458,23 +456,22 @@
                             <p align="justify"> 
                                 <strong>
                                      Untuk Layanan Informasi Hubungi: <br>
+                                </strong>
+                            </p>
                                     <ul>
                                         <li><span class="glyphicon glyphicon-phone"></span> Afrilia : 0857-24262511</li>
-                                        <li><span class="glyphicon glyphicon-phone"></span> Dewilisa : 0812-82723295</li>
+                                        <li><span class="glyphicon glyphicon-phone"></span>  Hilda Yulianti: 0857 1140 5934</li>
+                                        <li><span class="glyphicon glyphicon-phone"></span>  Hana Nabilah : 0812 9838 6898</li>
+                                        
                                         <li><span class="glyphicon glyphicon-phone"></span> Kantor : 021-5725518</li>
                                         <li><span class="glyphicon glyphicon-envelope"></span> Email : pembinaantenaga.kesenian@gmail.com</li>
-                                    </ul>
-                                </strong>
-                               
-                            </p>
+                                    </ul>      
+                           
                         </div>
                     </div>
                     <div class="col-md-6">
-                        
-                            <?php echo $map['html']; ?>
-                       
-                            <strong>Kementrian Pendidikan dan Kebudayaan<br>Direktorat Kesenian, DIrektorat Jenderal Kebudayaan<br>Jln. Jenderal Sudirman, Komplek Kementrian Pendidikan dan Kebudayaan <br>Gedung E Lantai 9<br>Senayan Jakarta 10270</strong>
-                       
+                        <?php echo $map['html']; ?>
+                        <strong>Kementrian Pendidikan dan Kebudayaan<br>Direktorat Kesenian, DIrektorat Jenderal Kebudayaan<br>Jln. Jenderal Sudirman, Komplek Kementrian Pendidikan dan Kebudayaan <br>Gedung E Lantai 9<br>Senayan Jakarta 10270</strong>  
                     </div>
                 </div>
             </div>
