@@ -338,20 +338,19 @@
     </section>    
 
     <!-- daftar form -->
-    <section id="daftar" >
+     <section id="daftar">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Daftar</h2>
-                    <h3 class="section-subheading text-muted">  </h3>
+            <div clas ="row">
+                <div class ="col-lg-12 text-center">
+                    <h2 class ="section-heading">Daftar</h2>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="daftar" id="contactForm" action ="<?php echo base_url().'C_Peserta/createpeserta' ?>" method="post" >
+                    <form name="daftar" id="daftarform" action ="<?=site_url('C_Peserta/createpeserta'); ?>" method="post">
                         <div class="row">
-                            <div class ="col-lg-12">
-                                <div class="form-group">
+                            <div class ="col-md6">
+                                <div class ="form-group">
                                     <input type ="text" class ="form-control" placeholder="Nama" id="nama" name="nama" required data-validation-required-message="silakan masukan nama Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
@@ -371,47 +370,44 @@
                                     <input type ="email" class ="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="silakan masukan email Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
-                            </div>    
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <h3>Daerah Pilihan</h3>
 
-                                <div class ="form-group">
-                                      <input type="radio" id="region" name="chk" value="belu" checked>Belu <br/>
-                                </div>
-                                <div class ="form-group">
-                                    <input type="radio" id="region" name="chk" value="natuna" >Natuna<br/>
-                                </div>
-                                <div class ="form-group">
-                                    <input type="radio" id="region" name="chk" value="kapuashulu" >Kapuas Hulu<br/>
-                                </div>
+                               
+                                <div class"row">
+                                     <h3>Daerah yang Dipilih</h3>
+                                    <div class ="form-group">
+                                          <input type="radio" id="region" name="chk" value="belu" checked>Belu <br/>
+                                     </div>
+                                    <div class ="form-group">
+                                         <input type="radio" id="region" name="chk" value="natuna" >Natuna<br/>
+                                    </div>
+                                    <div class ="form-group">
+                                         <input type="radio" id="region" name="chk" value="kapuashulu" >Kapuas Hulu<br/>
+                                    </div>
                                      <!-- <div class ="form-group">
                                          <input type="radio" name="bb" value="kapuashulu"   onclick="setSelect('kapuashulu')" checked > Kapuas Hulu <br>
-                                     </div>  -->  
-                            </div>
-                            <div class="col-md-6">
+                                     </div>  -->   
+                                </div>
                                 <div class="form-group">
                                     <h3>Bidang Seni</h3>
-                                    <select id="jenis_seni" name="jenis_seni" class="btn btn-default dropdown-toggle">
+                                    <select id="jenis_seni" name="jenis_seni">
                                         <option name="name" value="1">Jenis Seni</option>
                                     </select>
                                 </div>
+
                             </div>
-                        </div>
-                        <div class="row">   
+                           
                             <div class="col-lg-12 text-center">
-                                
+                                <div id="success"></div>
                                 <button type="submit" name ="submit" value="submit" class="btn btn-xl">Daftar</button>
                             </div>
                         </div>
                     </form>
                 </div>
             </div>
-        </div>
+
+            </div>
     </section>
-
-
+    
     <!-- Contact Section -->
     <section id="hubungi" class="bg-light-gray">
         <div class="container">

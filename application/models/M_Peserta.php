@@ -1,11 +1,10 @@
+
 <?php
 	class M_Peserta extends CI_ModeL{
-
 		//insert data pendaftar ke dalam database
 		public function create($data){
 			$this->db->insert('peserta',$data);
 		}
-
 		//get konten pendaftar
 		function getdetailseniman($id_seniman){
 			$this->db->select('*');
@@ -16,8 +15,5 @@
 			$query = $this->db->get();
 			return $query->result();
 		}
-
 		
-
 	}
-
