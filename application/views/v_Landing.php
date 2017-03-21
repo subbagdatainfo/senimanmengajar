@@ -348,7 +348,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="daftar" id="contactForm" action ="<?=site_url('C_Peserta/createpeserta'); ?>" method="post" >
+                    <form name="daftar" id="contactForm" action ="<?php echo base_url().'C_Peserta/createpeserta' ?>" method="post" >
                         <div class="row">
                             <div class ="col-lg-12">
                                 <div class="form-group">
@@ -401,7 +401,7 @@
                         </div>
                         <div class="row">   
                             <div class="col-lg-12 text-center">
-                                <div id="success"></div>
+                                
                                 <button type="submit" name ="submit" value="submit" class="btn btn-xl">Daftar</button>
                             </div>
                         </div>

@@ -9,7 +9,7 @@
 			$data = array();
 			$data['nama_seniman'] = $this->input->post('nama');
 			$data['username'] = $this->input->post('username');
-			$data['password'] = $this->encrypt->encode($this->input->post('password'));
+			$data['password'] = $this->input->post('password');
 			$data['no_telpon'] = $this->input->post('no_telpon');
 			$data['email'] = $this->input->post('email');
 			$data['jenis_seni'] = $this->input->post('jenis_seni');
@@ -17,6 +17,7 @@
 
 			// echo base_url();
 			 echo $data['nama_seniman'];
+			 echo $data['password'];
 			
 			//$this->M_Peserta->create($data);
 			//redirect(base_url().'#daftar','refresh');
