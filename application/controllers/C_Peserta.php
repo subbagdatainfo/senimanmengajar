@@ -12,11 +12,19 @@
 			$data['email'] = $this->input->post('email');
 			$data['jenis_seni'] = $this->input->post('jenis_seni');
 			$data['region']=$this->input->post('chk');
-			 //echo base_url();
-			 //echo $data['nama_seniman'];
 			
-			$this->M_Peserta->create($data);
-			redirect(base_url(),'refresh');
+			//insert data to database
+			$result=$this->M_Peserta->create($data);
+			if ($result) {
+				$message1=$this->session->set_flashdata('message','Pendaftaran Anda Berhasil');
+				$message2=$this->session->set_flashdata('status', 'success');
+			} else {
+				$message1=$this->session->set_flashdata('message','Email Yang Anda Masukan Sudah Terdaftar');
+				$message2=$this->session->set_flashdata('status', 'danger');
+			}
+			//redirect to landing page with a message
+			redirect(base_url().'#daftar','refresh');
+
 		}
 		function upload() {
 			$data = array();
@@ -43,11 +51,12 @@
 	        $this->m_Peserta->save(); 
 	        redirect('c_Peserta/detail');
 		}
-		public function getdetailseniman($id_seniman){
+		public function detail($id_seniman){
 			$data=$this->M_Peserta->getdetailseniman($id_seniman);
 			$this->load->view('v_form', $data);
 		}
 		public function login(){
+			$this->load->view('template/header');
 			$this->load->view('v_login');
 		}
 	}

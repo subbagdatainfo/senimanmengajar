@@ -13,7 +13,7 @@
 				$sess_array = array('username' => $username, 'logged' => TRUE );
 				$this->session->set_userdata('logged',$sess_array);
 				$data = $sess_array;
-				redirect(site_url('C_Peserta'),$data);
+				redirect(site_url('C_Peserta/detail'),$data);
 				
 			} else {
 				$data['message'] = 'username or password are invalid';

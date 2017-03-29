@@ -3,7 +3,13 @@
 	class M_Peserta extends CI_ModeL{
 		//insert data pendaftar ke dalam database
 		public function create($data){
-			$this->db->insert('peserta',$data);
+			$result=$this->db->insert('peserta',$data);
+			if ($result) {
+				return TRUE;
+			} else {
+				return FALSE;
+			}
+			
 		}
 		//get konten pendaftar
 		function getdetailseniman($id_seniman){
