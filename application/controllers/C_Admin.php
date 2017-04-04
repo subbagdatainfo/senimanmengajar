@@ -33,7 +33,7 @@
 				// View data according to array.
 				$this->load->view("v_admin", $data);
 			} else {
-				$this->load->view('V_loginadmin');
+				$this->load->view('v_loginadmin');
 			}
 		}
 
