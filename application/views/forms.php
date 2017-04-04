@@ -80,6 +80,13 @@
             </div>
             <!-- /.row -->
             <div class="row">
+                <?php if($this->session->flashdata('status')=="success"){ ?>
+                <p><h3><span class="label label-success"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
+                <?php }elseif ($this->session->flashdata('status')=='danger') {?>
+                    <p><h3><span class="label label-danger"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
+                <?php } ?>
+            </div>
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">

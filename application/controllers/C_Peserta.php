@@ -194,12 +194,12 @@
 					$message2=$this->session->set_flashdata('status', 'success');
 					redirect(base_url().'C_Peserta/detail','refresh');
 				} else {
-					$message1=$this->session->set_flashdata('message','gagal tulis database');
+					$message1=$this->session->set_flashdata('message','Gagal Mengakses Database');
 					$message2=$this->session->set_flashdata('status', 'danger');
 					redirect(base_url().'C_Peserta/detail','refresh');
 				} 
 	        } else{
-	        	$message1=$this->session->set_flashdata('message','gagal upload');
+	        	$message1=$this->session->set_flashdata('message','Upload Gagal');
 				$message2=$this->session->set_flashdata('status', 'danger'); 
 	        	redirect(base_url().'C_Peserta/detail','refresh');
 	    	}
@@ -214,5 +214,12 @@
 			// 	$message1=$this->session->set_flashdata('message','Upload Gagal, Silakan Upload Kembali');
 			// 	$message2=$this->session->set_flashdata('status', 'danger');
 			// }
+		}
+
+		public function cretaedirectory(){
+			$dirmake = $this->M_Peserta->directory();
+			foreach ($dirmake->result_array() as $key) {
+				mkdir('data/'.$key['username'],0775);
+			}
 		}
 	}
