@@ -44,7 +44,11 @@
                         <h3 class="panel-title">Silakan Log in</h3>
                     </div>
                     <div class="panel-body">
-                        <form role="form" name="login" action ="<?=site_url('C_System/auth'); ?>" method="post">
+                        <?php if($this->session->flashdata('message')){
+                            ?> <span class="label label-danger"> <?php echo $this->session->flashdata('message'); ?></span><?php 
+                        }
+                        ?>
+                        <form role="form" name="login" action ="<?=site_url('C_Peserta/auth'); ?>" method="post">
                             <fieldset>
                                 <div class="form-group">
                                     <input class="form-control" placeholder="username" name="username" type="text" autofocus>
@@ -58,10 +62,7 @@
                             </fieldset>
                         </form>
                         <div class="clear"></div>
-                        <?php if(isset($message)){
-                            echo $message; 
-                        }
-                        ?>
+                        
                     </div>
                 </div>
             </div>
