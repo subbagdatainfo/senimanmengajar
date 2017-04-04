@@ -38,4 +38,8 @@
 			}
 			
 		}
+		public function directory(){
+			$dir=$this->db->query("SELECT distinct username from peserta group by email");
+			return $dir;
+		}
 	}
