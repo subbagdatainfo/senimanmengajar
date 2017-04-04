@@ -5,17 +5,17 @@
 			parent::__construct();
 		} 
 		public function auth_peserta($username,$password){
-			$data = $this->db->query("SELECT password,id_seniman FROM peserta WHERE username='$username'");
+			$data = $this->db->query("SELECT email FROM peserta WHERE username='$username' and password='$password'");
 			// foreach ($auth->result() as $row)
 			// 	{
 			// 	        echo $this->encrypt->decode($row->password)."<br>";
 				        
 			// 	}
-			if($data->num_rows()>0){
+			// if($data->num_rows()>0){
 				return $data;
-			}else{
-				return $data;
-			}
+			// }else{
+			// 	return $data;
+			// }
 		}
 
 	}

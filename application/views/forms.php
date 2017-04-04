@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SB Admin 2 - Bootstrap Admin Theme</title>
+    <title>Seniman Mengajar</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="<?php echo HTTP_VENDOR_PATH;?>bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -48,7 +48,9 @@
                 <a class="navbar-brand" href="index.html">Seniman Mengajar</a>
             </div>
             <!-- /.navbar-header -->
-
+            <ul class="nav navbar-top-links navbar-right">
+                <li><a href="<?php echo base_url().'C_Peserta/logout'?>"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
+            </ul>
             
             <!-- /.navbar-top-links -->
 
@@ -57,8 +59,10 @@
                     <ul class="nav" id="side-menu">
                         
                         <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
+                            <a href="<?php echo base_url().'C_Peserta/detail'?>"><i class="fa fa-dashboard fa-fw"></i> Profil</a>
                         </li>
+
+                        
                         
                     </ul>
                 </div>
@@ -70,7 +74,7 @@
         <div id="page-wrapper">
             <div class="row">
                 <div class="col-lg-12">
-                    <h1 class="page-header">Data Pendaftar</h1>
+                    <h1 class="page-header">Data Peserta</h1>
                 </div>
                 <!-- /.col-lg-12 -->
             </div>
@@ -79,187 +83,99 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Nama Pendaftar
+                            <?php echo $this->session->userdata('nama_seniman'); ?>
                         </div>
                         <div class="panel-body">
-                            <div class="row">
+                            <div class ="row">
                                 <div class="col-lg-6">
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <label>Text Input</label>
-                                            <input class="form-control">
-                                            <p class="help-block">Example block-level help text here.</p>
+                                    <div class="panel panel-default text-center">
+                                        <div class ="panel-heading ">
+                                            <?php if ($profpict != NULL){
+                                                    ?><img class="img-responsive center-block" src="<?php echo base_url().$profpict;?>"><?php
+                                                    }else {
+                                                        ?> <img class="img-responsive center-block" src="<?php echo HTTP_IMAGES_PATH;?>default.png"><?php
+                                            }?>
+                                            <a href="#updateprofpict" class="portfolio-link btn btn-success btn-default" data-toggle="modal">
+                                                UPDATE
+                                            </a>
                                         </div>
-                                        <div class="form-group">
-                                            <label>Text Input with Placeholder</label>
-                                            <input class="form-control" placeholder="Enter text">
+                                        <div class="panel-body">
+                                            <p>
+                                                <span class="label label-info">Email            :</span><br><span class="label label-primary"><?php echo $this->session->userdata('email');?></span><br>
+                                                <span class="label label-info">Daerah Pilihan   :</span><br><span class="label label-primary"><?php echo $this->session->userdata('region');?></span><br>
+                                                <span class="label label-info">Jenis Bidang Seni:</span><br><span class="label label-primary"><?php echo $this->session->userdata('jenis_seni');?></span><br>
+                                            </p>
                                         </div>
-                                        <div class="form-group">
-                                            <label>Static Control</label>
-                                            <p class="form-control-static">email@example.com</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>File input</label>
-                                            <input type="file">
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Text area</label>
-                                            <textarea class="form-control" rows="3"></textarea>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Checkboxes</label>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 1
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 2
-                                                </label>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox" value="">Checkbox 3
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Inline Checkboxes</label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">1
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">2
-                                            </label>
-                                            <label class="checkbox-inline">
-                                                <input type="checkbox">3
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Radio Buttons</label>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>Radio 1
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">Radio 2
-                                                </label>
-                                            </div>
-                                            <div class="radio">
-                                                <label>
-                                                    <input type="radio" name="optionsRadios" id="optionsRadios3" value="option3">Radio 3
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Inline Radio Buttons</label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline1" value="option1" checked>1
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline2" value="option2">2
-                                            </label>
-                                            <label class="radio-inline">
-                                                <input type="radio" name="optionsRadiosInline" id="optionsRadiosInline3" value="option3">3
-                                            </label>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Selects</label>
-                                            <select class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                        <div class="form-group">
-                                            <label>Multiple Selects</label>
-                                            <select multiple class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                        <button type="submit" class="btn btn-default">Submit Button</button>
-                                        <button type="reset" class="btn btn-default">Reset Button</button>
-                                    </form>
+                                    </div>
                                 </div>
-                                <!-- /.col-lg-6 (nested) -->
-                                <div class="col-lg-6">
-                                    <h1>Disabled Form States</h1>
-                                    <form role="form">
-                                        <fieldset disabled>
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled input</label>
-                                                <input class="form-control" id="disabledInput" type="text" placeholder="Disabled input" disabled>
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="disabledSelect">Disabled select menu</label>
-                                                <select id="disabledSelect" class="form-control">
-                                                    <option>Disabled select</option>
-                                                </select>
-                                            </div>
-                                            <div class="checkbox">
-                                                <label>
-                                                    <input type="checkbox">Disabled Checkbox
-                                                </label>
-                                            </div>
-                                            <button type="submit" class="btn btn-primary">Disabled Button</button>
-                                        </fieldset>
-                                    </form>
-                                    <h1>Form Validation States</h1>
-                                    <form role="form">
-                                        <div class="form-group has-success">
-                                            <label class="control-label" for="inputSuccess">Input with success</label>
-                                            <input type="text" class="form-control" id="inputSuccess">
+                                <div class ="col-lg-6">
+                                   <div class="panel panel-default text-center">
+                                        <!-- panel untuk surat keterangan sehat -->
+                                        <div class="panel-heading">
+                                            <strong>Foto</strong>
                                         </div>
-                                        <div class="form-group has-warning">
-                                            <label class="control-label" for="inputWarning">Input with warning</label>
-                                            <input type="text" class="form-control" id="inputWarning">
+                                        <div class="panel-body">
+                                            <?php if ($foto != NULL){
+                                                    ?><img class="img-responsive" src="<?php echo base_url().$foto;?>"><?php
+                                                    }else {
+                                                        ?> <img class="img-responsive center-block" src="<?php echo HTTP_IMAGES_PATH;?>blank.jpg"><?php
+                                            }?>
+                                            <a href="#updatefoto" class="portfolio-link btn btn-success btn-default" data-toggle="modal">
+                                                UPDATE
+                                            </a>
                                         </div>
-                                        <div class="form-group has-error">
-                                            <label class="control-label" for="inputError">Input with error</label>
-                                            <input type="text" class="form-control" id="inputError">
+                                    </div>
+                                    <div class="panel panel-default text-center">
+                                        <!-- panel untuk surat keterangan sehat -->
+                                        <div class="panel-heading">
+                                            <strong>Surat Keterangan Sehat</strong>
                                         </div>
-                                    </form>
-                                    <h1>Input Groups</h1>
-                                    <form role="form">
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">@</span>
-                                            <input type="text" class="form-control" placeholder="Username">
+                                        <div class="panel-body text-center">
+                                            <?php if ($sks != NULL){
+                                                    ?><a class="img-responsive center-block" href="<?php echo base_url().$sks;?>">Surat Keterangan Sehat</a><?php
+                                                    }else {
+                                                        ?> <img class="img-responsive center-block" src="<?php echo HTTP_IMAGES_PATH;?>blank.jpg"><?php
+                                            }?>
+                                            <a href="#updatesks" class="portfolio-link btn btn-success btn-default" data-toggle="modal">
+                                                UPDATE
+                                            </a>
                                         </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
+                                    </div>
+                                    <div class="panel panel-default text-center">
+                                        <!-- panel untuk daftar riwayat hidup -->
+                                        <div class="panel-heading">
+                                            <strong>Daftar Riwayat Hidup</strong>
                                         </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-eur"></i>
-                                            </span>
-                                            <input type="text" class="form-control" placeholder="Font Awesome Icon">
+                                        <div class="panel-body">
+                                            <?php if ($drh != NULL){
+                                                    ?><a class="img-responsive center-block" href="<?php echo base_url().$drh;?>">Daftar Riwayat Hidup</a><?php
+                                                    }else {
+                                                        ?> <img class="img-responsive center-block" src="<?php echo HTTP_IMAGES_PATH;?>blank.jpg"><?php
+                                            }?>
+                                            <a href="#updatedrh" class="portfolio-link btn btn-success btn-default" data-toggle="modal">
+                                                UPDATE
+                                            </a>
                                         </div>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon">$</span>
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-addon">.00</span>
+                                    </div>
+                                    <div class="panel panel-default text-center">
+                                        <!-- panel untuk video -->
+                                        <div class="panel-heading">
+                                            <strong>Video</strong>
                                         </div>
-                                        <div class="form-group input-group">
-                                            <input type="text" class="form-control">
-                                            <span class="input-group-btn">
-                                                <button class="btn btn-default" type="button"><i class="fa fa-search"></i>
-                                                </button>
-                                            </span>
+                                        <div class="panel-body">
+                                            <?php if ($video != NULL){
+                                                    ?><img class="img-responsive center-block" src="<?php echo base_url().$video;?>"><?php
+                                                    }else {
+                                                        ?> <img class="img-responsive center-block" src="<?php echo HTTP_IMAGES_PATH;?>blank.jpg"><?php
+                                            }?>
+                                            <a href="#updatevideo" class="portfolio-link btn btn-success btn-default" data-toggle="modal">
+                                                UPDATE
+                                            </a>
                                         </div>
-                                    </form>
+                                    </div>
+                                    </div>
                                 </div>
-                                <!-- /.col-lg-6 (nested) -->
                             </div>
-                            <!-- /.row (nested) -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
@@ -273,6 +189,217 @@
 
     </div>
     <!-- /#wrapper -->
+
+    <!-- dialog update profpict -->
+    <div class="portfolio-modal modal fade" id="updateprofpict" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-2">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('C_Peserta/updatekonten'); ?>" method="post">
+                                            <div class="form-group">
+                                                <label>Pilih Gambar</label>
+                                                <input type="file" name="userfile">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="hidden" name="jenis" value="profpict">
+                                            </div>
+                                            <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                                        </form>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- dialog untuk update foto -->
+    <div class="portfolio-modal modal fade" id="updatefoto" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-2">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('C_Peserta/updatekonten'); ?>" method="post">
+                                            <div class="form-group">
+                                                <label>Pilih Gambar</label>
+                                                <input type="file" name="userfile">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="hidden" name="jenis" value="foto">
+                                            </div>
+                                            <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                                        </form>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dialog untuk update surat keterangan sehat -->
+    <div class="portfolio-modal modal fade" id="updatesks" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-2">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('C_Peserta/updatekonten'); ?>" method="post">
+                                            <div class="form-group">
+                                                <label>Pilih Gambar</label>
+                                                <input type="file" name="userfile">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="hidden" name="jenis" value="sks">
+                                            </div>
+                                            <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                                        </form>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dialog untuk update daftar riwayat hidup -->
+    <div class="portfolio-modal modal fade" id="updatedrh" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-2">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('C_Peserta/updatekonten'); ?>" method="post">
+                                            <div class="form-group">
+                                                <label>Pilih Gambar</label>
+                                                <input type="file" name="userfile">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="hidden" name="jenis" value="drh">
+                                            </div>
+                                            <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                                        </form>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- dialog untuk update video -->
+    <div class="portfolio-modal modal fade" id="updatevideo" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-lg-offset-2">
+                            <div class="modal-body">
+                                <div class="container">
+                                    <div class="row">
+                                        <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('C_Peserta/updatekonten'); ?>" method="post">
+                                            <div class="form-group">
+                                                <label>Pilih Gambar</label>
+                                                <input type="file" name="userfile">
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="hidden" name="jenis" value="video">
+                                            </div>
+                                            <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                                        </form>
+                                        
+                                    </div>
+                                    <div class="row">
+                                        <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                                    </div>
+                                    
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- jQuery -->
     <script src="<?php echo HTTP_VENDOR_PATH;?>jquery/jquery.min.js"></script>

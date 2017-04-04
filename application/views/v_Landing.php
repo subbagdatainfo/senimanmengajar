@@ -325,7 +325,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pelaksanaan Kegiatan</h4>
-                                    <h4 class="subheading">1 Mei 2017</h4>
+                                    <h4 class="subheading">1 Mei -20 Mei2017</h4>
                                 </div>
                                 
                             </div>
@@ -395,7 +395,11 @@
                             <div class="form-group col-md-6">
                                 <h3>Bidang Seni</h3>
                                 <select id="jenis_seni" name="jenis_seni">
-                                    <option name="name" value="1">Jenis Seni</option>
+                                    <option name='Seni Rupa (Ukir)', value='senirupaukir'>Seni Rupa (Ukir)</option>
+                                    <option name='Seni Tari', value='senitari'>Seni Tari</option>
+                                    <option name='Seni Teater', value='seniteater'>Seni Teater</option>
+                                    <option name='Seni Musik (Vokal)', value='senimusikvocal'>Seni Musik (Vokal)</option>
+                                    <option name='Seni Media', value='senimedia'>Seni Media</option>
                                 </select>
                             </div>
                         </div>

@@ -18,6 +18,7 @@
 			if ($result) {
 				$message1=$this->session->set_flashdata('message','Pendaftaran Anda Berhasil');
 				$message2=$this->session->set_flashdata('status', 'success');
+				mkdir('data/'.$data['username'],0775);
 			} else {
 				$message1=$this->session->set_flashdata('message','Email Yang Anda Masukan Sudah Terdaftar');
 				$message2=$this->session->set_flashdata('status', 'danger');
@@ -51,12 +52,167 @@
 	        $this->m_Peserta->save(); 
 	        redirect('c_Peserta/detail');
 		}
-		public function detail($id_seniman){
-			$data=$this->M_Peserta->getdetailseniman($id_seniman);
-			$this->load->view('v_form', $data);
+		public function detail(){
+			// $email_seniman=$this->session->userdata($peserta['email']);
+			// foreach ($auth->result() as $rowdata ) {
+			// 	$data=$this->M_Peserta->getdetailseniman($rowdata->email);
+			// }
+			if ($this->session->userdata('logged')['logged'] ) {
+				$kontenarray = array();
+				//inisialisasi konten array
+				$kontenarray['profpict']=NULL;
+				$kontenarray['foto']=NULL;
+				$kontenarray['drh']=NULL;
+				$kontenarray['sks']=NULL;
+				$kontenarray['video']=NULL;
+
+
+
+
+			 	$email_seniman=$this->session->userdata('email');
+				$data=$this->M_Peserta->getdetailseniman($email_seniman);
+				$datakonten=$this->M_Peserta->getkontenseniman($email_seniman);
+				foreach ($data->result_array() as $key) {
+					$this->session->set_userdata('username', $key['username']);
+					$this->session->set_userdata('nama_seniman', $key['nama_seniman']);
+					$this->session->set_userdata('no_telpon', $key['no_telpon']);
+					$this->session->set_userdata('region', $key['region']);
+					$this->session->set_userdata('jenis_seni', $key['jenis_seni']);
+						// $this->session->set_userdata('jenis',$key['jenis']);
+						// $this->session->set_userdata('path',$key['path']);
+				}
+
+				foreach ($datakonten->result_array() as $keykonten ) {
+					if ($keykonten['jenis']=='profpict') {
+						// $this->session->set_userdata('profpict',$keykonten['path']);
+						$kontenarray['profpict']=$keykonten['path'];
+						//echo $kontenarray['profpict'].'<br>';
+						//echo $keykonten['path'].'<br>';
+					}
+					if ($keykonten['jenis']=='foto') {
+					// $this->session->set_userdata('foto',$keykonten['path']);
+					$kontenarray['foto']=$keykonten['path'];
+					//echo $kontenarray['foto'].'<br>'; 
+					//echo $keykonten['path'].'<br>';
+					}
+					if ($keykonten['jenis']=='sks') {
+						// $this->session->set_userdata('sks',$keykonten['path']);
+						$kontenarray['sks']=$keykonten['path'];
+						//echo $kontenarray['sks'];
+						//echo $keykonten['path'].'<br>';
+					}
+					if ($keykonten['jenis']=='drh') {
+						// $this->session->set_userdata('drh',$keykonten['path']);
+						// echo $keykonten['jenis'].'<br>'; 
+						$kontenarray['drh']=$keykonten['path'];
+						//echo $kontenarray['drh'];
+						//echo $keykonten['path'].'<br>';
+					}
+					if ($keykonten['jenis']=='video') {
+						// $this->session->set_userdata('video',$keykonten['path']);
+						// echo $keykonten['jenis'].'<br>'; 
+						$kontenarray['video']=$keykonten['path'];
+						//echo $kontenarray['video'];
+						//echo $keykonten['path'].'<br>';
+					}
+				}
+					  $this->load->view('forms', $kontenarray);
+					//$this->loadform($kontenarray);
+			} else {
+		 		$this->load->view('v_login');
+		 	}
+			 	 	
+			
+		}
+		public function loadform($kontenarray){
+			$this->load->view('forms', $kontenarray);
 		}
 		public function login(){
 			$this->load->view('template/header');
 			$this->load->view('v_login');
+		}
+
+		public function auth(){
+			// $data_peserta = array();
+			$username=$this->input->post('username');
+			$password=$this->input->post('password');
+			$auth=$this->M_System->auth_peserta($username,$password);
+			if ($auth->num_rows() > 0) {
+				$sess_array = array('username' => $username, 'logged' => TRUE );
+				$this->session->set_userdata('logged',$sess_array);
+				foreach ($auth->result_array() as $key ) {
+					$this->session->set_userdata('email', $key['email']);
+				}
+				
+				// $this->session->set_userdata($auth);
+				
+				//$data['peserta'] = $sess_array;
+				// $this->detail();
+				redirect(base_url().'C_Peserta/detail','refresh');
+				//$this->detail();
+			} else {
+				$this->session->set_flashdata('message', 'Username atau Password Salah');
+				// $data['message'] = 'Username atau Password Salah';
+				redirect(base_url().'C_Peserta/login','refresh');
+				//$this->detail();
+			}
+		}
+
+		public function logout(){
+			// $this->session->unset_userdata('logged');
+			//session_destroy();
+			$this->session->sess_destroy();
+			$this->load->view('v_login');
+		}
+
+		public function update (){
+			$this->load->view('v_update');
+		}
+
+		public function updatekonten(){
+			$konten['email'] = $this->session->userdata('email');
+			$konten['jenis'] = $this->input->post('jenis');
+
+			$pathdirectory='data/'.$this->session->userdata('username');
+			// echo $konten['jenis'];
+
+			$config['file_name'] =  $this->session->userdata('username').'_'. $konten['jenis'];
+	        $config['upload_path'] = $pathdirectory;
+	        $config['allowed_types'] = 'pdf|jpg|png|doc|docx';
+	        $config['overwrite'] = TRUE;
+
+	        $this->upload->initialize($config);
+	        if ($this->upload->do_upload()){
+	            	$data_file = $this->upload->data();
+	            	$file_ext = $data_file['file_ext'];
+	            	$konten['path']=$config['upload_path'].'/'.$config['file_name'].$file_ext;
+	            	//$this->Konten->jenis = $jenis;	
+	            $result=$this->M_Peserta->uploadkonten($konten);
+	            // echo $result;
+				if ($result) {
+					$message1=$this->session->set_flashdata('message','Upload Berhasil');
+					$message2=$this->session->set_flashdata('status', 'success');
+					redirect(base_url().'C_Peserta/detail','refresh');
+				} else {
+					$message1=$this->session->set_flashdata('message','gagal tulis database');
+					$message2=$this->session->set_flashdata('status', 'danger');
+					redirect(base_url().'C_Peserta/detail','refresh');
+				} 
+	        } else{
+	        	$message1=$this->session->set_flashdata('message','gagal upload');
+				$message2=$this->session->set_flashdata('status', 'danger'); 
+	        	redirect(base_url().'C_Peserta/detail','refresh');
+	    	}
+
+
+
+			// $result=$this->M_Peserta->uploadkonten($konten);
+			// if ($result) {
+			// 	$message1=$this->session->set_flashdata('message','Upload Berhasil');
+			// 	$message2=$this->session->set_flashdata('status', 'success');
+			// } else {
+			// 	$message1=$this->session->set_flashdata('message','Upload Gagal, Silakan Upload Kembali');
+			// 	$message2=$this->session->set_flashdata('status', 'danger');
+			// }
 		}
 	}
