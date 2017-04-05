@@ -31,6 +31,7 @@
 				$data["links"] = explode('&nbsp;',$str_links );
 
 				// View data according to array.
+				$this->load->view('navigation');
 				$this->load->view("v_admin", $data);
 			} else {
 				$this->load->view('v_loginadmin');
@@ -67,5 +68,10 @@
 		public function adminlogout(){
 			$this->session->sess_destroy();
 			$this->loginadmin();
+		}
+
+		public function sendmail(){
+			$this->load->view('navigation');
+			$this->load->view('sendmail');
 		}
 	}

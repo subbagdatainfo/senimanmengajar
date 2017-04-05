@@ -11,15 +11,7 @@
                 <div class="col-lg-3 col-md-6">
                     <div class="panel panel-green">
                         <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-3">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-9 text-right">
-                                    <div class="huge"><?php echo $count;?></div>
-                                    <div>Jumlah Pendaftar</div>
-                                </div>
-                            </div>
+                            <strong>Kirim Email</strong>
                         </div>
                         <!-- <a href="#">
                             <div class="panel-footer">
@@ -80,7 +72,7 @@
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Daftar Pendaftar
+                            <i class="fa fa-envelope-o fa-fw"></i> Buat Email
                             <!-- <div class="pull-right">
                                 <div class="btn-group">
                                     <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
@@ -103,26 +95,9 @@
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <table class="table">
-                            <tr>
-                                <th>Nama</th>
-                                <th>Email</th>
-                                <th>Nomor Kontak</th>
-                                <!-- <th>Action</th> -->
-                            </tr>
-                            <?php foreach ($peserta as $row) {
-                                ?><tr>
-                                    <td><?php echo $row->nama_seniman;?></td>
-                                    <td><?php echo $row->email;?></td>
-                                    <td><?php echo $row->no_telpon;?></td>
-                                </tr><?php
-                            }?>
-                            </table>
-                            <div class="pagination pagination-sm">
-                                <?php foreach ($links as $link) {
-                                echo "<li class >". $link."</li>";
-                                } ?>
-                            </div>
+                           <!--  form kirim email  -->
+                           <form >
+                           </form>
                         </div>
                         <!-- /.panel-body -->
                     </div>
