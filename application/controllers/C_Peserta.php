@@ -178,7 +178,7 @@
 
 			$config['file_name'] =  $this->session->userdata('username').'_'. $konten['jenis'];
 	        $config['upload_path'] = $pathdirectory;
-	        $config['allowed_types'] = 'pdf|jpg|png|doc|docx';
+	        $config['allowed_types'] = 'pdf|jpg|png|doc|docx|mkv|mov|mp4|avi';
 	        $config['overwrite'] = TRUE;
 
 	        $this->upload->initialize($config);
