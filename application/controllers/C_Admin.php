@@ -74,4 +74,55 @@
 			$this->load->view('navigation');
 			$this->load->view('sendmail');
 		}
+
+		public function send(){
+			$detail_email['message'] = $this->input->post('pesan');
+			//echo 'message : '.$detail_email['message'].'<br>';
+			$detail_email['subject'] = $this->input->post('subject');
+			//echo 'subject : '.$detail_email['subject'].'<br>';
+			if (NULL !== ($this->input->post('all'))) {
+				$emailaddress=array();
+				$email=$this->M_Admin->getemail();
+				foreach ($email->result_array() as $key ) {
+					$detail_email['address']=$key['email'];
+					//echo 'address : '.$detail_email['address'].'<br>';
+					$status=$this->sendtoaddress($detail_email);
+				}
+			} else {
+				$detail_email['address']=$this->input->post('address');
+				//echo 'address : '.$detail_email['address'].'<br>';
+				$status=$this->sendtoaddress($detail_email);
+			}
+			if ($status) {
+				$message1=$this->session->set_flashdata('message','Email berhasil dikirm');
+				$message2=$this->session->set_flashdata('status', 'success');
+				$this->sendmail();
+			} else {
+				$message1=$this->session->set_flashdata('message','Email gagal dikirim');
+				$message2=$this->session->set_flashdata('status', 'danger');
+				$this->sendmail();
+			}
+		}
+
+		public function sendtoaddress($detail_email){
+			$this->load->library('email');
+			
+			$this->email->from('pembinaantenaga.kesenian', 'Panitia Seniman Mengajar');
+			$this->email->to($detail_email['address']);
+			
+			$this->email->subject($detail_email['subject']);
+			$this->email->message($detail_email['message']);
+			
+			$this->email->send();
+			if ($this->email->send()) {
+				return TRUE;
+			} else {
+				return FALSE;
+			}
+			
+			
+			// echo $this->email->print_debugger();
+			// echo smtp_user();
+		}
+
 	}
