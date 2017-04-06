@@ -96,11 +96,11 @@
 			if ($status) {
 				$message1=$this->session->set_flashdata('message','Email berhasil dikirm');
 				$message2=$this->session->set_flashdata('status', 'success');
-				redirect(base_url().'C_Admin/sendmail','refresh')
+				redirect(base_url().'C_Admin/sendmail','refresh');
 			} else {
 				$message1=$this->session->set_flashdata('message',show_error($this->email->print_debugger()));
 				$message2=$this->session->set_flashdata('status', 'danger');
-				redirect(base_url().'C_Admin/sendmail','refresh')
+				redirect(base_url().'C_Admin/sendmail','refresh');
 			}
 		}
 
