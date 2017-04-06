@@ -55,7 +55,7 @@
 				$this->session->set_userdata('logged',$sess_array);
 				redirect(base_url().'C_Admin/admin','refresh');
 			} else {
-				$this->session->set_flashdata('message', show_error($this->email->print_debugger()));
+				$this->session->set_flashdata('message', 'Username atau Password Salah');
 				redirect(base_url().'C_Admin/loginadmin','refresh');
 			}	
 		}
@@ -98,7 +98,7 @@
 				$message2=$this->session->set_flashdata('status', 'success');
 				$this->sendmail();
 			} else {
-				$message1=$this->session->set_flashdata('message','Email gagal dikirim');
+				$message1=$this->session->set_flashdata('message',show_error($this->email->print_debugger()));
 				$message2=$this->session->set_flashdata('status', 'danger');
 				$this->sendmail();
 			}
