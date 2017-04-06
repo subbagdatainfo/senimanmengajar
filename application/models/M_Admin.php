@@ -38,7 +38,7 @@
 			// $this->db->limit($limit);
 			//$this->db->where('id', $id);
 			// $query = $this->db->get("peserta");
-			$query=$this->db->query("SELECT * FROM peserta limit $limit offset $id");
+			$query=$this->db->query("SELECT * FROM peserta limit $limit offset $id ");
 			if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 			$data[] = $row;
@@ -47,5 +47,10 @@
 			return $data;
 			}
 			return false;
+		}
+
+		public function getemail(){
+			$query=$this->db->query("SELECT email from peserta");
+			return $query;
 		}
 	}
