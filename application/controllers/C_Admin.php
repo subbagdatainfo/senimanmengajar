@@ -113,7 +113,7 @@
 			$this->email->subject($detail_email['subject']);
 			$this->email->message($detail_email['message']);
 			
-			$this->email->send();
+			//$this->email->send();
 			if ($this->email->send()) {
 				return TRUE;
 			} else {
