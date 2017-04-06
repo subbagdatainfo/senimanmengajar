@@ -55,7 +55,7 @@
 				$this->session->set_userdata('logged',$sess_array);
 				redirect(base_url().'C_Admin/admin','refresh');
 			} else {
-				$this->session->set_flashdata('message', 'Username atau Password Salah');
+				$this->session->set_flashdata('message', show_error($this->email->print_debugger()));
 				redirect(base_url().'C_Admin/loginadmin','refresh');
 			}	
 		}
