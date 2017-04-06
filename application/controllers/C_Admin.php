@@ -109,7 +109,7 @@
 			
 			$this->email->from('pembinaantenaga.kesenian', 'Panitia Seniman Mengajar');
 			$this->email->to($detail_email['address']);
-			
+			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
 			$this->email->message($detail_email['message']);
 			
