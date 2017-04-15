@@ -338,10 +338,11 @@
     </section>    
 
     <!-- daftar form -->
-     <section id="daftar">
-        <div class="container">
+     <section id="daftar"   >
+        <div class="container text-center">
             <div clas ="row">
-                <div class ="col-lg-12 text-center">
+                <h1><span class="label label-success"> Pendaftaran sudah Ditutup</span><h1>
+                <!-- <div class ="col-lg-12 text-center">
                     <h2 class ="section-heading">Daftar</h2>
                 </div>
             </div>
@@ -410,7 +411,7 @@
                             </div>
                         </div>
                     </form>
-                </div>
+                </div> -->
             </div>
 
             </div>
