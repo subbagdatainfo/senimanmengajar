@@ -71,11 +71,13 @@
 		}
 
 		public function sendmail(){
+			//load view untuk interface kirim email
 			$this->load->view('navigation');
 			$this->load->view('sendmail');
 		}
 
 		public function send(){
+			$addressall='';
 			$detail_email['message'] = $this->input->post('pesan');
 			//echo 'message : '.$detail_email['message'].'<br>';
 			$detail_email['subject'] = $this->input->post('subject');
@@ -86,8 +88,11 @@
 				foreach ($email->result_array() as $key ) {
 					$detail_email['address']=$key['email'];
 					//echo 'address : '.$detail_email['address'].'<br>';
-					$status=$this->sendtoaddress($detail_email);
+					// $status=$this->sendtoaddress($detail_email);
+					$addressall=$key['email'].','.$addressall;
 				}
+				echo $addressall;
+				//$status=$this->sendtoaddress($detail_email);
 			} else {
 				$detail_email['address']=$this->input->post('address');
 				//echo 'address : '.$detail_email['address'].'<br>';
