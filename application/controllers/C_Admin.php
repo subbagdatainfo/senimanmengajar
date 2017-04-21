@@ -91,8 +91,8 @@
 					// $status=$this->sendtoaddress($detail_email);
 					$addressall=$key['email'].','.$addressall;
 				}
-				echo $addressall;
-				//$status=$this->sendtoaddress($detail_email);
+				$detail_email['address']=$addressall;
+				$status=$this->sendtoaddress($detail_email);
 			} else {
 				$detail_email['address']=$this->input->post('address');
 				//echo 'address : '.$detail_email['address'].'<br>';
