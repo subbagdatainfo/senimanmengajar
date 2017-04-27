@@ -83,6 +83,7 @@
 				$config['allowed_types'] = 'pdf|jpg|png|doc|docx';
 				$config['file_name'] = "attachment";
 				$this->upload->initialize($config);
+				$this->upload->do_upload();
 				$data_file = $this->upload->data();
 	            $file_ext = $data_file['file_ext'];
 				$detail_email['attach_path']='data/attachment'.$file_ext;
