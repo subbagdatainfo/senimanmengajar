@@ -36,7 +36,7 @@
                         <div class="panel-body">
                            <!--  form kirim email  -->
                            
-                           <form name="daftar" enctype="multipart/form-data"id="daftarform" action ="<?=site_url('C_Admin/send'); ?>" method="post">
+                           <form name="daftar" enctype="multipart/form-data" id="daftarform" action ="<?=site_url('C_Admin/send'); ?>" method="post">
                                 <div class="row-lg-12">
                                     <div class="form-group">
                                         <input type ="text" class ="form-control" placeholder="Kepada" id="address" name="address" >

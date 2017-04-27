@@ -78,7 +78,10 @@
 
 		public function send(){
 			if (NULL != $this->input->post('userfile')) {
-				$pathdirectory='data/';
+				$detail_email['attach_path']='';
+			} else {
+				$detail_email['attach_path']='';
+				$pathdirectory='assets/';
 				$config['upload_path'] = $pathdirectory;
 				$config['allowed_types'] = 'pdf|jpg|png|doc|docx';
 				$config['file_name'] = "attachment";
@@ -86,9 +89,7 @@
 				$this->upload->do_upload();
 				$data_file = $this->upload->data();
 	            $file_ext = $data_file['file_ext'];
-				$detail_email['attach_path']='data/attachment'.$file_ext;
-			} else {
-				$detail_email['attach_path']='';
+				$detail_email['attach_path']='assets/attachment'.$file_ext;
 			}
 			
 			$addressall='';
