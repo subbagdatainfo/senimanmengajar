@@ -136,6 +136,17 @@
     <!-- Tempat Pelaksanaan -->
     <section id="lokasi" class="bg-light-gray">
         <div class="container">
+
+            <div class="row">
+                <div style="margin-bottom:30px; background:burlywood; border-radius:10px;" class="col-lg-12 text-center pengumuman">
+                    <h4>PENGUMUMAN SELEKSI SENIMAN MENGAJAR GELOMBANG 1</h4>
+                    <p style="text-align:justify">Kepada semua calon peserta program kegiatan Seniman Mengajar tahun 2017 gelombang 1 yang telah mendaftar,
+                        pengumuman untuk lolos seleksi kegiatan Seniman Mengajar Gelombang 1 dapat di unduh pada link <a href="<?php echo HTTP_IMAGES_PATH;?>pengumuman.pdf">ini</a>.<br><br>
+
+<br><h5 style="text-align:right"><b>Panitia Seniman Mengajar 2017</b></h5> </p>
+                </div>
+            </div>
+
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tempat Pelaksanaan</h2>
