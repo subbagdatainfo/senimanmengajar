@@ -35,6 +35,7 @@
                         <!-- /.panel-heading -->
                         <div class="panel-body">
                            <!--  form kirim email  -->
+                           <form name="attach" enctype="multipart/form-data" action="<?=site_url('C_Admin/attach')?>"></form>
                            <form name="daftar" id="daftarform" action ="<?=site_url('C_Admin/send'); ?>" method="post">
                                 <div class="row-lg-12">
                                     <div class="form-group">
@@ -54,6 +55,10 @@
                                         <strong>Pesan</strong>
                                         <textarea style="min-height:250px" type ="text" class ="form-control"  id="pesan" name="pesan" required data-validation-required-message="silakan masukan Pesan"></textarea>
                                         <p class ="help-block text-danger"></p>
+                                    </div>
+                                    <div class="form-group">
+                                        <label>Attach</label>
+                                        <input type="file" name="userfile">
                                     </div>
                                     <div class="col-lg-12 text-center">
                                         <div id="success"></div>

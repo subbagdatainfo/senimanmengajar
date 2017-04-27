@@ -1,14 +1,4 @@
-<<<<<<< HEAD
-<IfModule mod_rewrite.c>
-    RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
-    RewriteRule ^(.*)$ /index.php/$1 [L]
-</IfModule>
-<IfModule !mod_rewrite.c>
-    ErrorDocument 404 /index.php
-</IfModule>
-=======
+
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -18,4 +8,4 @@
 <IfModule !mod_rewrite.c>
     ErrorDocument 404 /dev/index.php
 </IfModule>
->>>>>>> f9bd2539ebfb1b23de4f63b9e8c182de2f38d3f1
+
