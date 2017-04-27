@@ -130,8 +130,7 @@
 			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
 			$this->email->message($detail_email['message']);
-			$this->email->attach($detail_email['attach_path']);
-			
+			$this->email->attach($detail_email['attach_path']); 
 			//$this->email->send();
 			if ($this->email->send()) {
 				return TRUE;

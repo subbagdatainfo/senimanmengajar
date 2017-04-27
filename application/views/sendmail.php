@@ -57,7 +57,7 @@
                                         <p class ="help-block text-danger"></p>
                                     </div>
                                     <div class="form-group">
-                                        <label>Attach</label>
+                                        <label>Attach File</label>
                                         <input type="file" name="userfile">
                                     </div>
                                     <div class="col-lg-12 text-center">
