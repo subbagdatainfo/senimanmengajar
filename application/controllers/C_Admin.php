@@ -127,10 +127,10 @@
 
 		public function sendtoaddress($detail_email){
 			$this->load->library('email');
-			
+			 $this->email->clear(TRUE);
 			$this->email->from('pembinaantenaga.kesenian', 'Panitia Seniman Mengajar');
-			$this->email->from('karyana.abdhadi@gmail.com');
-			$this->email->bcc($detail_email['address']);
+			$this->email->to('karyana.abdhadi@gmail.com');
+			$this->email->bcc($detail_email['address'],10);
 			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
 			$this->email->message($detail_email['message']);
