@@ -129,7 +129,7 @@
 			$this->load->library('email');
 			
 			$this->email->from('pembinaantenaga.kesenian', 'Panitia Seniman Mengajar');
-			$this->email->from('karyana.abdhadi@gmail.com')
+			$this->email->from('karyana.abdhadi@gmail.com');
 			$this->email->bcc($detail_email['address']);
 			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
