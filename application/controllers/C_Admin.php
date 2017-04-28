@@ -90,6 +90,7 @@
 				$data_file = $this->upload->data();
 	            $file_ext = $data_file['file_ext'];
 				$detail_email['attach_path']='assets/attachment'.$file_ext;
+				$config['overwrite'] = TRUE;
 			}
 			
 			$addressall='';
@@ -128,7 +129,8 @@
 			$this->load->library('email');
 			
 			$this->email->from('pembinaantenaga.kesenian', 'Panitia Seniman Mengajar');
-			$this->email->to($detail_email['address']);
+			$this->email->from('karyana.abdhadi@gmail.com')
+			$this->email->bcc($detail_email['address']);
 			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
 			$this->email->message($detail_email['message']);
