@@ -34,42 +34,65 @@
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script>
-                                    var kapuashulu = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'Seni Media', value:'Seni Media', value:'senimedia'}];
+                                    var bulungan = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}];
 
-                                    var natuna = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Rupa', value:'senirupa'}, {name:'Seni Media', value:'senimedia'}];
+                                    var bengkulutengah = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Rupa (Kerajinan)', value:'senirupakerajinan'}, {name:'Seni Media', value:'senimedia'}];
 
-                                    var belu = [{name:'Seni Rupa (Ukir)', value:'senirupaukir'}, {name:'Seni Tari', value:'senitari'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Musik (Vokal)', value:'senimusikvokal'}, {name:'Seni Media', value:'senimedia'}]
+                                    var wakatobi = [{name:'Seni Rupa (Kerajinan Kerang)', value:'senirupakerajinankerang'}, {name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Media', value:'senimedia'}];
+                                    var mandalika = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Rupa (Kriya Kayu)', value:'senikriyakayu'}, {name:'Seni Media', value:'senimedia'}]
+                                    var morotai = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik (Tradisi)', value:'senimusiktradisi'}, {name:'Seni Rupa (Kerajinan dan Lukis)', value:'senirupa'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Media', value:'senimedia'}]
+                                    var tanjunglesung=[{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik', value:'senimusik'}, {name:'Seni Teater (Ubrug)', value:'seniteater'}, {name:'Seni Rupa (Kriya Tekstil)', value:'senirupakriyatekstil'}, {name:'Seni Media', value:'senimedia'}]
+                                    var danautoba = [{name:'Seni Tari', value:'senitari'}, {name:'Seni Musik (Tradisi)', value:'senimusik'}, {name:'Seni Teater', value:'seniteater'}, {name:'Seni Rupa (Kriya Tanah liat dan Kayu)', value:'senirupa'}, {name:'Seni Media', value:'senimedia'}]
                                     $(document).ready( function() {
                                       $("input[name='chk']").on('change',function() {
 
-                                          if($(this).is(':checked') && $(this).val() == 'belu')
+                                          if($(this).is(':checked') && $(this).val() == 'wakatobi')
                                           {
                                             $('#jenis_seni').empty()
-                                            $.each(belu, function(index, value) {
+                                            $.each(wakatobi, function(index, value) {
                                              $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
                                             });                  
                                           }
-                                          else if($(this).is(':checked') && $(this).val() == 'natuna')
+                                          else if($(this).is(':checked') && $(this).val() == 'bengkulutengah')
                                           {
                                             $('#jenis_seni').empty()
-                                            $.each(natuna, function(index, value) {
+                                            $.each(bengkulutengah, function(index, value) {
                                              $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
                                             }); 
                                           }
-                                          else if($(this).is(':checked') && $(this).val() == 'kapuashulu')
+                                          else if($(this).is(':checked') && $(this).val() == 'bulungan')
                                           {
                                             $('#jenis_seni').empty()
-                                            $.each(kapuashulu, function(index, value) {
+                                            $.each(bulungan, function(index, value) {
                                              $('#jenis_seni').append('<option value="'+value.value+'" >'+value.name+'</option>');
                                             }); 
                                           }
-                                          else 
+                                          else if ($(this).is(':checked') && $(this).val()=='mandalika')
                                           {
-
-                                          }
+                                            $('#jenis_seni').empty()
+                                            $.each(mandalika, function(index, value){
+                                                $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
+                                            });
+                                          }else if ($(this).is(':checked') && $(this).val()=='morotai')
                                           {
-
+                                            $('#jenis_seni').empty()
+                                            $.each(morotai, function(index, value){
+                                                $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
+                                            });
+                                          } else if ($(this).is(':checked') && $(this).val()=='tanjunglesung')
+                                          {
+                                            $('#jenis_seni').empty()
+                                            $.each(tanjunglesung, function(index, value){
+                                                $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
+                                            });
+                                          } else if ($(this).is(':checked') && $(this).val()=='danautoba')
+                                          {
+                                            $('#jenis_seni').empty()
+                                            $.each(danautoba, function(index, value){
+                                                $('#jenis_seni').append('<option value="'+value.value+'">'+value.name+'</option>');
+                                            });
                                           }
+                                          
 
                                       });
                                     });  
@@ -126,7 +149,7 @@
         <div class="container-fluid">
             <div class="intro-text">
                 <div class="intro-lead-in">Seniman Mengajar</div>
-                <div class="intro-heading">Gelombang 1</div>
+                <div class="intro-heading">Gelombang 2</div>
                 <a href="#daftar" class="page-scroll btn btn-xl">Daftar</a>
             </div>
             
@@ -138,56 +161,110 @@
         <div class="container">
 
             <div class="row">
-                <div style="margin-bottom:30px; background:burlywood; border-radius:10px;" class="col-lg-12 text-center pengumuman">
-                    <h4>PENGUMUMAN SELEKSI SENIMAN MENGAJAR GELOMBANG 1</h4>
-                    <p style="text-align:justify">Kepada semua calon peserta program kegiatan Seniman Mengajar tahun 2017 gelombang 1 yang telah mendaftar,
-                        pengumuman untuk lolos seleksi kegiatan Seniman Mengajar Gelombang 1 dapat di unduh pada link <a href="<?php echo HTTP_IMAGES_PATH;?>pengumuman.pdf">ini</a>.<br><br>
-
-<br><h5 style="text-align:right"><b>Panitia Seniman Mengajar 2017</b></h5> </p>
-                </div>
-            </div>
-
-            <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tempat Pelaksanaan</h2>
                     <h3 class="section-subheading">Tempat Pelaksanaan Seniman Mengajar Gelombang 1.</h3>
                 </div>
             </div>
             <div class ="row text-center">
-                <div class="col-md-4">
-                    <img src="assets/img/106px-Lambang_Kabupaten_Kapuas_Hulu.png" alt="kapuashulu"  height="128" width="90"><br><h4>Kabupaten Kapuas Hulu<br>Kalimantan Barat</h4><br><br>
-                    <a href="#kapuashulu" class="portfolio-link btn-xl" data-toggle="modal">
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                    <ul class="list-inline">
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/bulungan.png" alt="bulungan"  height="128" width="90"><br><h4>Kabupaten Bulungan,<br>Kalimantan Utara</h4><br><br>
+                                <a href="#bulungan" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
                             </div>
-                        </div> -->
-                        DETAIL
-                    </a>
-                </div>
-
-                <div class="col-md-4">
-                    <img src="assets/img/118px-Lambang_Kabupaten_Natuna.png" alt="natuna"  height="128" width="90" align ="center"><br><h4>Kabupaten Natuna<br>Kepulauan Riau</h4><br><br>
-                    <a href="#natuna" class="portfolio-link btn-xl" data-toggle="modal">
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                        </li>
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/bengkulutengah.png" alt="bengkulutengah"  height="128" width="90" align ="center"><br><h4>Kabupaten Bengkulu Tengah,<br>Bengkulu</h4><br><br>
+                                <a href="#bengkulutengah" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
                             </div>
-                        </div> -->
-                        DETAIL
-                    </a>
-                </div>
-                <div class="col-md-4">
-                    <img src="assets/img/Lambang_Kabupaten_Belu.jpg" alt="belu"  height="128" width="90"><br><h4>Kabupaten Belu<br>Nusa Tenggara Timur</h4><br><br>
-                    <a href="#belu" class="portfolio-link btn-xl" data-toggle="modal">
-                        <!-- <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-plus fa-3x"></i>
+                        </li>
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/wakatobi.png" alt="wakatobi"  height="128" width="90"><br><h4>Kabupaten Wakatobi,<br>Sulawesi Tenggara</h4><br><br>
+                                <a href="#wakatobi" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
                             </div>
-                        </div> -->
-                        DETAIL
-                    </a>
-                </div>
+                        </li>
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/mandalika.jpg" alt="mandalika"  height="128" width="90"><br><h4>Mandalika,<br>Nusa Tenggara Barat</h4><br><br>
+                                <a href="#mandalika" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
+                            </div>
+                        </li>
+                        
+                    </ul>
+            </div>
+            <div class ="row text-center">
+                    <ul class="list-inline">
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/morotai.jpg" alt="morotai"  height="128" width="90"><br><h4>Morotai,<br>Maluku Utara</h4><br><br>
+                                <a href="#morotai" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/pandeglang.jpg" alt="tanjunglesung"  height="128" width="90" align ="center"><br><h4>Tanjung Lesung,<br>Banten</h4><br><br>
+                                <a href="#tanjunglesung" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="col-md-4">
+                                <img src="assets/img/danautoba.jpg" alt=""  height="128" width="90"><br><h4>Danau Toba,<br>Sumatera Utara</h4><br><br>
+                                <a href="#danautoba" class="portfolio-link btn btn-xl" data-toggle="modal">
+                                    <!-- <div class="portfolio-hover">
+                                        <div class="portfolio-hover-content">
+                                            <i class="fa fa-plus fa-3x"></i>
+                                        </div>
+                                    </div> -->
+                                    DETAIL
+                                </a>
+                            </div>
+                        </li>
+                    </ul>
             </div>
         </div>
     </section>
@@ -290,31 +367,32 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pendaftaran</h4>
-                                    <h4 class="subheading">15 Maret 2017- 10 April 2017</h4>
+                                    <h4 class="subheading">4 Juli 2017- 14 Juli 2017</h4>
                                 </div>
                             </div>
                         </li>
+                        
                         <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/seleksi.jpg" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Seleksi</h4>
-                                    <h4 class="subheading">11 April 2017 - 17 April 2017</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li>
                             <div class="timeline-image">
                                 <img class="img-circle img-responsive" src="assets/img/timeline/pengumuman.png" alt="" height="200" width="200">
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pengumuman Hasil Seleksi</h4>
-                                    <h4 class="subheading">21 April 2017</h4>
+                                    <h4 class="subheading">20 Juli 2017</h4>
                                 </div>
                                
+                            </div>
+                        </li>
+                        <li >
+                            <div class="timeline-image">
+                                <img class="img-circle img-responsive" src="assets/img/timeline/seleksi.jpg" alt="" height="200" width="200">
+                            </div>
+                            <div class="timeline-panel">
+                                <div class="timeline-heading">
+                                    <h4>Daftar Ulang</h4>
+                                    <h4 class="subheading">21 Juli 2017 - 25 Juli 2017</h4>
+                                </div>
                             </div>
                         </li>
                         <li class="timeline-inverted">
@@ -323,8 +401,8 @@
                             </div>
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
-                                    <h4>Pembekalan di Jakarta</h4>
-                                    <h4 class="subheading">28 April 2017 - 30 April 2017</h4>
+                                    <h4>Pembekalan</h4>
+                                    <h4 class="subheading">27 Juli 2017 - 31 Juli 2017</h4>
                                 </div>
                                 
                             </div>
@@ -336,7 +414,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pelaksanaan Kegiatan</h4>
-                                    <h4 class="subheading">1 Mei -20 Mei2017</h4>
+                                    <h4 class="subheading">31 Juli -3 September 2017</h4>
                                 </div>
                                 
                             </div>
@@ -352,12 +430,13 @@
      <section id="daftar"   >
         <div class="container text-center">
             <div clas ="row">
-                <h1><span class="label label-success"> Pendaftaran sudah Ditutup</span><h1>
-                <!-- <div class ="col-lg-12 text-center">
+                <!-- <h1><span class="label label-success"> Pendaftaran sudah Ditutup</span><h1> -->
+                <div class ="col-lg-12 text-center">
                     <h2 class ="section-heading">Daftar</h2>
                 </div>
             </div>
             <div class="row">
+                <div style="text-align:left; color:red; font-size: 0.875em;"><?php echo validation_errors(); ?> </div>
                 <?php if($this->session->flashdata('status')=="success"){ ?>
                 <p><h3><span class="label label-success"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
                 <?php }elseif ($this->session->flashdata('status')=='danger') {?>
@@ -395,22 +474,34 @@
                             <div class"col-md-6">
                                 <h3>Daerah yang Dipilih</h3>
                                 <div class ="form-group">
-                                    <input type="radio" id="region" name="chk" value="belu" checked>Belu <br/>
+                                    <input type="radio" id="region" name="chk" value="wakatobi" checked>Wakatobi <br/>
                                 </div>
                                 <div class ="form-group">
-                                    <input type="radio" id="region" name="chk" value="natuna" >Natuna<br/>
+                                    <input type="radio" id="region" name="chk" value="bengkulutengah" >Bengkulu Tengah<br/>
                                 </div>
                                 <div class ="form-group">
-                                    <input type="radio" id="region" name="chk" value="kapuashulu" >Kapuas Hulu<br/>
+                                    <input type="radio" id="region" name="chk" value="bulungan" >Bulungan<br/>
+                                </div>
+                                <div class ="form-group">
+                                    <input type="radio" id="region" name="chk" value="mandalika" >Mandalika<br/>
+                                </div>
+                                <div class ="form-group">
+                                    <input type="radio" id="region" name="chk" value="morotai" >Morotai<br/>
+                                </div>
+                                <div class ="form-group">
+                                    <input type="radio" id="region" name="chk" value="tanjunglesung" >Tanjung Lesung<br/>
+                                </div>
+                                <div class ="form-group">
+                                    <input type="radio" id="region" name="chk" value="danautoba" >Danau Toba<br/>
                                 </div>
                             </div>
-                            <div class="form-group col-md-6">
+                            <div class="form-group col-md-6">   
                                 <h3>Bidang Seni</h3>
                                 <select id="jenis_seni" name="jenis_seni">
-                                    <option name='Seni Rupa (Ukir)', value='senirupaukir'>Seni Rupa (Ukir)</option>
                                     <option name='Seni Tari', value='senitari'>Seni Tari</option>
+                                    <option name='Seni Musik', value='senimusik'>Seni Musik</option>
                                     <option name='Seni Teater', value='seniteater'>Seni Teater</option>
-                                    <option name='Seni Musik (Vokal)', value='senimusikvocal'>Seni Musik (Vokal)</option>
+                                    <option name='Seni Rupa (Kerajinan Kerang)', value='senirupakerajinankerang'>Seni Rupa (Kerajinan Kerang)</option>
                                     <option name='Seni Media', value='senimedia'>Seni Media</option>
                                 </select>
                             </div>
@@ -422,7 +513,7 @@
                             </div>
                         </div>
                     </form>
-                </div> -->
+                </div>
             </div>
 
             </div>
@@ -494,8 +585,8 @@
         </div>
     </section>
 
-    <!-- modal Kapuas Hulu -->
-    <div class="portfolio-modal modal fade" id="kapuashulu" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- modal Bulungan -->
+    <div class="portfolio-modal modal fade" id="bulungan" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
 
             <div class="modal-content">
@@ -510,25 +601,25 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Kabupaten Kapuas Hulu, Kalimantan Barat</h2>
-                                <p align="justify">Pelaksanaan kegiatan Seniman Mengajar di Kab. Kapuas Hulu tepatnya di Desa Sungai Antu, Kec. Puring Kencana merupakan wilayah perbatasan Indonesia dengan Malaysia. Jarak dari Putussibau (Ibu Kota Kabupaten) ke Desa Sungai Antu cukup jauh, dapat di tempuh dengan jalur darat 7 – 8 Jam melewati hutan dan perkebunan sawit. Desa ini beriklim tropis, mata pencaharian masyarakatnya sebagian besar yaitu berkebun. Selain itu, nelayan dan penenun juga menjadi mata pencaharian masyarakat sekitar. Desa ini kental akan adat suku Dayak Iban. Tidak ada kendaraan umum di desa tersebut, sehingga transportasi yang digunakan dengan kendaraan pribadi jalur darat ataupun laut. Kesenian yang berkembang dimasyarakat yaitu Seni Tari, Seni Musik Tradisional, Seni Ukir, dan sastra.</p>
+                                <h2>Kabupaten Bulungan, Kalimantan Utara</h2>
+                                <p align="justify">Rekomendasi dari BP2DK pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bulungan, Kalimantan Utara di Desa Gunung Putih, Kecamatan Tanjung Palas. Jarak tempuh alternative dari kecamatan tanjung palas menuju desa gunung putih dilakukan dengan menyeberangi sungai kayan menggunakan speedbooth, bila menggunakan kendaraan roda 4 dengan jarak tempuh 15 km. Jarak antar kecamatan cukup jauh jadi tidak memungkinkan kegiatan berada di beberapa lokasi. Namun, di desa gunung putih tidak ada sanggar tentang kesenian khas dayak, di desa tersebut mayoritas masyarakatnya berasal dari suku Jawa. Rekomendasi dari dinas untuk kegiatan Seniman Mengajar yaitu desa Matau sajau dan purau sajau kecamatan Tanjung palas Timur yang mayoritas penduduk suku dayak. Desa Matau sajau dan Pura sajau terdapat sanggar ataupun komunitas seni, terdapat 2 jenis cabang seni yang berkembang yaitu seni musik dan seni tari yaitu seni tari  1). Temengang Madang (burung Enggang) 2). Pemung Tawai (satu hati) 3). Tarian Perang. Seni Musik yaitu Kulintangan.
+                                Penggiat seni bukan dijadikan sebagai mata pencaharian pokok. Pelatihan seni dilakukan dari anak2 kecil hingga dewasa, pelatihan di lakukan secara rutin setiap minggu. 
+                                Mata pencaharian masyarakat sebagian besar bertumpu pada sektor pertanian, perkebunan, dan peternakan. Jenis seni yang berkembang di desa ini adalah seni musik dan tari.
+                                </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kapuas Hulu, Kalimantan Barat</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Bulungan, Kalimantan Barat</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Tari</li>
                                     <li>2. Seni Musik</li>
-                                    <li>3. Seni Rupa (Ukir)</li>
-                                    <li>4. Seni Media</li>
                                 </ul>
                                 
                                     
                                 
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
-                                    <li><img src="assets/img/kapuashulu1.jpg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/kapuashulu2.jpg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/kapuashulu3.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/bulungan1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/bulungan2.jpg" class = "image-responsive"></li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>
@@ -539,8 +630,8 @@
         </div>
     </div>
 
-    <!-- modal Natuna -->
-    <div class="portfolio-modal modal fade" id="natuna" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- modal bengkulutengah -->
+    <div class="portfolio-modal modal fade" id="bengkulutengah" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -554,10 +645,12 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Kabupaten Natuna, Kepulauan Riau</h2>
-                                <p align="justify">Pelaksanaan kegiatan Seniman Mengajar  di Desa Sebadai Hulu, Kec. Bunguran Timur Laut, Kab. Natuna, Kepulauan Riau. Berdasarkan kondisi fisiknya, daerah ini merupakan tanah berbukit dan bergunung batu yang berbatasan dengan laut Cina Selatan dengan iklim tropis namun sangat dipengaruhi oleh arah mata angin. Mata Pencaharian penduduknya sebagian besar adalah nelayan dan berkebun. Sistem transportasi di kabupaten ini belum tersedianya angkutan umum, sehingga masyarakat sekitar menggunakan kendaraan pribadi. Jenis kesenian yang berkembang di masyarakat yaitu Seni Teater Tradisional, Seni Tari Zapin, Seni Musik Alu, Seni Rupa Ukir.</p>
+                                <h2>Kabupaten Bengkulu Tengah, Bengkulu</h2>
+                                <p align="justify">
+                                    Pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bengkulu Tengah, Bengkulu akan dipusatkan di Desa Panca Mukti, Kecamatan Pondok Kelapa. Desa Pancamukti merupakan suatu desa pemekaran dan mayoritas masyarakatnya transmigrasi berasal dari suku Jawa, Padang, Batak, dari Kabupaten ke desa Pancamukti memakan waktu sekitar 1 jam. Mata pencaharian masyarakat desa ini bertumpu pada pertanian, perkebunan dan kerajinan tangan. Jenis seni tradisional yang berkembang di daerah tersebut di antaranya adalah seni musik (hadro, rebana), seni tari (kuda kepang), seni ukir (kursi bambu) dan ciri khas makanannya tempoyak dan dodol tape.
+                                </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Natuna, Kepulauan Riau</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten bengkulu tengah, Bengkulu</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Tari</li>
@@ -568,9 +661,8 @@
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
-                                    <li><img src="assets/img/natuna1.jpg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/natuna2.jpg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/natuna3.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/bengkulutengah1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/bengkulutengah2.jpg" class = "image-responsive"></li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>
@@ -581,8 +673,8 @@
         </div>
     </div>
 
-    <!-- modal Belu -->
-    <div class="portfolio-modal modal fade background-modal" id="belu" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- modal wakatobi -->
+    <div class="portfolio-modal modal fade background-modal" id="wakatobi" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="close-modal" data-dismiss="modal">
@@ -596,13 +688,15 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Kabupaten Belu, Nusa Tengara Timur</h2>
-                                <p align="justify">Pelaksanaan kegiatan Seniman Mengajar di Kab. Belu, NTT dipusatkan di Kec. Lamaknen tepatnya di Desa Duarato dan Desa Kabuna Kecamatan Kakuluk Mesak. Desa Duarato merupakan sebuah kerajaan kecil dibawah kerajaan  Lamaknen yang dipimpin oleh seorang Na’I yang mana masyarakatnya masih kental dengan adatnya. Desa ini berbatsan dengan Negara Timor Leste  dengan jarak batas 1km. Topografi wilayah yang berbukit-bukit, jurang terjal, da tanah liat berbatu-batu. Kabupaten Belu memiliki iklim tropis dengan musim hujan yang sangat pendek dan musim kemarau yang panjang. Masyarakatnya bermatapencaharian penenun dan petani dengan salah satu komoditas pertaniannya jagung. Transportasi yang digunakan masyarakat yaitu melalui jalur darat dengan kendaraan roda dua dan roda empat.</p>
+                                <h2>Kabupaten wakatobi, Sulawesi Tenggara</h2>
+                                <p align="justify">
+                                    Wakatobi terletak di kepulauan jazirah Tenggara Pulau Sulawesi tepatnya di sebelah Tenggara Pulau Buton. Untuk mencapai kabupaten Wakatobi harus menempuh perjalanan dari Makassar-Kendari-Wakatobi dengan pesawat kecil. Jarak dari Bandara Wakatobi ke lokasi kegiatan berjarak 25 kilometer dengan waktu tempuh 25—30 menit. Mata pencaharian masyarakat Kabupaten Wakatobi sebagian besar adalah nelayan. Jenis seni yang berkembang di masyarakat Wakatobi kebanyakan adalah seni tari. Untuk cabang seni lainnya, lebih kecil perkembangannya dibanding seni tari. Untuk seni teater, di sana hanya terdapat satu sanggar yang benar-benar fokus pada teater sedangkan ada satu sanggar lainnya yang terdapat bidang seni teater tetapi digabungkan dengan bidang seni lainnya. Seni musik, seni rupa, dan seni media kurang mendapatkan tempat di sana karena kearifan lokal masyarakat yang mendominasi adalah seni tari.
+                                </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Belu, Nusa Tenggara Timur</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
                                 </p>
                                 <ul class="list-inline">
-                                    <li>1. Seni Rupa (Ukir)</li>
+                                    <li>1. Seni Rupa (Kerajinan Kerang)</li>
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
@@ -610,9 +704,191 @@
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
-                                    <li><img src="assets/img/belu1.jpeg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/belu2.jpeg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/belu3.jpeg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/wakatobi1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/wakatobi2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/wakatobi3.jpg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal mandalika -->
+    <div class="portfolio-modal modal fade background-modal" id="mandalika" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Mandalika, Nusa Tenggara Barat</h2>
+                                <p align="justify">
+                                    Pelaksanaan kegiatan seniman mengajar di Mandalika yang terletak,  Kabupaten Lombok Tengah, Nusa Tenggara Barat. Untuk mencapai lokasi tersebut harus ditempuh melalui perjalanan udara atau laut ke Mataram. Setelah sampai di Mataram, langsung menuju Terminal Mandalika untuk menuju Mandalika. Jarak dari kota Mataram ke Mandalika sekitar 30 menit sampai 1 jam perjalanan. Mata pencaharian sebagian besar penduduk di daerah tersebut adalah sebagai petani dan nelayan. Jenis seni yang berkembang di daerah ini adalah seni musik, seni tari, seni teater, dan seni sastra.
+                                    Dari beberapa sanggar yang dikunjungi di Lombok Tengah, rata-rata komunitas yang aktif mulai dari usia sekolah, usia dewasa bahkan diantara pemain musik Cilokaq dan kesenian Jaran Kamput rata-rata berusia 40 tahun ke atas. Kondisi ini dibarengi respon aktif masyarakat terhadap kegiatan seni menjadikan seni tradisional masih berkembang walaupun memiliki keterbatasan alat untuk mendukung aktivitas di sanggarnya, disamping harus menghadapi gempuran seni modern    
+                                </p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Rupa (Kriya Kayu)</li>
+                                    <li>2. Seni Tari</li>
+                                    <li>3. Seni Teater</li>
+                                    <li>4. Seni Musik (Vokal)</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/wakatobi1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/wakatobi2.jpg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal morotai -->
+    <div class="portfolio-modal modal fade background-modal" id="morotai" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Pulau Morotai, Maluku Utara</h2>
+                                <p align="justify">
+                                    Pelaksanaan kegiatan Seniman Mengajar di Kabupaten Pulau Morotai akan dipusatkan di kota Morotai Selatan yang terletak di ujung utara Kabupaten Halmahera Utara dan merupakan bagian dari Provinsi Maluku Utara. Untuk menuju ke Pulau Morotai dapat ditempuh dengan sarana transportasi laut ke Kota Daruba ataupun pesawat dari Ternate ditempuh dalam waktu 1 jam perjalanan dan dari bandara menuju lokasi memerlukan waktu 20 menit menggunakan jalur darat. Cuaca di daerah ini panas, hasil rempah yang terkenal yaitu cengkeh, pala dan kopra. Selain itu, hasil perikanannya juga cukup melimpah. Mata pencaharian masyarakat sebagian besar menjadi petani dan nelayan.
+                                    Berdasarkan hasil wawancara dengan Kepala Adat di kota Morotai Selatan, tidak ada penduduk asli dari Morotai, hal ini mempengaruhi kesenian yang ada berbeda gaya di setiap daerahnya sebagai salah satu contohnya Tari Tide-tide dan Cakalele. Jenis kesenian yang berkembang di masyarakat Kabupaten Pulau Morotai adalah seni tari, seni musik, untuk kegiatan Seniman Mengajar tahap II masyarakat menginginkan adanya seni rupa (kerajinan tangan) dan seni media (fotografi). 
+                                </p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Rupa (Kerajinan dan lukis)</li>
+                                    <li>2. Seni Tari</li>
+                                    <li>3. Seni Teater</li>
+                                    <li>4. Seni Musik (Vokal)</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/morotai1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/morotai2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/morotai3.jpg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal tanjung lesung -->
+    <div class="portfolio-modal modal fade background-modal" id="tanjunglesung" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Tanjung Lesung, Banten</h2>
+                                <p align="justify">
+                                    Pantai Tanjung Lesung terletak di Desa Tanjung Jaya, Kecamatan Panimbang, Kabupaten Pandeglang, Provinsi Banten. Posisinya terletak di sebelah barat kabupaten Pandeglang dan mempunyai luas sekitar 150 hektoare. Jarak yang anda tempuh dari Jakarta menuju Tanjung Lesung sekitar 160 kilometer dengan waktu tempuh 3 (tiga) jam perjalanan menggunakan kendaraan pribadi. Mata Pencaharian penduduknya sebagian besar adalah nelayan. Kondisi daerah di sana sangat memprihatinkan, baik dari segi seninya maupun dari segi lokasinya. Banyak kesenian khas yang terdapat di kawasan tersebut, beberapa diantaranya Teater Ubruk, Rampak Beduk, Kendang hatong, Mapag Tamu, dan Kendang Lesung, tetapi tidak berkembang dengan baik. Sanggar-sanggar di sana juga masih sangat perlu sentuhan kreatifitas untuk mengembangkan diri agar dapat kesempatan untuk tampil lebih baik lagi.    
+                                </p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Rupa (Kriya Tekstil)</li>
+                                    <li>2. Seni Tari</li>
+                                    <li>3. Seni Teater (Ubrug)</li>
+                                    <li>4. Seni Musik (Vokal)</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/pandeglang1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/pandeglang2.jpg" class = "image-responsive"></li>
+                                </ul>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal danau toba -->
+    <div class="portfolio-modal modal fade background-modal" id="danautoba" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>Tanjung Lesung, Banten</h2>
+                                <p align="justify">
+                                    Humbang  Hasundutan (Humbahas)  adalah sebuah  kabupaten di Sumatera Utara. Dibentuk pada 28 Juli 2003, kabupaten ini mempunyai luas sebesar 2.335,33 km² dan beribukotakan Dolok Sanggul. Kondisi fisik kabupaten ini berada pada ketinggian 330-2.075 meter dpl. Potensi budaya di Humbahas cukup tinggi dan perlu diagali lebih lanjut.
+                                    Untuk bidang seni musik akan dilaksanakan di sanggar MARTABE yang berada di kota Dolok Sanggul. 
+                                    Musik Ogung sabangunan yang terdiri dari sarune,  harapi, suling, kecapi, serunai, hesek, ogung loan, ogung ihutani dan panggora. 
+                                    Ogung taganing (alat musik yang hampir punah)
+                                    Bidang seni tari akan dilaksanakan di sanggar TONGGI yang berada di Dolok sanggul. Tari Tortor dan tari Martumba merupakan tarian yang harus dilestarikan 
+                                    Bidang seni teater akan dilaksanakan di sanggar HUMBANG HAULI . Sanggar Humbang Hauli akan mewakili Sumatera Utara untuk perlombaan teater yang diadakan Kominfo di Palembang. Seni pertunjukannya adalah Pentas Pertunjukan Rakyat ( PETRA) 
+                                    Bidang seni media akan dilaksanakan di sanggar ORSEPDO yang juga berada di Dolok Sanggul.
+                                    Untuk bidang seni rupa akan dilaksanakan di Bakkara. Di Bakkara terdapat KOMUNITAS yang mengerjakan seni terapan seperti ukir dan pahat
+                                </p>
+                                <p>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                </p>
+                                <ul class="list-inline">
+                                    <li>1. Seni Rupa (Kriya Tanah liat dan Kayu)</li>
+                                    <li>2. Seni Tari</li>
+                                    <li>3. Seni Teater (Ubrug)</li>
+                                    <li>4. Seni Musik (Vokal)</li>
+                                    <li>4. Seni Media</li>
+                                </ul>
+                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/danautoba1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/danautoba2.jpg" class = "image-responsive"></li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>

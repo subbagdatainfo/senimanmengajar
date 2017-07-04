@@ -4,27 +4,73 @@
 			parent::__construct();
 		}
 		public function createpeserta(){
-			$data = array();
-			$data['nama_seniman'] = $this->input->post('nama');
-			$data['username'] = $this->input->post('username');
-			$data['password'] = $this->input->post('password');
-			$data['no_telpon'] = $this->input->post('no_telpon');
-			$data['email'] = $this->input->post('email');
-			$data['jenis_seni'] = $this->input->post('jenis_seni');
-			$data['region']=$this->input->post('chk');
+			$this->form_validation->set_rules('nama', 'Nama', 'required|alpha',array(
+                'required'      => 'Nama harus diisi.',
+                'alpha'	=>'Format Nama tidak sesuai, hanya boleh menggunakan huruf'
+                
+        	));
+        	$this->form_validation->set_rules('email', 'Email', 'required|valid_email',array(
+                'required'      => 'Email harus diisi.',
+                'valid_email'	=>'Format email tidak sesuai'
+                
+        	));
+        	$this->form_validation->set_rules('no_telpon', 'Nomor Telpon', 'required|is_natural',array(
+                'required'      => 'Nomor Telpon harus diisi.',
+                'is_natural'	=>'Format no telpon tidak sesuai, hanya boleh menggunakan angka'
+                
+        	));
+        	$this->form_validation->set_rules('username', 'Username', 'required|alpha_numeric',array(
+                'required'      => 'Nomor Telpon harus diisi.',
+                'alpha_numeric'	=>'Format username tidak sesuai, hanya boleh menggunakan huruf dan angka'
+                
+        	));
+        	if ($this->form_validation->run() == FALSE) {
+        		redirect(base_url().'#daftar','refresh');
+        	} else {
+        		$data = array();
+				$data['nama_seniman'] = $this->input->post('nama');
+				$data['username'] = $this->input->post('username');
+				$data['password'] = $this->input->post('password');
+				$data['no_telpon'] = $this->input->post('no_telpon');
+				$data['email'] = $this->input->post('email');
+				$data['jenis_seni'] = $this->input->post('jenis_seni');
+				$data['region']=$this->input->post('chk');
+				
+				//insert data to database
+				$result=$this->M_Peserta->create($data);
+				if ($result) {
+					$message1=$this->session->set_flashdata('message','Pendaftaran Anda Berhasil');
+					$message2=$this->session->set_flashdata('status', 'success');
+					mkdir('data/'.$data['username'],0775);
+				} else {
+					$message1=$this->session->set_flashdata('message','Email Yang Anda Masukan Sudah Terdaftar');
+					$message2=$this->session->set_flashdata('status', 'danger');
+				}
+				//redirect to landing page with a message
+				redirect(base_url().'#daftar','refresh');
+        	}
+        	
+			// $data = array();
+			// $data['nama_seniman'] = $this->input->post('nama');
+			// $data['username'] = $this->input->post('username');
+			// $data['password'] = $this->input->post('password');
+			// $data['no_telpon'] = $this->input->post('no_telpon');
+			// $data['email'] = $this->input->post('email');
+			// $data['jenis_seni'] = $this->input->post('jenis_seni');
+			// $data['region']=$this->input->post('chk');
 			
-			//insert data to database
-			$result=$this->M_Peserta->create($data);
-			if ($result) {
-				$message1=$this->session->set_flashdata('message','Pendaftaran Anda Berhasil');
-				$message2=$this->session->set_flashdata('status', 'success');
-				mkdir('data/'.$data['username'],0775);
-			} else {
-				$message1=$this->session->set_flashdata('message','Email Yang Anda Masukan Sudah Terdaftar');
-				$message2=$this->session->set_flashdata('status', 'danger');
-			}
-			//redirect to landing page with a message
-			redirect(base_url().'#daftar','refresh');
+			// //insert data to database
+			// $result=$this->M_Peserta->create($data);
+			// if ($result) {
+			// 	$message1=$this->session->set_flashdata('message','Pendaftaran Anda Berhasil');
+			// 	$message2=$this->session->set_flashdata('status', 'success');
+			// 	mkdir('data/'.$data['username'],0775);
+			// } else {
+			// 	$message1=$this->session->set_flashdata('message','Email Yang Anda Masukan Sudah Terdaftar');
+			// 	$message2=$this->session->set_flashdata('status', 'danger');
+			// }
+			// //redirect to landing page with a message
+			// redirect(base_url().'#daftar','refresh');
 
 		}
 		function upload() {
@@ -221,5 +267,23 @@
 			foreach ($dirmake->result_array() as $key) {
 				mkdir('data/'.$key['username'],0775);
 			}
+		}
+
+		public function seeresult(){
+			$email_seniman='email3@domain.com';
+			$jenis[0]= 'foto';
+            $jenis[2]= 'profpict';
+            $jenis[3]= 'sks';
+            $jenis[4]='drh';
+            $seq=0;
+            foreach ($jenis as $key ) {
+                $datakonten=$this->M_Peserta->getkontenseniman($email_seniman,$jenis);
+                $seq2=0;
+                foreach ($datakonten as $result_array() => $keykonten) {
+                    $kontenarray[$jenis][$seq2]=$keykonten['path'];
+                    echo $kontenarray[$jenis][$seq2].'-->'.$keykonten['id'].'<br>';
+                }
+                $seq=$seq+1;
+            }
 		}
 	}

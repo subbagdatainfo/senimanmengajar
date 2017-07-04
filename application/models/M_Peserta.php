@@ -6,7 +6,7 @@
 			$result=$this->db->insert('peserta',$data);
 			$emailinsert=$data['email'];
 			
-			$path = 'data/'.$data['username'];
+			$path = 'data/'.$data['nama'];
 			if ($result) {
 				//$query=$this->db->query("insert INTO portofolio (email,jenis,path) VALUES('$emailinsert','profpict', $path),('$emailinsert','sks', $path),('$emailinsert','drh', $path),('$emailinsert','video', $path)");
 				return TRUE;
@@ -24,8 +24,8 @@
 			$detail = $this->db->query("SELECT * from peserta where email='$email_seniman'");
 			return $detail;
 		}
-		public function getkontenseniman($email_seniman){
-			$konten = $this->db->query("SELECT * from portofolio where email= '$email_seniman'");
+		public function getkontenseniman($email_seniman,$jenis){
+			$konten = $this->db->query("SELECT * from portofolio where email= '$email_seniman' and jenis='$jenis'");
 			return $konten;
 		}
 		
