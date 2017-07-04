@@ -3,7 +3,11 @@
 		public function __construct(){
 			parent::__construct();
 		}
-		public function createpeserta(){
+		public function tes(){
+			
+			echo "tes";
+		}
+		public function createpeserta2(){
 			// $this->form_validation->set_rules('nama', 'Nama', 'required|alpha',array(
    //              'required'      => 'Nama harus diisi.',
    //              'alpha'	=>'Format Nama tidak sesuai, hanya boleh menggunakan huruf'
@@ -35,6 +39,7 @@
 				$data['email'] = $this->input->post('email');
 				$data['jenis_seni'] = $this->input->post('jenis_seni');
 				$data['region']=$this->input->post('chk');
+				echo $data['nama_seniman'];
 				
 				//insert data to database
 				$result=$this->M_Peserta->create($data);
@@ -47,7 +52,7 @@
 					$message2=$this->session->set_flashdata('status', 'danger');
 				}
 				//redirect to landing page with a message
-				redirect(base_url().'#daftar','refresh');
+				//redirect(base_url().'#daftar','refresh');
         	//}
         	
 			// $data = array();

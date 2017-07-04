@@ -437,7 +437,7 @@
             </div>
             <div class="row">
                 <div style="text-align:left; color:red; font-size: 0.875em;"><?php echo validation_errors(); ?> </div>
-                <?php if($this->session->flashdata('status')=="success"){ ?>
+                        <?php if($this->session->flashdata('status')=="success"){ ?>
                 <p><h3><span class="label label-success"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
                 <?php }elseif ($this->session->flashdata('status')=='danger') {?>
                     <p><h3><span class="label label-danger"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
@@ -445,11 +445,11 @@
             </div>
             <div class="row">
                 <div class="col-lg-12">
-                    <form name="daftar" id="daftarform" action ="<?=site_url('C_Peserta/createpeserta'); ?>" method="post">
+                    <form name="daftar" id="daftarform" action ="<?=site_url('Peserta/createpeserta'); ?>" method="post">
                         <div class="row">
                             <div class ="row-lg-12">
                                 <div class ="form-group">
-                                    <input type ="text" class ="form-control" placeholder="Nama" id="nama" name="nama" required data-validation-required-message="silakan masukan nama Anda">
+                                    <input type ="text" class ="form-control" placeholder="Nama"  name="nama" required data-validation-required-message="silakan masukan nama Anda">
                                     <p class ="help-block text-danger"></p>
                                 </div>
                                 <div class ="form-group">
@@ -471,7 +471,7 @@
                             </div>    
                         </div>
                         <div class="row">
-                            <div class"col-md-6">
+                            <div class="col-md-6">
                                 <h3>Daerah yang Dipilih</h3>
                                 <div class ="form-group">
                                     <input type="radio" id="region" name="chk" value="wakatobi" checked>Wakatobi <br/>
@@ -498,11 +498,11 @@
                             <div class="form-group col-md-6">   
                                 <h3>Bidang Seni</h3>
                                 <select id="jenis_seni" name="jenis_seni">
-                                    <option name='Seni Tari', value='senitari'>Seni Tari</option>
-                                    <option name='Seni Musik', value='senimusik'>Seni Musik</option>
-                                    <option name='Seni Teater', value='seniteater'>Seni Teater</option>
-                                    <option name='Seni Rupa (Kerajinan Kerang)', value='senirupakerajinankerang'>Seni Rupa (Kerajinan Kerang)</option>
-                                    <option name='Seni Media', value='senimedia'>Seni Media</option>
+                                    <option name="Seni Tari", value="senitari">Seni Tari</option>
+                                    <option name="Seni Musik", value="senimusik">Seni Musik</option>
+                                    <option name="Seni Teater", value="seniteater">Seni Teater</option>
+                                    <option name="Seni Rupa (Kerajinan Kerang)", value="senirupakerajinankerang">Seni Rupa (Kerajinan Kerang)</option>
+                                    <option name="Seni Media", value="senimedia">Seni Media</option>
                                 </select>
                             </div>
                         </div>
