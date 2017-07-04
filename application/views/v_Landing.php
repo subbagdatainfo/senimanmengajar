@@ -293,13 +293,15 @@
                         <!-- <p class="text-muted">Lead Designer</p> -->
                         <p align="left">
                             <br>a.  Warga Negara Indonesia<br>
-                            b.  Usia 30 – 50 tahun<br>
+                            b.  Usia 30 – 60 tahun<br>
                             c.  Non PNS<br>
                             d.  Profesional dan berdedikasi tinggi terhadap seni<br>
                             e.  Memiliki pengalaman minimal 5 tahun dalam berkesenian<br>
                             f.  Mampu beradaptasi dengan lingkungan di lokasi tempat mengajar<br>
                             g.  Dapat berkomunikasi dengan baik dan aktif<br>
                             h.  Sehat jasmani dan rohani<br>
+                            i.  menguasai management seni, pengemasan seni dan penggalian kesenian lokal.<br>
+                            j.  Belum pernah mengikuti kegiatan Seniman Mengajar
                         </p>  
                     </div>
                 </div>
@@ -310,8 +312,8 @@
                             <br>a.  mendapatkan insentif<br> 
                             b.  sertifikat<br>
                             c.  sarana pendukung/ keperluan belajar<br> 
-                            d.  akomodasi (tinggal bersama masyarakat setempat dan makan)<br>
-                            e.  transportasi dari daerah asal ke lokasi kegiatan<br>
+                            d.  akomodasi (tinggal bersama masyarakat setempat) dan konsumsi<br>
+                            e.  transportasi dari daerah asal ke lokasi kegiatan dan transportasi di lokasi kegiatan<br>
                         </p>                        
                     </div>
                 </div>
@@ -321,15 +323,14 @@
                         <p align="left">
                             <br>a.  membuat rancangan bahan ajar<br>
                             b.  membuat materi ajar<br>
-                            c.  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2.)<br>
+                            c.  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2 pada Juknis.)<br>
                             d.  mempresentasikan materi ajar<br>
-                            e.  berkoordinasi dengan pihak Dinas Kebudayaan<br>
-                            f.  melaksanakan aturan yang berlaku sesuai juknis<br>
-                            g.  menandatangani kontrak kerja<br>
-                            h.  wajib mengikuti proses kegiatan dari awal sampai akhir<br>
-                            i.  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi<br>
-                            j.  menyusun laporan teknis dan administrasi kegiatan<br>
-                            k.  seniman mengajar per kelas antara 10-30 orang
+                            e.  berkoordinasi dengan Dinas Kebudayaan/Instansi terkait<br>
+                            f.  menandatangani kontrak kerja sama<br>
+                            g.  wajib melaksanakan proses kegiatan dari awal sampai akhir<br>
+                            h.  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi<br>
+                            i.  menyusun laporan teknis dan administrasi kegiatan<br>
+                            j.  seniman mengajar per kelas antara 10-30 orang
                         </p>   
                     </div>
                 </div>
@@ -337,10 +338,11 @@
                     <div class="team-member">
                         <h4>Berkas Kelengkapan</h4>
                         <p align="left">
-                            1.  Mengirimkan daftar riwayat hidup <br>
+                            1.  Mengisi daftar riwayat hidup <br>
                             2.  Surat keterangan sehat dari dokter<br>
-                            3.  Foto diri seluruh badan terbaru ukuran 4R<br>
+                            3.  Foto diri <br>
                             4.  Foto karya atau video karya<br>
+                            5.  Motivation Letter (max : 300 kata)
                         </p>
                     </div>
                 </div>
@@ -369,7 +371,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pendaftaran</h4>
-                                    <h4 class="subheading">4 Juli 2017- 12 Juli 2017</h4>
+                                    <h4 class="subheading">5 Juli 2017- 20 Juli 2017</h4>
                                 </div>
                             </div>
                         </li>
@@ -381,7 +383,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pengumuman Hasil Seleksi</h4>
-                                    <h4 class="subheading">20 Juli 2017</h4>
+                                    <h4 class="subheading">27 Juli 2017</h4>
                                 </div>
                                
                             </div>
@@ -393,7 +395,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Daftar Ulang</h4>
-                                    <h4 class="subheading">21 Juli 2017 - 25 Juli 2017</h4>
+                                    <h4 class="subheading">27 Juli 2017 - 29 Juli 2017</h4>
                                 </div>
                             </div>
                         </li>
@@ -404,7 +406,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pembekalan</h4>
-                                    <h4 class="subheading">27 Juli 2017 - 31 Juli 2017</h4>
+                                    <h4 class="subheading">1 Agustus 2017 - 3 Agustus 2017</h4>
                                 </div>
                                 
                             </div>
@@ -416,7 +418,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pelaksanaan Kegiatan</h4>
-                                    <h4 class="subheading">31 Juli -3 September 2017</h4>
+                                    <h4 class="subheading">4 Agustus -7 September 2017</h4>
                                 </div>
                                 
                             </div>
@@ -605,12 +607,12 @@
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
                                 <h2>Kabupaten Bulungan, Kalimantan Utara</h2>
-                                <p align="justify">Rekomendasi dari BP2DK pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bulungan, Kalimantan Utara di Desa Gunung Putih, Kecamatan Tanjung Palas. Jarak tempuh alternative dari kecamatan tanjung palas menuju desa gunung putih dilakukan dengan menyeberangi sungai kayan menggunakan speedbooth, bila menggunakan kendaraan roda 4 dengan jarak tempuh 15 km. Jarak antar kecamatan cukup jauh jadi tidak memungkinkan kegiatan berada di beberapa lokasi. Namun, di desa gunung putih tidak ada sanggar tentang kesenian khas dayak, di desa tersebut mayoritas masyarakatnya berasal dari suku Jawa. Rekomendasi dari dinas untuk kegiatan Seniman Mengajar yaitu desa Matau sajau dan purau sajau kecamatan Tanjung palas Timur yang mayoritas penduduk suku dayak. Desa Matau sajau dan Pura sajau terdapat sanggar ataupun komunitas seni, terdapat 2 jenis cabang seni yang berkembang yaitu seni musik dan seni tari yaitu seni tari  1). Temengang Madang (burung Enggang) 2). Pemung Tawai (satu hati) 3). Tarian Perang. Seni Musik yaitu Kulintangan.
+                                <p align="justify">Rekomendasi dari BP2DK pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bulungan, Kalimantan Utara di Desa Gunung Putih, Kecamatan Tanjung Palas. Jarak tempuh alternative dari kecamatan tanjung palas menuju desa gunung putih dilakukan dengan menyeberangi sungai kayan menggunakan speedbooth, bila menggunakan kendaraan roda 4 dengan jarak tempuh 15 km. Jarak antar kecamatan cukup jauh jadi tidak memungkinkan kegiatan berada di beberapa lokasi. Namun, di desa gunung putih tidak ada sanggar tentang kesenian khas dayak, di desa tersebut mayoritas masyarakatnya berasal dari suku Jawa. Rekomendasi dari dinas untuk kegiatan Seniman Mengajar yaitu desa Matau sajau dan purau sajau kecamatan Tanjung palas Timur yang mayoritas penduduk suku dayak kenyah. Desa Matau sajau dan Pura sajau terdapat sanggar ataupun komunitas seni, terdapat 2 jenis cabang seni yang berkembang yaitu seni musik dan seni tari yaitu seni tari  1). Temengang Madang (burung Enggang) 2). Pemung Tawai (satu hati) 3). Tarian Perang. Seni Musik yaitu Kulintangan.
                                 Penggiat seni bukan dijadikan sebagai mata pencaharian pokok. Pelatihan seni dilakukan dari anak2 kecil hingga dewasa, pelatihan di lakukan secara rutin setiap minggu. 
                                 Mata pencaharian masyarakat sebagian besar bertumpu pada sektor pertanian, perkebunan, dan peternakan. Jenis seni yang berkembang di desa ini adalah seni musik dan tari.
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Bulungan, Kalimantan Barat</strong>
+                                    <strong>Membutuhkan seniman yang ahli di bidang managemen seni pertunjukan dan pengemasan seni pertunjukan</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Tari (3 orang)</li>
@@ -619,7 +621,7 @@
                                 
                                     
                                 
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>rencana lokasi pembelajaran</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/bulungan1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/bulungan2.jpg" class = "image-responsive"></li>
@@ -650,19 +652,19 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Kabupaten Bengkulu Tengah, Bengkulu</h2>
                                 <p align="justify">
-                                    Pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bengkulu Tengah, Bengkulu akan dipusatkan di Desa Panca Mukti, Kecamatan Pondok Kelapa. Desa Pancamukti merupakan suatu desa pemekaran dan mayoritas masyarakatnya transmigrasi berasal dari suku Jawa, Padang, Batak, dari Kabupaten ke desa Pancamukti memakan waktu sekitar 1 jam. Mata pencaharian masyarakat desa ini bertumpu pada pertanian, perkebunan dan kerajinan tangan. Jenis seni tradisional yang berkembang di daerah tersebut di antaranya adalah seni musik (hadro, rebana), seni tari (kuda kepang), seni ukir (kursi bambu) dan ciri khas makanannya tempoyak dan dodol tape.
+                                    Pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bengkulu Tengah, Bengkulu akan dipusatkan di Desa Panca Mukti, Kecamatan Pondok Kelapa. Desa Pancamukti merupakan suatu desa pemekaran dan mayoritas masyarakatnya transmigrasi berasal dari suku Jawa, Padang, Batak, dari Kabupaten ke desa Pancamukti memakan waktu sekitar 1 jam. Mata pencaharian masyarakat desa ini bertumpu pada pertanian, perkebunan dan kerajinan tangan.
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Bengkulu Tengah, Bengkulu</strong>
+                                    <strong>Membutuhkan seniman yang ahli di bidang management seni pertunjukan dan pengemasan seni pertunjukan dan yang mampu menggali kesenian kearifan lokal daerah Bengkulu </strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Tari</li>
                                     <li>2. Seni Musik</li>
                                     <li>3. Seni Teater</li>
-                                    <li>4. Seni Rupa</li>
-                                    <li>5. Seni Media</li>
+                                    <li>4. Seni Rupa (Kerajinan Bambu)</li>
+                                    <li>5. Seni Media (Fotografi dan videografi)</li>
                                 </ul>
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>rencana lokasi pembelajaran</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/bengkulutengah1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/bengkulutengah2.jpg" class = "image-responsive"></li>
@@ -693,19 +695,19 @@
                                 <!-- Project Details Go Here -->
                                 <h2>Kabupaten wakatobi, Sulawesi Tenggara</h2>
                                 <p align="justify">
-                                    Wakatobi terletak di kepulauan jazirah Tenggara Pulau Sulawesi tepatnya di sebelah Tenggara Pulau Buton. Untuk mencapai kabupaten Wakatobi harus menempuh perjalanan dari Makassar-Kendari-Wakatobi dengan pesawat kecil. Jarak dari Bandara Wakatobi ke lokasi kegiatan berjarak 25 kilometer dengan waktu tempuh 25—30 menit. Mata pencaharian masyarakat Kabupaten Wakatobi sebagian besar adalah nelayan. Jenis seni yang berkembang di masyarakat Wakatobi kebanyakan adalah seni tari. Untuk cabang seni lainnya, lebih kecil perkembangannya dibanding seni tari. Untuk seni teater, di sana hanya terdapat satu sanggar yang benar-benar fokus pada teater sedangkan ada satu sanggar lainnya yang terdapat bidang seni teater tetapi digabungkan dengan bidang seni lainnya. Seni musik, seni rupa, dan seni media kurang mendapatkan tempat di sana karena kearifan lokal masyarakat yang mendominasi adalah seni tari.
+                                    Wakatobi terletak di kepulauan jazirah Tenggara Pulau Sulawesi tepatnya di sebelah Tenggara Pulau Buton. Untuk mencapai kabupaten Wakatobi harus menempuh perjalanan dari Makassar-Kendari-Wakatobi dengan pesawat kecil. Jarak dari Bandara Wakatobi ke lokasi kegiatan berjarak 25 kilometer dengan waktu tempuh 25—30 menit. Mata pencaharian masyarakat Kabupaten Wakatobi sebagian besar adalah nelayan. Jenis seni yang berkembang di masyarakat Wakatobi kebanyakan adalah seni tari. Untuk cabang seni lainnya, lebih kecil perkembangannya dibanding seni tari. Untuk seni teater, di sana hanya terdapat satu sanggar yang benar-benar fokus pada teater sedangkan ada satu sanggar lainnya yang terdapat bidang seni teater tetapi digabungkan dengan bidang seni lainnya. Seni musik, seni rupa, dan seni media kurang mendapatkan tempat di sana karena kearifan lokal masyarakat yang mendominasi adalah seni tari. Kegiatan ini dilaksanakan di pulau Wangi-wangi, kecamatan Wangi-Wangi dan kecamatan Wangi-Wangi Selatan.
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Wakatobi, Sulawesi Tenggara</strong>
+                                    <strong>membutuhkan seniman yang ahli di bidang management seni, pengemasan seni dan penggalian kesenian lokal</strong>
                                 </p>
                                 <ul class="list-inline">
-                                    <li>1. Seni Rupa (Kerajinan Kerang)</li>
+                                    <li>1. Seni Rupa (Kerajinan yang memanfaatkan bahan baku lokal)</li>
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>5. Seni Media</li>
+                                    <li>5. Seni Media (Fotografi dan Videografi)</li>
                                 </ul>
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>Rencana Lokasi Pembelajaran</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/wakatobi1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/wakatobi2.jpg" class = "image-responsive"></li>
@@ -741,14 +743,14 @@
                                     Dari beberapa sanggar yang dikunjungi di Lombok Tengah, rata-rata komunitas yang aktif mulai dari usia sekolah, usia dewasa bahkan diantara pemain musik Cilokaq dan kesenian Jaran Kamput rata-rata berusia 40 tahun ke atas. Kondisi ini dibarengi respon aktif masyarakat terhadap kegiatan seni menjadikan seni tradisional masih berkembang walaupun memiliki keterbatasan alat untuk mendukung aktivitas di sanggarnya, disamping harus menghadapi gempuran seni modern    
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Mandalika, Nusa Tenggara Barat</strong>
+                                    <strong>membutuhkan seniman yang ahli di bidang management seni, pengemasan seni dan penggalian kesenian lokal </strong>
                                 </p>
                                 <ul class="list-inline">
-                                    <li>1. Seni Rupa (Kriya Kayu)</li>
+                                    <li>1. Seni Rupa (Ukir Kayu)</li>
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>5. Seni Media</li>
+                                    <li>5. Seni Media (Fotografi dan Videografi)</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
@@ -782,10 +784,9 @@
                                 <h2>Pulau Morotai, Maluku Utara</h2>
                                 <p align="justify">
                                     Pelaksanaan kegiatan Seniman Mengajar di Kabupaten Pulau Morotai akan dipusatkan di kota Morotai Selatan yang terletak di ujung utara Kabupaten Halmahera Utara dan merupakan bagian dari Provinsi Maluku Utara. Untuk menuju ke Pulau Morotai dapat ditempuh dengan sarana transportasi laut ke Kota Daruba ataupun pesawat dari Ternate ditempuh dalam waktu 1 jam perjalanan dan dari bandara menuju lokasi memerlukan waktu 20 menit menggunakan jalur darat. Cuaca di daerah ini panas, hasil rempah yang terkenal yaitu cengkeh, pala dan kopra. Selain itu, hasil perikanannya juga cukup melimpah. Mata pencaharian masyarakat sebagian besar menjadi petani dan nelayan.
-                                    Berdasarkan hasil wawancara dengan Kepala Adat di kota Morotai Selatan, tidak ada penduduk asli dari Morotai, hal ini mempengaruhi kesenian yang ada berbeda gaya di setiap daerahnya sebagai salah satu contohnya Tari Tide-tide dan Cakalele. Jenis kesenian yang berkembang di masyarakat Kabupaten Pulau Morotai adalah seni tari, seni musik, untuk kegiatan Seniman Mengajar tahap II masyarakat menginginkan adanya seni rupa (kerajinan tangan) dan seni media (fotografi). 
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Pulau Morotai, Maluku Utara</strong>
+                                    <strong>Seniman yang dibutuhkan untuk daerah Morotai, Maluku Utara adalah di bidang : </strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kerajinan dan lukis)</li>
@@ -794,7 +795,7 @@
                                     <li>4. Seni Musik (Vokal)</li>
                                     <li>5. Seni Media</li>
                                 </ul>
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>Gambaran Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/morotai1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/morotai2.jpg" class = "image-responsive"></li>
@@ -829,19 +830,20 @@
                                     Pantai Tanjung Lesung terletak di Desa Tanjung Jaya, Kecamatan Panimbang, Kabupaten Pandeglang, Provinsi Banten. Posisinya terletak di sebelah barat kabupaten Pandeglang dan mempunyai luas sekitar 150 hektoare. Jarak yang anda tempuh dari Jakarta menuju Tanjung Lesung sekitar 160 kilometer dengan waktu tempuh 3 (tiga) jam perjalanan menggunakan kendaraan pribadi. Mata Pencaharian penduduknya sebagian besar adalah nelayan. Kondisi daerah di sana sangat memprihatinkan, baik dari segi seninya maupun dari segi lokasinya. Banyak kesenian khas yang terdapat di kawasan tersebut, beberapa diantaranya Teater Ubruk, Rampak Beduk, Kendang hatong, Mapag Tamu, dan Kendang Lesung, tetapi tidak berkembang dengan baik. Sanggar-sanggar di sana juga masih sangat perlu sentuhan kreatifitas untuk mengembangkan diri agar dapat kesempatan untuk tampil lebih baik lagi.    
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Tanjung Lesung, Banten</strong>
+                                    <strong>Seniman yang dibutuhkan untuk daerah Morotai, Maluku Utara adalah di bidang :</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kriya Tekstil)</li>
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater (Ubrug)</li>
-                                    <li>4. Seni Musik (Vokal)</li>
-                                    <li>5. Seni Media</li>
+                                    <li>4. Seni Musik</li>
+                                    <li>5. Seni Media (videografi)</li>
                                 </ul>
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>Rencana lokasi pembelajaran</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/pandeglang1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/pandeglang2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/pandeglang3.jpg" class = "image-responsive"></li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>
@@ -879,19 +881,20 @@
                                     Untuk bidang seni rupa akan dilaksanakan di Bakkara. Di Bakkara terdapat KOMUNITAS yang mengerjakan seni terapan seperti ukir dan pahat
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Danau Toba, Sumatera Utara</strong>
+                                    <strong>Seniman yang dibutuhkan untuk daerah Morotai, Maluku Utara adalah di bidang :</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kriya Tanah liat dan Kayu)</li>
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
-                                    <li>4. Seni Musik (Vokal)</li>
-                                    <li>5. Seni Media</li>
+                                    <li>4. Seni Musik (tradisi)</li>
+                                    <li>5. Seni Media (Fotografi dan Videografi)</li>
                                 </ul>
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>Gambaran Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/danautoba1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/danautoba2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/danautoba3.jpg" class = "image-responsive"></li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>
@@ -920,7 +923,7 @@
                     </div> -->
                     <div class="col-md-6">
                         <ul class="list-inline quicklinks">
-                            <li><a href="http://kebudayaan.kemdikbud.go.id" class=" btn btn-primary">Website Ditjen Kebudayaan</a>
+                            <li><a href="http://kebudayaan.kemdikbud.go.id/ditsejarah" class=" btn btn-primary">Website Ditjen Kebudayaan</a>
                             </li>
                             <li><a href="http://kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
                             </li>
