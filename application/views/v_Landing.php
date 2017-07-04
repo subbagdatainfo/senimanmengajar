@@ -12,7 +12,8 @@
     <title>Seniman Mengajar</title>
 
     <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo HTTP_CSS_PATH;?>bootstrap.css" rel="stylesheet">
+    <!-- <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet"> -->
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
@@ -22,7 +23,7 @@
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
-    <link href="assets/css/agency.css" rel="stylesheet">
+    <link href="<?php echo HTTP_CSS_PATH;?>agency.css" rel="stylesheet">
     <!-- load google maps library -->
     <?php echo $map['js']?>
 
@@ -135,7 +136,7 @@
                     </li>
                     <li>
                         <!--<a class="page-scroll" href="#masuk">Masuk</a>-->
-                        <a href="<?=site_url('C_Peserta/login');?>">Login</a>
+                        <a href="<?=site_url('Peserta/login');?>">Login</a>
                     </li>
                 </ul>
             </div>
@@ -163,7 +164,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tempat Pelaksanaan</h2>
-                    <h3 class="section-subheading">Tempat Pelaksanaan Seniman Mengajar Gelombang 1.</h3>
+                    <h3 class="section-subheading">Tempat Pelaksanaan Seniman Mengajar Gelombang 2.</h3>
                 </div>
             </div>
             <div class ="row text-center">
@@ -280,8 +281,9 @@
             <div class="row-lg-12">
                 <p allign="left">
                     Seniman Mengajar adalah program yang diselenggarakan Direktorat Kesenian, Direktorat Jenderal Kebudayaan, Kementerian Pendidikan dan Kebudayaan, yaitu program seniman mengajar kesenian kepada masyarakat/ komunitas/ sanggar yang berada di daerah dengan predikat 3T yang berada di Indonesia. <br><br>
-                    Program ini pada prinsipnya mendorong para seniman berbagi ilmu dan pengalamannya kepada masyarakat yang berada daerah 3T. Dengan program ini masyarakat di daerah 3T dapat terbuka wawasannya dan dapat menjalin kerjasama dengan para seniman sehingga dapat meningkatkan kualitas ekspresi seni dan penguatan identitas budaya di daerah 3T. Pada akhir masa belajar, para seniman dapat mempresentasikan apa yang telah dikerjakannya di daerah pelaksanaan kegiatan. <br><br>
+                    Program ini pada prinsipnya mendorong para seniman berbagi ilmu dan pengalamannya kepada masyarakat yang berada daerah 3T dan menjunjung kearifan lokal. Dengan program ini masyarakat di daerah 3T dapat terbuka wawasannya dan dapat menjalin kerjasama dengan para seniman sehingga dapat meningkatkan kualitas ekspresi seni dan penguatan identitas budaya di daerah 3T. Pada akhir masa belajar, para seniman dapat mempresentasikan apa yang telah dikerjakannya di daerah pelaksanaan kegiatan. <br><br>
                     Dalam melaksanakan program Seniman Mengajar ditekankan prinsip – prinsip : partisipatif, dialogis, dan transformasi. Format kegiatan residensi seniman dalam kurun waktu yang ditentukan dengan target paket kegiatan selesai. Seniman berbagi ilmu dan keahlian dengan  seniman lokal yang mewakili sanggar/ komunitas.
+
                 </p>
             </div>
             <div class="row">
@@ -354,7 +356,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Timeline</h2>
-                    <h3 class="section-subheading text-muted">Jadwal Pelaksaan Seniman Mengajar Gelombang 1</h3>
+                    <h3 class="section-subheading text-muted">Jadwal Pelaksaan Seniman Mengajar Gelombang 2</h3>
                 </div>
             </div>
             <div class="row">
@@ -367,7 +369,7 @@
                             <div class="timeline-panel">
                                 <div class="timeline-heading">
                                     <h4>Pendaftaran</h4>
-                                    <h4 class="subheading">4 Juli 2017- 14 Juli 2017</h4>
+                                    <h4 class="subheading">4 Juli 2017- 12 Juli 2017</h4>
                                 </div>
                             </div>
                         </li>
@@ -566,7 +568,7 @@
                                 </strong>
                             </p>
                                     <ul>
-                                        <li><span class="glyphicon glyphicon-phone"></span> Afrilia : 0857-24262511</li>
+                                        
                                         <li><span class="glyphicon glyphicon-phone"></span>  Hilda Yulianti: 0857 1140 5934</li>
                                         <li><span class="glyphicon glyphicon-phone"></span>  Hana Nabilah : 0812 9838 6898</li>
                                         
@@ -610,8 +612,8 @@
                                     <strong>Bidang Seni yang dibutuhkan untuk daerah Bulungan, Kalimantan Barat</strong>
                                 </p>
                                 <ul class="list-inline">
-                                    <li>1. Seni Tari</li>
-                                    <li>2. Seni Musik</li>
+                                    <li>1. Seni Tari (3 orang)</li>
+                                    <li>2. Seni Musik (2 orang)</li>
                                 </ul>
                                 
                                     
@@ -657,7 +659,7 @@
                                     <li>2. Seni Musik</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Rupa</li>
-                                    <li>4. Seni Media</li>
+                                    <li>5. Seni Media</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
@@ -700,7 +702,7 @@
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>4. Seni Media</li>
+                                    <li>5. Seni Media</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
@@ -745,12 +747,12 @@
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>4. Seni Media</li>
+                                    <li>5. Seni Media</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
-                                    <li><img src="assets/img/wakatobi1.jpg" class = "image-responsive"></li>
-                                    <li><img src="assets/img/wakatobi2.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/mandalika1.jpg" class = "image-responsive"></li>
+                                    <li><img src="assets/img/mandalika2.jpg" class = "image-responsive"></li>
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>
@@ -789,7 +791,7 @@
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>4. Seni Media</li>
+                                    <li>5. Seni Media</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
@@ -833,7 +835,7 @@
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater (Ubrug)</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>4. Seni Media</li>
+                                    <li>5. Seni Media</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
@@ -864,7 +866,7 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Tanjung Lesung, Banten</h2>
+                                <h2>Danau Toba, Sumatera Utara</h2>
                                 <p align="justify">
                                     Humbang  Hasundutan (Humbahas)  adalah sebuah  kabupaten di Sumatera Utara. Dibentuk pada 28 Juli 2003, kabupaten ini mempunyai luas sebesar 2.335,33 km² dan beribukotakan Dolok Sanggul. Kondisi fisik kabupaten ini berada pada ketinggian 330-2.075 meter dpl. Potensi budaya di Humbahas cukup tinggi dan perlu diagali lebih lanjut.
                                     Untuk bidang seni musik akan dilaksanakan di sanggar MARTABE yang berada di kota Dolok Sanggul. 
@@ -876,14 +878,14 @@
                                     Untuk bidang seni rupa akan dilaksanakan di Bakkara. Di Bakkara terdapat KOMUNITAS yang mengerjakan seni terapan seperti ukir dan pahat
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Danau Toba, Sumatera Utara</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kriya Tanah liat dan Kayu)</li>
                                     <li>2. Seni Tari</li>
-                                    <li>3. Seni Teater (Ubrug)</li>
+                                    <li>3. Seni Teater</li>
                                     <li>4. Seni Musik (Vokal)</li>
-                                    <li>4. Seni Media</li>
+                                    <li>5. Seni Media</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">

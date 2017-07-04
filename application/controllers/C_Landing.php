@@ -1,6 +1,6 @@
 <?php
 
-class c_Landing extends CI_Controller {
+class C_Landing extends CI_Controller {
 	
 	function index() {
 		
