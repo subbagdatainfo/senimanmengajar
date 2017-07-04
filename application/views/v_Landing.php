@@ -652,7 +652,7 @@
                                     Pelaksanaan kegiatan Seniman Mengajar di Kabupaten Bengkulu Tengah, Bengkulu akan dipusatkan di Desa Panca Mukti, Kecamatan Pondok Kelapa. Desa Pancamukti merupakan suatu desa pemekaran dan mayoritas masyarakatnya transmigrasi berasal dari suku Jawa, Padang, Batak, dari Kabupaten ke desa Pancamukti memakan waktu sekitar 1 jam. Mata pencaharian masyarakat desa ini bertumpu pada pertanian, perkebunan dan kerajinan tangan. Jenis seni tradisional yang berkembang di daerah tersebut di antaranya adalah seni musik (hadro, rebana), seni tari (kuda kepang), seni ukir (kursi bambu) dan ciri khas makanannya tempoyak dan dodol tape.
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten bengkulu tengah, Bengkulu</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Bengkulu Tengah, Bengkulu</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Tari</li>
@@ -695,7 +695,7 @@
                                     Wakatobi terletak di kepulauan jazirah Tenggara Pulau Sulawesi tepatnya di sebelah Tenggara Pulau Buton. Untuk mencapai kabupaten Wakatobi harus menempuh perjalanan dari Makassar-Kendari-Wakatobi dengan pesawat kecil. Jarak dari Bandara Wakatobi ke lokasi kegiatan berjarak 25 kilometer dengan waktu tempuh 25—30 menit. Mata pencaharian masyarakat Kabupaten Wakatobi sebagian besar adalah nelayan. Jenis seni yang berkembang di masyarakat Wakatobi kebanyakan adalah seni tari. Untuk cabang seni lainnya, lebih kecil perkembangannya dibanding seni tari. Untuk seni teater, di sana hanya terdapat satu sanggar yang benar-benar fokus pada teater sedangkan ada satu sanggar lainnya yang terdapat bidang seni teater tetapi digabungkan dengan bidang seni lainnya. Seni musik, seni rupa, dan seni media kurang mendapatkan tempat di sana karena kearifan lokal masyarakat yang mendominasi adalah seni tari.
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Wakatobi, Sulawesi Tenggara</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kerajinan Kerang)</li>
@@ -740,7 +740,7 @@
                                     Dari beberapa sanggar yang dikunjungi di Lombok Tengah, rata-rata komunitas yang aktif mulai dari usia sekolah, usia dewasa bahkan diantara pemain musik Cilokaq dan kesenian Jaran Kamput rata-rata berusia 40 tahun ke atas. Kondisi ini dibarengi respon aktif masyarakat terhadap kegiatan seni menjadikan seni tradisional masih berkembang walaupun memiliki keterbatasan alat untuk mendukung aktivitas di sanggarnya, disamping harus menghadapi gempuran seni modern    
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Mandalika, Nusa Tenggara Barat</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kriya Kayu)</li>
@@ -784,7 +784,7 @@
                                     Berdasarkan hasil wawancara dengan Kepala Adat di kota Morotai Selatan, tidak ada penduduk asli dari Morotai, hal ini mempengaruhi kesenian yang ada berbeda gaya di setiap daerahnya sebagai salah satu contohnya Tari Tide-tide dan Cakalele. Jenis kesenian yang berkembang di masyarakat Kabupaten Pulau Morotai adalah seni tari, seni musik, untuk kegiatan Seniman Mengajar tahap II masyarakat menginginkan adanya seni rupa (kerajinan tangan) dan seni media (fotografi). 
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten Pulau Morotai, Maluku Utara</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kerajinan dan lukis)</li>
@@ -828,7 +828,7 @@
                                     Pantai Tanjung Lesung terletak di Desa Tanjung Jaya, Kecamatan Panimbang, Kabupaten Pandeglang, Provinsi Banten. Posisinya terletak di sebelah barat kabupaten Pandeglang dan mempunyai luas sekitar 150 hektoare. Jarak yang anda tempuh dari Jakarta menuju Tanjung Lesung sekitar 160 kilometer dengan waktu tempuh 3 (tiga) jam perjalanan menggunakan kendaraan pribadi. Mata Pencaharian penduduknya sebagian besar adalah nelayan. Kondisi daerah di sana sangat memprihatinkan, baik dari segi seninya maupun dari segi lokasinya. Banyak kesenian khas yang terdapat di kawasan tersebut, beberapa diantaranya Teater Ubruk, Rampak Beduk, Kendang hatong, Mapag Tamu, dan Kendang Lesung, tetapi tidak berkembang dengan baik. Sanggar-sanggar di sana juga masih sangat perlu sentuhan kreatifitas untuk mengembangkan diri agar dapat kesempatan untuk tampil lebih baik lagi.    
                                 </p>
                                 <p>
-                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Kabupaten wakatobi, Sulawesi Tenggara</strong>
+                                    <strong>Bidang Seni yang dibutuhkan untuk daerah Tanjung Lesung, Banten</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kriya Tekstil)</li>
