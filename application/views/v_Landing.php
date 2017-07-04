@@ -440,9 +440,9 @@
             <div class="row">
                 <div style="text-align:left; color:red; font-size: 0.875em;"><?php echo validation_errors(); ?> </div>
                         <?php if($this->session->flashdata('status')=="success"){ ?>
-                <p><h3><span class="label label-success"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
+                <p><h3><?php echo $this->session->flashdata('message'); ?></h3></p>
                 <?php }elseif ($this->session->flashdata('status')=='danger') {?>
-                    <p><h3><span class="label label-danger"><?php echo $this->session->flashdata('message'); ?></span></h3></p>
+                    <p><h3><?php echo $this->session->flashdata('message'); ?></h3></p>
                 <?php } ?>
             </div>
             <div class="row">
@@ -574,7 +574,7 @@
                                         <li><span class="glyphicon glyphicon-phone"></span>  Angga : 0856 4793 3110</li>
                                         
                                         <li><span class="glyphicon glyphicon-phone"></span> Kantor : 021-5725518</li>
-                                        <li><span class="glyphicon glyphicon-envelope"></span> Email : pembinaantenaga.kesenian@gmail.com</li>
+                                        <li><span class="glyphicon glyphicon-envelope"></span> Email : senimanmengajar.kemdikbud@gmail.com</li>
                                     </ul>      
                            
                         </div>

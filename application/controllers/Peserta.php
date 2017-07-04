@@ -47,7 +47,10 @@
         	));
         	$this->form_validation->set_rules('password', 'Password', 'required');
         	if ($this->form_validation->run() == FALSE) {
-        		$this->landing();
+        		$message1=$this->session->set_flashdata('message',validation_errors());
+				$message2=$this->session->set_flashdata('status', 'danger');
+        		// $this->landing();
+        		redirect(base_url().'#daftar','refresh');
 				
         	} else {
         		$data = array();
