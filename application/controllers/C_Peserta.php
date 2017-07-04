@@ -4,29 +4,29 @@
 			parent::__construct();
 		}
 		public function createpeserta(){
-			$this->form_validation->set_rules('nama', 'Nama', 'required|alpha',array(
-                'required'      => 'Nama harus diisi.',
-                'alpha'	=>'Format Nama tidak sesuai, hanya boleh menggunakan huruf'
+			// $this->form_validation->set_rules('nama', 'Nama', 'required|alpha',array(
+   //              'required'      => 'Nama harus diisi.',
+   //              'alpha'	=>'Format Nama tidak sesuai, hanya boleh menggunakan huruf'
                 
-        	));
-        	$this->form_validation->set_rules('email', 'Email', 'required|valid_email',array(
-                'required'      => 'Email harus diisi.',
-                'valid_email'	=>'Format email tidak sesuai'
+   //      	));
+   //      	$this->form_validation->set_rules('email', 'Email', 'required|valid_email',array(
+   //              'required'      => 'Email harus diisi.',
+   //              'valid_email'	=>'Format email tidak sesuai'
                 
-        	));
-        	$this->form_validation->set_rules('no_telpon', 'Nomor Telpon', 'required|is_natural',array(
-                'required'      => 'Nomor Telpon harus diisi.',
-                'is_natural'	=>'Format no telpon tidak sesuai, hanya boleh menggunakan angka'
+   //      	));
+   //      	$this->form_validation->set_rules('no_telpon', 'Nomor Telpon', 'required|is_natural',array(
+   //              'required'      => 'Nomor Telpon harus diisi.',
+   //              'is_natural'	=>'Format no telpon tidak sesuai, hanya boleh menggunakan angka'
                 
-        	));
-        	$this->form_validation->set_rules('username', 'Username', 'required|alpha_numeric',array(
-                'required'      => 'Nomor Telpon harus diisi.',
-                'alpha_numeric'	=>'Format username tidak sesuai, hanya boleh menggunakan huruf dan angka'
+   //      	));
+   //      	$this->form_validation->set_rules('username', 'Username', 'required|alpha_numeric',array(
+   //              'required'      => 'Nomor Telpon harus diisi.',
+   //              'alpha_numeric'	=>'Format username tidak sesuai, hanya boleh menggunakan huruf dan angka'
                 
-        	));
-        	if ($this->form_validation->run() == FALSE) {
-        		redirect(base_url().'#daftar','refresh');
-        	} else {
+   //      	));
+   //      	if ($this->form_validation->run() == FALSE) {
+   //      		redirect(base_url().'#daftar','refresh');
+   //      	} else {
         		$data = array();
 				$data['nama_seniman'] = $this->input->post('nama');
 				$data['username'] = $this->input->post('username');
@@ -48,7 +48,7 @@
 				}
 				//redirect to landing page with a message
 				redirect(base_url().'#daftar','refresh');
-        	}
+        	//}
         	
 			// $data = array();
 			// $data['nama_seniman'] = $this->input->post('nama');
