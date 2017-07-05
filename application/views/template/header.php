@@ -24,7 +24,20 @@
 
     <!-- Theme CSS -->
     <link href="<?php echo HTTP_CSS_PATH;?>agency.css" rel="stylesheet">
+    <link href="<?php echo HTTP_CSS_PATH;?>sb-admin-2.css" rel="stylesheet">
+    <!-- load google maps library -->
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js" integrity="sha384-0s5Pv64cNZJieYFkXYOTId2HMA2Lfb6q2nAcx2n0RTLUnCAoTTsS0nKEO27XyKcY" crossorigin="anonymous"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js" integrity="sha384-ZoaMbDF+4LeFxg6WdScQ9nnR1QC2MIRxA1O9KWEXQwns1G8UNyIEZIQidzb0T1fo" crossorigin="anonymous"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    
 </head>
+<body>
 <!-- Navigation -->
     <nav id="mainNav" class="navbar navbar-inverse navbar-fixed-top">
         <div class="container">
@@ -59,7 +72,7 @@
                     </li>
                     <li>
                         <!--<a class="page-scroll" href="#masuk">Masuk</a>-->
-                        <a href="<?=site_url('C_Peserta/login');?>">Login</a>
+                        <a href="<?=site_url('Peserta/login');?>">Login</a>
                     </li>
                 </ul>
             </div>

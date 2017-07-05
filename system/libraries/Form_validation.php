@@ -1591,4 +1591,12 @@ class CI_Form_validation {
 		return $this;
 	}
 
+	public function myAlpha($string) 
+    {
+        if ( !preg_match('/^[a-z ]+$/i',$string) )
+        {
+            return false;
+        }
+    }
+
 }

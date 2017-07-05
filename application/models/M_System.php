@@ -4,8 +4,8 @@
 			$table = 'peserta';
 			parent::__construct();
 		} 
-		public function auth_peserta($username,$password){
-			$data = $this->db->query("SELECT email FROM peserta WHERE username='$username' and password='$password'");
+		public function auth_peserta($email,$password){
+			$data = $this->db->query("SELECT email FROM peserta WHERE email='$email' and password='$password'");
 			// foreach ($auth->result() as $row)
 			// 	{
 			// 	        echo $this->encrypt->decode($row->password)."<br>";

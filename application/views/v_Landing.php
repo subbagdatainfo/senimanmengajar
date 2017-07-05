@@ -287,62 +287,70 @@
                 </p>
             </div>
             <div class="row">
-                <div class="col-md-3">
-                    <div class="team-member">
-                        <h4>Syarat Pendaftar</h4>
+                <div class="col-lg-3">
+                    <div class="team-member" style="text-align:left;">
+                        <h4 style="text-align:center;">Syarat Pendaftar</h4>
                         <!-- <p class="text-muted">Lead Designer</p> -->
-                        <p align="left">
-                            <br>a.  Warga Negara Indonesia<br>
-                            b.  Usia 30 – 60 tahun<br>
-                            c.  Non PNS<br>
-                            d.  Profesional dan berdedikasi tinggi terhadap seni<br>
-                            e.  Memiliki pengalaman minimal 5 tahun dalam berkesenian<br>
-                            f.  Mampu beradaptasi dengan lingkungan di lokasi tempat mengajar<br>
-                            g.  Dapat berkomunikasi dengan baik dan aktif<br>
-                            h.  Sehat jasmani dan rohani<br>
-                            i.  menguasai management seni, pengemasan seni dan penggalian kesenian lokal.<br>
-                            j.  Belum pernah mengikuti kegiatan Seniman Mengajar
-                        </p>  
+                       
+                            <ul>
+                                <li>  Warga Negara Indonesia</li>
+                                <li>  Usia 30 – 60 tahun</li>
+                                <li>  Non PNS</li>
+                                <li>  Profesional dan berdedikasi tinggi terhadap seni</li>
+                                <li>  Memiliki pengalaman minimal 5 tahun dalam berkesenian</li>
+                                <li>  Mampu beradaptasi dengan lingkungan di lokasi tempat mengajar</li>
+                                <li>  Dapat berkomunikasi dengan baik dan aktif</li>
+                                <li>  Sehat jasmani dan rohani</li>
+                                <li>  menguasai management seni, pengemasan seni dan penggalian kesenian lokal.</li>
+                                <li>  Belum pernah mengikuti kegiatan Seniman Mengajar</li>
+                            </ul>
+                          
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="team-member">
-                        <h4>Hak Seniman</h4>
+                <div class="col-lg-3">
+                    <div class="team-member" style="text-align:left;">
+                        <h4 style="text-align:center;">Hak Seniman</h4>
                         <p align="left">
-                            <br>a.  mendapatkan insentif<br> 
-                            b.  sertifikat<br>
-                            c.  sarana pendukung/ keperluan belajar<br> 
-                            d.  akomodasi (tinggal bersama masyarakat setempat) dan konsumsi<br>
-                            e.  transportasi dari daerah asal ke lokasi kegiatan dan transportasi di lokasi kegiatan<br>
+                            <ul>    
+                                <li>  mendapatkan insentif</li> 
+                                <li>  sertifikat</li>
+                                <li>  sarana pendukung/ keperluan belajar</li> 
+                                <li>  akomodasi (tinggal bersama masyarakat setempat) dan konsumsi</li>
+                                <li>  transportasi dari daerah asal ke lokasi kegiatan dan transportasi di lokasi kegiatan</li>
+                            </ul>
                         </p>                        
                     </div>
                 </div>
-                <div class="col-md-3">
-                    <div class="team-member">
-                        <h4>Kewajiban Seniman</h4>
+                <div class="col-lg-3">
+                    <div class="team-member" style="text-align:left;">
+                        <h4 style="text-align:center;">Kewajiban Seniman</h4>
                         <p align="left">
-                            <br>a.  membuat rancangan bahan ajar<br>
-                            b.  membuat materi ajar<br>
-                            c.  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2 pada Juknis.)<br>
-                            d.  mempresentasikan materi ajar<br>
-                            e.  berkoordinasi dengan Dinas Kebudayaan/Instansi terkait<br>
-                            f.  menandatangani kontrak kerja sama<br>
-                            g.  wajib melaksanakan proses kegiatan dari awal sampai akhir<br>
-                            h.  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi<br>
-                            i.  menyusun laporan teknis dan administrasi kegiatan<br>
-                            j.  seniman mengajar per kelas antara 10-30 orang
+                            <ul>
+                                <li>  membuat rancangan bahan ajar</li>
+                                <li>  membuat materi ajar</li>
+                                <li>  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2 pada Juknis.)</li>
+                                <li>  mempresentasikan materi ajar</li>
+                                <li>  berkoordinasi dengan Dinas Kebudayaan/Instansi terkait</li>
+                                <li>  menandatangani kontrak kerja sama</li>
+                                <li>  wajib melaksanakan proses kegiatan dari awal sampai akhir</li>
+                                <li>  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi</li>
+                                <li>  menyusun laporan teknis dan administrasi kegiatan</li>
+                                <li>  seniman mengajar per kelas antara 10-30 orang</li>
+                            </ul>  
                         </p>   
                     </div>
                 </div>
-                <div class="col-md3">
-                    <div class="team-member">
-                        <h4>Berkas Kelengkapan</h4>
+                <div class="col-lg-3">
+                    <div class="team-member" style="text-align:left;">
+                        <h4 style="text-align:center;">Berkas Kelengkapan</h4>
                         <p align="left">
-                            1.  Mengisi daftar riwayat hidup <br>
-                            2.  Surat keterangan sehat dari dokter<br>
-                            3.  Foto diri <br>
-                            4.  Foto karya atau video karya<br>
-                            5.  Motivation Letter (max : 300 kata)
+                            <ul>
+                                <li>  Mengisi daftar riwayat hidup </li>
+                                <li>  Surat keterangan sehat dari dokter</li>
+                                <li>  Foto diri </li>
+                                <li>  Foto karya atau video karya</li>
+                                <li>  Motivation Letter (max : 300 kata)</li>
+                            </ul>
                         </p>
                     </div>
                 </div>
@@ -453,29 +461,48 @@
                         <div class="row">
                             <div class ="row-lg-12">
                                 <div class ="form-group">
-                                    <input type ="text" class ="form-control" placeholder="Nama"  name="nama" required data-validation-required-message="silakan masukan nama Anda">
+                                    <input type ="text" class ="form-control" placeholder="Nama"  name="nama" >
                                     <p class ="help-block text-danger"></p>
                                 </div>
                                 <div class ="form-group">
-                                    <input type ="text" class ="form-control" placeholder="Username" id="username" name="username" required data-validation-required-message="silakan masukan username Anda">
+                                    <input type ="text" class ="form-control" placeholder="Tempat tanggal lahir"  name="ttl" >
                                     <p class ="help-block text-danger"></p>
                                 </div>
                                 <div class ="form-group">
-                                    <input type ="password" class ="form-control" placeholder="Password" id="password" name="password" required data-validation-required-message="silakan masukan password Anda">
+                                    <input type ="text" class ="form-control" placeholder="alamat"  name="alamat" >
                                     <p class ="help-block text-danger"></p>
                                 </div>
                                 <div class ="form-group">
-                                    <input type ="tel" class ="form-control" placeholder="Nomor Telepon/Handphone" id="no_telpon" name ="no_telpon" required data-validation-required-message="silakan masukan nomor kontak Anda">
+                                    <input type ="text" class ="form-control" placeholder="kota"  name="kota" >
+                                    <p class ="help-block text-danger"></p>
+                                </div>
+                                <div class="form-group col-md-6" style="text-align:left;">   
+                                <h3>Provinsi</h3>
+                                <select id="provinsi" name="provinsi" >
+                                    <?php
+                                        foreach ($provinsi->result_array() as $key) {
+                                            ?><option  value="<?php echo $key['provinsi'];?>"><?php echo $key['provinsi'];?></option><?php
+                                        }
+                                    ?>
+                                </select>
+                            </div>
+                                
+                                <div class ="form-group">
+                                    <input type ="password" class ="form-control" placeholder="Password" id="password" name="password" >
                                     <p class ="help-block text-danger"></p>
                                 </div>
                                 <div class ="form-group">
-                                    <input type ="email" class ="form-control" placeholder="Email" id="email" name="email" required data-validation-required-message="silakan masukan email Anda">
+                                    <input type ="text" class ="form-control" placeholder="Nomor Telepon/Handphone" id="no_telpon" name ="no_telpon" >
+                                    <p class ="help-block text-danger"></p>
+                                </div>
+                                <div class ="form-group">
+                                    <input type ="email" class ="form-control" placeholder="Email" id="email" name="email" >
                                     <p class ="help-block text-danger"></p>
                                 </div>
                             </div>    
                         </div>
                         <div class="row">
-                            <div class="col-md-6">
+                            <div class="col-md-6" style="text-align:left;">
                                 <h3>Daerah yang Dipilih</h3>
                                 <div class ="form-group">
                                     <input type="radio" id="region" name="chk" value="wakatobi" checked>Wakatobi <br/>
@@ -502,11 +529,11 @@
                             <div class="form-group col-md-6">   
                                 <h3>Bidang Seni</h3>
                                 <select id="jenis_seni" name="jenis_seni">
-                                    <option name="Seni Tari", value="senitari">Seni Tari</option>
-                                    <option name="Seni Musik", value="senimusik">Seni Musik</option>
-                                    <option name="Seni Teater", value="seniteater">Seni Teater</option>
-                                    <option name="Seni Rupa (Kerajinan Kerang)", value="senirupakerajinankerang">Seni Rupa (Kerajinan Kerang)</option>
-                                    <option name="Seni Media", value="senimedia">Seni Media</option>
+                                    <option name="Seni Tari" value="senitari">Seni Tari</option>
+                                    <option name="Seni Musik" value="senimusik">Seni Musik</option>
+                                    <option name="Seni Teater" value="seniteater">Seni Teater</option>
+                                    <option name="Seni Rupa (Kerajinan Kerang)" value="senirupakerajinankerang">Seni Rupa (Kerajinan Kerang)</option>
+                                    <option name="Seni Media" value="senimedia">Seni Media</option>
                                 </select>
                             </div>
                         </div>
