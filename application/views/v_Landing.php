@@ -312,11 +312,11 @@
                         <h4 style="text-align:center;">Hak Seniman</h4>
                         <p align="left">
                             <ul>    
-                                <li>  mendapatkan insentif</li> 
-                                <li>  sertifikat</li>
-                                <li>  sarana pendukung/ keperluan belajar</li> 
-                                <li>  akomodasi (tinggal bersama masyarakat setempat) dan konsumsi</li>
-                                <li>  transportasi dari daerah asal ke lokasi kegiatan dan transportasi di lokasi kegiatan</li>
+                                <li>  Mendapatkan insentif</li> 
+                                <li>  Sertifikat</li>
+                                <li>  Sarana pendukung/ keperluan belajar</li> 
+                                <li>  Akomodasi (tinggal bersama masyarakat setempat) dan konsumsi</li>
+                                <li>  Transportasi dari daerah asal ke lokasi kegiatan dan transportasi di lokasi kegiatan</li>
                             </ul>
                         </p>                        
                     </div>
@@ -326,16 +326,16 @@
                         <h4 style="text-align:center;">Kewajiban Seniman</h4>
                         <p align="left">
                             <ul>
-                                <li>  membuat rancangan bahan ajar</li>
-                                <li>  membuat materi ajar</li>
-                                <li>  melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2 pada Juknis.)</li>
-                                <li>  mempresentasikan materi ajar</li>
-                                <li>  berkoordinasi dengan Dinas Kebudayaan/Instansi terkait</li>
-                                <li>  menandatangani kontrak kerja sama</li>
-                                <li>  wajib melaksanakan proses kegiatan dari awal sampai akhir</li>
-                                <li>  membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi</li>
-                                <li>  menyusun laporan teknis dan administrasi kegiatan</li>
-                                <li>  seniman mengajar per kelas antara 10-30 orang</li>
+                                <li>  Membuat rancangan bahan ajar</li>
+                                <li>  Membuat materi ajar</li>
+                                <li>  Melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2 pada Juknis.)</li>
+                                <li>  Mempresentasikan materi ajar</li>
+                                <li>  Berkoordinasi dengan Dinas Kebudayaan/Instansi terkait</li>
+                                <li>  Menandatangani kontrak kerja sama</li>
+                                <li>  Wajib melaksanakan proses kegiatan dari awal sampai akhir</li>
+                                <li>  Membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi</li>
+                                <li>  Menyusun laporan teknis dan administrasi kegiatan</li>
+                                <li>  Seniman mengajar per kelas antara 10-30 orang</li>
                             </ul>  
                         </p>   
                     </div>
@@ -720,12 +720,12 @@
                         <div class="col-lg-8 col-lg-offset-2">
                             <div class="modal-body">
                                 <!-- Project Details Go Here -->
-                                <h2>Kabupaten wakatobi, Sulawesi Tenggara</h2>
+                                <h2>Kabupaten Wakatobi, Sulawesi Tenggara</h2>
                                 <p align="justify">
                                     Wakatobi terletak di kepulauan jazirah Tenggara Pulau Sulawesi tepatnya di sebelah Tenggara Pulau Buton. Untuk mencapai kabupaten Wakatobi harus menempuh perjalanan dari Makassar-Kendari-Wakatobi dengan pesawat kecil. Jarak dari Bandara Wakatobi ke lokasi kegiatan berjarak 25 kilometer dengan waktu tempuh 25—30 menit. Mata pencaharian masyarakat Kabupaten Wakatobi sebagian besar adalah nelayan. Jenis seni yang berkembang di masyarakat Wakatobi kebanyakan adalah seni tari. Untuk cabang seni lainnya, lebih kecil perkembangannya dibanding seni tari. Untuk seni teater, di sana hanya terdapat satu sanggar yang benar-benar fokus pada teater sedangkan ada satu sanggar lainnya yang terdapat bidang seni teater tetapi digabungkan dengan bidang seni lainnya. Seni musik, seni rupa, dan seni media kurang mendapatkan tempat di sana karena kearifan lokal masyarakat yang mendominasi adalah seni tari. Kegiatan ini dilaksanakan di pulau Wangi-wangi, kecamatan Wangi-Wangi dan kecamatan Wangi-Wangi Selatan.
                                 </p>
                                 <p>
-                                    <strong>membutuhkan seniman yang ahli di bidang management seni, pengemasan seni dan penggalian kesenian lokal</strong>
+                                    <strong>Seniman yang dibutuhkan untuk daerah Wakatobi, Sulawesi Tenggara adalah di bidang :</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (kerajinan/ ekonomi kreatif)</li>
@@ -770,7 +770,7 @@
                                     Dari beberapa sanggar yang dikunjungi di Lombok Tengah, rata-rata komunitas yang aktif mulai dari usia sekolah, usia dewasa bahkan diantara pemain musik Cilokaq dan kesenian Jaran Kamput rata-rata berusia 40 tahun ke atas. Kondisi ini dibarengi respon aktif masyarakat terhadap kegiatan seni menjadikan seni tradisional masih berkembang walaupun memiliki keterbatasan alat untuk mendukung aktivitas di sanggarnya, disamping harus menghadapi gempuran seni modern    
                                 </p>
                                 <p>
-                                    <strong>membutuhkan seniman yang ahli di bidang management seni, pengemasan seni dan penggalian kesenian lokal </strong>
+                                    <strong>Seniman yang dibutuhkan untuk daerah Mandalika, Nusa Tenggara Barat adalah di bidang : </strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Ukir Kayu)</li>
@@ -779,10 +779,16 @@
                                     <li>4. Seni Musik (Vokal)</li>
                                     <li>5. Seni Media (Fotografi dan Videografi)</li>
                                 </ul>
-                                <p class="section-subheading"> <strong>Contoh Rupa Kondisi Lokasi</strong></p>
+                                <p class="section-subheading"> <strong>Gambaran Kondisi Lokasi</strong></p>
                                 <ul class="list-inline">
                                     <li><img src="assets/img/mandalika1.jpg" class = "image-responsive"></li>
                                     <li><img src="assets/img/mandalika2.jpg" class = "image-responsive"></li>
+                                </ul>
+
+                                <p class="section-subheading"> <strong>Salah satu contoh kerajinan khas Mandalika, yaitu Pameje</strong></p>
+                                <ul class="list-inline">
+                                    <li><img src="assets/img/mandalika3.jpg" class = "image-responsive"></li>
+                                    
                                 </ul>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Tutup</button>
                             </div>
@@ -857,7 +863,7 @@
                                     Pantai Tanjung Lesung terletak di Desa Tanjung Jaya, Kecamatan Panimbang, Kabupaten Pandeglang, Provinsi Banten. Posisinya terletak di sebelah barat kabupaten Pandeglang dan mempunyai luas sekitar 150 hektoare. Jarak yang anda tempuh dari Jakarta menuju Tanjung Lesung sekitar 160 kilometer dengan waktu tempuh 3 (tiga) jam perjalanan menggunakan kendaraan pribadi. Mata Pencaharian penduduknya sebagian besar adalah nelayan. Kondisi daerah di sana sangat memprihatinkan, baik dari segi seninya maupun dari segi lokasinya. Banyak kesenian khas yang terdapat di kawasan tersebut, beberapa diantaranya Teater Ubruk, Rampak Beduk, Kendang hatong, Mapag Tamu, dan Kendang Lesung, tetapi tidak berkembang dengan baik. Sanggar-sanggar di sana juga masih sangat perlu sentuhan kreatifitas untuk mengembangkan diri agar dapat kesempatan untuk tampil lebih baik lagi.    
                                 </p>
                                 <p>
-                                    <strong>Seniman yang dibutuhkan untuk daerah Morotai, Maluku Utara adalah di bidang :</strong>
+                                    <strong>Seniman yang dibutuhkan untuk daerah Tanjung Lesung, Banten adalah di bidang :</strong>
                                 </p>
                                 <ul class="list-inline">
                                     <li>1. Seni Rupa (Kriya Tekstil)</li>
