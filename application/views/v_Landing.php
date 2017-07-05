@@ -728,10 +728,10 @@
                                     <strong>membutuhkan seniman yang ahli di bidang management seni, pengemasan seni dan penggalian kesenian lokal</strong>
                                 </p>
                                 <ul class="list-inline">
-                                    <li>1. Seni Rupa (Kerajinan yang memanfaatkan bahan baku lokal)</li>
+                                    <li>1. Seni Rupa (kerajinan/ ekonomi kreatif)</li>
                                     <li>2. Seni Tari</li>
                                     <li>3. Seni Teater</li>
-                                    <li>4. Seni Musik (Vokal)</li>
+                                    <li>4. Seni Musik </li>
                                     <li>5. Seni Media (Fotografi dan Videografi)</li>
                                 </ul>
                                 <p class="section-subheading"> <strong>Rencana Lokasi Pembelajaran</strong></p>
