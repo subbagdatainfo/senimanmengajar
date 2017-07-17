@@ -216,6 +216,7 @@
                 $kontenarray['fk']=NULL;
                 $kontenarray['video']=NULL;
                 $kontenarray['essai']=NULL;
+                $kontenarray['drh']=NULL;
 
                 //query yang dilakukan terhadap tabel konten dan tabel seniman yang dilakukan melalui model getdetailseniman dan getkontenseniman
                 $email_peserta=$this->session->userdata('email');
@@ -246,6 +247,7 @@
                 $jeniskonten[1]='sks';                
                 $jeniskonten[2]='essai'	;
                 $jeniskonten[3]='ktp'	;
+                $jeniskonten[4]='drh';
 	            
 	            foreach ($jeniskonten as $key ) {
 	            	//echo $key."<br>";

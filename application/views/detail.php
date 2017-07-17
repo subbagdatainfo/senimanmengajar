@@ -140,7 +140,7 @@
                             </div>
                             <!-- row untuk menampilkan surat keterangan sehat, surat rekomendasi sekolah dan surat persetujuan orang tua -->
                             <div class="row">                                
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="panel panel-default text-center">
                                             <!-- panel untuk surat keterangan sehat -->
                                             <div class="panel-heading">
@@ -157,7 +157,7 @@
                                             </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="panel panel-default text-center">
                                         <div class="panel-heading">
                                             <strong>Motivation Letter</strong>
@@ -173,7 +173,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
+                                <div class="col-md-3">
                                     <div class="panel panel-default text-center">
                                         <div class="panel-heading">
                                             <strong>KTP</strong>
@@ -181,10 +181,27 @@
                                         <div class="panel-body">
                                             <?php if ($ktp !== NULL){
                                             ?><a class="img-responsive center-block" href="<?php echo base_url().$ktp;?>">KTP</a><br>
-                                            <a href="#updateessai" class="portfolio-link btn btn-success btn-default" data-toggle="modal">Update</a><?php
+                                            <a href="#updatektp" class="portfolio-link btn btn-success btn-default" data-toggle="modal">Update</a><?php
                                             }else {
                                                 ?> <span class="label label-default">Belum Tersedia</span><br><br>
                                                 <a href="#addktp" class="portfolio-link btn btn-success btn-default" data-toggle="modal">Tambah</a><?php
+                                            }?>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-md-3">
+                                    <div class="panel panel-default text-center">
+                                        <div class="panel-heading">
+                                            <strong>Daftar Riwayat Hidup</strong>
+                                        </div>
+                                        <div class="panel-body">
+                                            <?php if ($drh !== NULL){
+                                            ?><a class="img-responsive center-block" href="<?php echo base_url().$ktp;?>">Daftar Riwayat Hidup</a><br>
+                                            <a href="#updatedrh" class="portfolio-link btn btn-success btn-default" data-toggle="modal">Update</a><?php
+                                            }else {
+                                                ?> <span class="label label-default">Belum Tersedia</span><br><br>
+                                                <a href="#adddrh" class="portfolio-link btn btn-success btn-default" data-toggle="modal">Tambah</a><?php
                                             }?>
                                         </div>
                                     </div>
@@ -367,13 +384,13 @@
     </div>
 
     <!-- modal update KTP -->
-    <div class="modal fade" id="updatesks" role="dialog" aria-hidden="true">
+    <div class="modal fade" id="updatektp" role="dialog" aria-hidden="true">
         <div class="modal-dialog modal-lg">
             <!-- Modal content-->
             <div class="modal-content">
                 <div class="modal-header text-center">
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
-                    <h4 class="modal-title">Surat Keterangan Sehat</h4>
+                    <h4 class="modal-title">KTP</h4>
                 </div>
                 <div class="modal-body">
                   <div class="row-md-8">
@@ -387,6 +404,76 @@
                         </div>
                         <div class="form-group">
                             <input type="hidden" name="jenis" value="ktp">
+                            <input type="hidden" name="update" value="update">
+                        </div>
+                        <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                    </form>
+                  </div> 
+                </div>
+                <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+
+    <!-- modal tambah drh -->
+    <div class="modal fade" id="adddrh" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Daftar Riwayat Hidup</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row-md-8">
+                    <p>Silakan upload Daftar Riwayat Hidup Anda. file upload dapat berupa file PDF, image (.jpg) atau Ms.Word (.doc, .docx)</p>
+                  </div>
+                  <div class="row-md-4">
+                    <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('Peserta/addsurat'); ?>" method="post">
+                        <div class="form-group">
+                            <label>Pilih File</label>
+                            <input type="file" name="userfile">
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="jenis" value="drh">
+                        </div>
+                        <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
+                    </form>
+                  </div> 
+                </div>
+                <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Tutup</button>
+            </div>
+          </div>
+          
+        </div>
+    </div>
+
+    <!-- modal update Daftar riwayat hidup -->
+    <div class="modal fade" id="updatedrh" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header text-center">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Daftar Riwayat Hidup</h4>
+                </div>
+                <div class="modal-body">
+                  <div class="row-md-8">
+                    <p>Silakan upload Daftar Riwayat Hidup Anda. file upload dapat berupa file PDF, image (.jpg) atau Ms.Word (.doc, .docx)</p>
+                  </div>
+                  <div class="row-md-4">
+                    <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('Peserta/addsurat'); ?>" method="post">
+                        <div class="form-group">
+                            <label>Pilih File</label>
+                            <input type="file" name="userfile">
+                        </div>
+                        <div class="form-group">
+                            <input type="hidden" name="jenis" value="drh">
                             <input type="hidden" name="update" value="update">
                         </div>
                         <button type="submit" name ="submit" value="submit" class="btn btn-xl">Upload</button>
@@ -498,7 +585,7 @@
                 </div>
                 <div class="modal-body">
                   <div class="row-md-8">
-                    <p>Silakan upload gambar profile Anda. file upload dapat berupa file PDF, image (.jpg) atau Ms.Word (.doc, .docx)</p>
+                    <p>Silakan upload gambar profile Anda. file upload dapat berupa file image (.jpg)</p>
                   </div>
                   <div class="row-md-4">
                     <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('Peserta/addsurat'); ?>" method="post">
@@ -532,7 +619,7 @@
                 </div>
                 <div class="modal-body">
                   <div class="row-md-8">
-                    <p>Silakan upload gambar profile Anda. file upload dapat berupa file PDF, image (.jpg) atau Ms.Word (.doc, .docx)</p>
+                    <p>Silakan upload gambar profile Anda. file upload dapat berupa file image (.jpg)</p>
                   </div>
                   <div class="row-md-4">
                     <form name="update" id="updateform" enctype="multipart/form-data" action ="<?=site_url('Peserta/addsurat'); ?>" method="post">
