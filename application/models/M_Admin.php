@@ -1,28 +1,6 @@
 
 <?php
-	// class M_Admin extends CI_ModeL{
-	// 	//insert data pendaftar ke dalam database
-	// 	public function getcountpeserta(){
-	// 		$count=$this->db->query("SELECT * from peserta");
-	// 		return $count;
-	// 	}
-
-	// 	public function getallpeserta($limit,$start){
-	// 		// $data = $this->db->query("SELECT * from peserta");
-	// 		// return $data;
-	// 		$this->db->limit($limit);
-	// 		//$this->db->where('id', $id);
-	// 		$query = $this->db->get("peserta");
-	// 		if ($query->num_rows() > 0) {
-	// 		foreach ($query->result() as $row) {
-	// 		$data[] = $row;
-	// 		}
-
-	// 		return $data;
-	// 		}
-	// 		return false;
-	// 	}
-	// }
+	
 	
 	class M_Admin extends CI_Model {
 		function __construct() {
@@ -38,7 +16,8 @@
 			// $this->db->limit($limit);
 			//$this->db->where('id', $id);
 			// $query = $this->db->get("peserta");
-			$query=$this->db->query("SELECT * FROM peserta limit $id,$limit ");
+			$query=$this->db->query("SELECT * FROM peserta ORDER BY nama_seniman ASC limit $id,$limit ");
+			
 			if ($query->num_rows() > 0) {
 			foreach ($query->result() as $row) {
 			$data[] = $row;
@@ -51,6 +30,72 @@
 
 		public function getemail(){
 			$query=$this->db->query("SELECT email from peserta");
+			return $query;
+		}
+
+		public function getstatusprofpict($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'profpict')");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'profpict')"];
+			}
+		}
+
+		public function getstatussks($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sks')");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sks')"];
+			}
+		}
+
+		public function getstatussr($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sr')");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sr')"];
+			}
+		}
+
+		public function getstatusdrh($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'drh')");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'drh')"];
+			}
+		}
+
+		public function getstatusfk($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from foto where email = '$email' )");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from foto where email = '$email' )"];
+			}
+		}
+
+		public function getstatusktp($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'ktp')");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'ktp')"];
+			}
+		}
+
+		public function getstatusessai($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'essai')");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'essai')"];
+			}
+		}
+
+		public function getstatusvideo($email){
+			$query = $this->db->query("SELECT EXISTS (SELECT email from video where email = '$email' )");
+			foreach ($query->result_array() as $key ) {
+				return $key["EXISTS (SELECT email from video where email = '$email' )"];
+			}
+		}
+
+		public function getcountbyregion(){
+			$region=$this->db->query("SELECT region,COUNT(region) FROM peserta GROUP BY region");
+			return $region;
+		}
+
+		public function getdirdownload($email){
+			$query=$this->db->query("SELECT nama_seniman FROM peserta WHERE email = '$email'");
 			return $query;
 		}
 	}

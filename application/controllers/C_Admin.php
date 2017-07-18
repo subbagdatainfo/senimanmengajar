@@ -7,43 +7,129 @@
 		}
 		public function admin(){
 			if ($this->session->userdata('logged')['logged'] ) {
+				ob_end_clean();
 				$data['count']=$this->getcount();
 				$config = array();
 				$config["base_url"] = base_url() . "C_Admin/admin";
 				$total_row = $this->M_Admin->getcountpeserta();
 				$config["total_rows"] = $total_row;
-				$config["per_page"] = 20;
+				$config["per_page"] = 25;
 				$config['use_page_numbers'] = TRUE;
 				$config['num_links'] = $total_row;
-				$config['cur_tag_open'] = '&nbsp;<a class="current">';
-				$config['cur_tag_close'] = '</a>';
+				$config['first_tag_open'] = $config['last_tag_open'] = $config['next_tag_open'] = $config['prev_tag_open'] = $config['num_tag_open'] = '<li>';
+        		$config['first_tag_close'] = $config['last_tag_close'] = $config['next_tag_close'] = $config['prev_tag_close'] = $config['num_tag_close'] = '</li>';
+         
+        		$config['cur_tag_open'] = '<li class="active"><span><b>';
+       			$config['cur_tag_close'] = '</b></span></li>';
 				$config['next_link'] = 'Next';
 				$config['prev_link'] = 'Previous';
 
 				$this->pagination->initialize($config);
-				if($this->uri->segment(3)){
-					$page = ($this->uri->segment(3)) ;
-				}else{
-					$page = 1;
+				// if($this->uri->segment(3)){
+				// 	$page = ($this->uri->segment(3)) ;
+				// }else{
+				// 	$page = 1;
+				// }
+				$page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
+        		$offset = $page == 0 ? 0 : ($page - 1) * $config["per_page"];
+				$data['peserta'] = $this->M_Admin->getallpeserta($config["per_page"], $offset);
+				foreach ($data['peserta'] as $key ) {
+					$data['profpict'][$key->email]= $this->M_Admin->getstatusprofpict($key->email);
+					$data['sks'][$key->email]= $this->M_Admin->getstatussks($key->email);
+					$data['drh'][$key->email]= $this->M_Admin->getstatusdrh($key->email);
+					$data['essai'][$key->email]= $this->M_Admin->getstatusessai($key->email);
+					$data['fk'][$key->email]= $this->M_Admin->getstatusfk($key->email);
+					$data['ktp'][$key->email]= $this->M_Admin->getstatusktp($key->email);
+					$data['video'][$key->email]= $this->M_Admin->getstatusvideo($key->email);
 				}
-				$data['peserta'] = $this->M_Admin->getallpeserta($config["per_page"], $page);
+				
 				$str_links = $this->pagination->create_links();
 				$data["links"] = explode('&nbsp;',$str_links );
-
+				$data['page'] = $page==0? 1:$page;
 				// View data according to array.
 				$this->load->view('navigation');
 				$this->load->view("v_admin", $data);
+				// $this->load->view("image", $data);
 			} else {
 				$this->load->view('v_loginadmin');
 			}
 		}
 
+		public function searchsiswa(){
+			$nama= $this->input->post('nama');
+			$data['peserta']= $this->M_Admin->searchpeserta($nama);
+			if ($data['peserta'] !== NULL) {
+
+				foreach ($data['peserta'] as $key ) {
+					$data['profpict'][$key->email]= $this->M_Admin->getstatusprofpict($key->email);
+					$data['sks'][$key->email]= $this->M_Admin->getstatussks($key->email);
+					$data['drh'][$key->email]= $this->M_Admin->getstatusdrh($key->email);
+					$data['essai'][$key->email]= $this->M_Admin->getstatusessai($key->email);
+					$data['fk'][$key->email]= $this->M_Admin->getstatusfk($key->email);
+					$data['ktp'][$key->email]= $this->M_Admin->getstatusktp($key->email);
+					$data['video'][$key->email]= $this->M_Admin->getstatusvideo($key->email);
+				}
+				$this->load->view('navigation');
+				$this->load->view("v_search", $data);
+			} else {
+				$message1=$this->session->set_flashdata('message','Nama Tidak Ditemukan');
+				$message2=$this->session->set_flashdata('status', 'danger');
+				redirect(base_url().'C_Admin/admin','refresh');
+			}
+		}
+
+		public function download($email)
+	    {
+	    	$name = $this->M_Admin->getdirdownload($email);
+	    	foreach ($name->result_array() as $key ) {
+	    		$dirname='data/'.$key['nama_seniman'];
+	    		$name=$key['nama_seniman'];
+	    	}
+	        // $dirmain="upload/data/" . $registration_no ;			
+	        // $dirname=$dirmain . "/lampiran";
+	        // $dirthumb=$dirmain . "/thumbnail" ;	
+	    	
+	    	$this->zip->read_dir($dirname, FALSE);
+	    	//$this->zip->clear_data();
+	    	$archieve=$this->zip->archive('zip/'.$name.'.zip');
+	    	$this->zip->clear_data();
+	    	
+
+	        $file_path=realpath($dirmain);
+	        $file_zip=  $name . ".zip";
+
+	        $myfile =  "zip/" .$file_zip;
+	        ob_end_clean();
+	        // $this->zip->download($file_zip);           
+	        header("Content-Type: application/zip");
+	        header("Content-Disposition: attachment; filename=$file_zip");
+	        header("Content-Length: " . filesize($myfile));
+
+	        readfile($myfile);
+	        ob_end_clean();
+	        // $this->zip->downlo
+	        exit;		  		  
+		}
 		public function getcount(){
 			$countpeserta = $this->M_Admin->getcountpeserta();
 			// foreach ($countpeserta as $key ) {
 			// 	$count = 
 			// }
 			return $countpeserta;
+		}
+
+		public function region(){
+			
+			if ($this->session->userdata('logged')['logged'] ) {
+				
+				$data['count']=$this->getcount();
+				$data['maestro']=$this->M_Admin->getcountbyregion();
+				// View data according to array.
+				$this->load->view('navigation');
+				$this->load->view("v_region", $data);
+			} else {
+				$this->load->view('v_loginadmin');
+			}
 		}
 
 		public function authadmin(){

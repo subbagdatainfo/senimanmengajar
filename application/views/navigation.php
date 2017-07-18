@@ -77,7 +77,9 @@
                         <li>
                             <a href="<?php echo base_url().'C_Admin/sendmail';?>"><i class="fa fa-envelope fa-fw"></i> Email</a>
                         </li>
-                        
+                        <li>
+                            <a href="<?php echo base_url().'C_Admin/region';?>"><i class="fa fa-dashboard fa-fw"></i> Region</a>
+                        </li>
                     </ul>
 
                 </div>
