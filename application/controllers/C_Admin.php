@@ -55,7 +55,7 @@
 			}
 		}
 
-		public function searchsiswa(){
+		public function searchpeserta(){
 			$nama= $this->input->post('nama');
 			$data['peserta']= $this->M_Admin->searchpeserta($nama);
 			if ($data['peserta'] !== NULL) {
