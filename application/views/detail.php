@@ -197,7 +197,7 @@
                                         </div>
                                         <div class="panel-body">
                                             <?php if ($drh !== NULL){
-                                            ?><a class="img-responsive center-block" href="<?php echo base_url().$ktp;?>">Daftar Riwayat Hidup</a><br>
+                                            ?><a class="img-responsive center-block" href="<?php echo base_url().$drh;?>">Daftar Riwayat Hidup</a><br>
                                             <a href="#updatedrh" class="portfolio-link btn btn-success btn-default" data-toggle="modal">Update</a><?php
                                             }else {
                                                 ?> <span class="label label-default">Belum Tersedia</span><br><br>

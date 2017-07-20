@@ -42,7 +42,7 @@
                                 <th>Download</th>
                                 <!-- <th>Action</th> -->
                             </tr>
-                            <?php $nom=0;foreach ($peserta as $row) {
+                            <?php $nom=0;foreach ($peserta as $row) { 
                                 $nom++;
                                 $email = $row->email;
                                 ?><tr>
