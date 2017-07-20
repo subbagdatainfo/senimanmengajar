@@ -163,9 +163,8 @@
 		}
 
 		public function send(){
-			if (NULL != $this->input->post('userfile')) {
-				$detail_email['attach_path']='';
-			} else {
+			// if (NULL != $this->input->post('userfile')) {
+			if ($_FILES['userfile']['error']==UPLOAD_ERR_OK){
 				$detail_email['attach_path']='';
 				$pathdirectory='assets/';
 				$config['upload_path'] = $pathdirectory;
@@ -175,9 +174,9 @@
 				$this->upload->do_upload();
 				$data_file = $this->upload->data();
 	            $file_ext = $data_file['file_ext'];
-				//$detail_email['attach_path']='assets/attachment'.$file_ext;
+				$detail_email['attach_path']='assets/attachment'.$file_ext;
 				$config['overwrite'] = TRUE;
-			}
+			} 
 			
 			$addressall='';
 			$detail_email['message'] = $this->input->post('pesan');
@@ -220,8 +219,10 @@
 			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
 			$this->email->message($detail_email['message']);
-			$this->email->attach($detail_email['attach_path']); 
-			//$this->email->send();
+			if (isset($detail_email['attach_path'])) {
+				$this->email->attach($detail_email['attach_path']); 
+			} 
+			
 			if ($this->email->send()) {
 				return TRUE;
 			} else {
