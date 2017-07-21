@@ -94,8 +94,8 @@
 			return $region;
 		}
 
-		public function getdirbyregion(){
-			$region = $this->db->query("SELECT distinct region from peserta ");
+		public function getdirbyregion($regions){
+			$region = $this->db->query("SELECT distinct region from peserta where region like '%$regions%'");
 			return $region;
 		}
 

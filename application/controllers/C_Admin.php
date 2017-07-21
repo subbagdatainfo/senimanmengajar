@@ -78,6 +78,10 @@
 			}
 		}
 
+		public function info(){
+			echo phpinfo();
+		}
+
 		public function download($email)
 	    {
 	    	$name = $this->M_Admin->getdirdownload($email);
@@ -124,8 +128,8 @@
 	 //    	echo "sukses";
 		// }
 
-		public function makezipbyregion(){
-			$region = $this->M_Admin->getdirbyregion();
+		public function makezipbyregion($regions){
+			$region = $this->M_Admin->getdirbyregion($regions);
 			foreach ($region->result_array() as $key ) {
 				$regiondir = $key['region'];
 				$name = $this->M_Admin->getdirdownloadbyregion($regiondir);
