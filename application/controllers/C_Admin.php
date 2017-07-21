@@ -142,6 +142,28 @@
 			    	//$this->zip->clear_data();
 			    	$archieve=$this->zip->archive('zip/'.$regiondir.'/'.$name.'.zip');
 			    	$this->zip->clear_data();
+			    	ob_end_clean();
+		    	}
+		    	echo "sukses<br>";
+			}
+		}
+
+		public function copy($regions){
+			$region = $this->M_Admin->getdirbyregion($regions);
+			foreach ($region->result_array() as $key ) {
+				$regiondir = $key['region'];
+				$name = $this->M_Admin->getdirdownloadbyregion($regiondir);
+				$dirregion = 'zip/'.$regiondir;
+				mkdir($dirregion,0775);
+		    	foreach ($name->result_array() as $key ) {
+		    		$dirname='data/'.$key['nama_seniman'];
+		    		copy($dirname.'/*', $dirregion.'/'.$key['nama_seniman']);
+
+		    		// $name=$key['nama_seniman'];
+		    		// $this->zip->read_dir($dirname, FALSE);
+			    	// //$this->zip->clear_data();
+			    	// $archieve=$this->zip->archive('zip/'.$regiondir.'/'.$name.'.zip');
+			    	// $this->zip->clear_data();
 		    	}
 		    	echo "sukses<br>";
 			}
