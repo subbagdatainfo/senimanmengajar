@@ -451,7 +451,7 @@
                     </h2>
                 </div>
             </div>
-            <!-- <div class="row">
+            <div class="row">
                 <div style="text-align:left; color:red; font-size: 0.875em;"><?php echo validation_errors(); ?> </div>
                         <?php if($this->session->flashdata('status')=="success"){ ?>
                 <p><h3><?php echo $this->session->flashdata('message'); ?></h3></p>
@@ -549,7 +549,7 @@
                         </div>
                     </form>
                 </div>
-            </div> -->
+            </div>
 
             </div>
     </section>

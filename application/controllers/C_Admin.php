@@ -108,8 +108,41 @@
 	        readfile($myfile);
 	        ob_end_clean();
 	        // $this->zip->downlo
-	        exit;		  		  
+	        //exit;		  		  
 		}
+
+		// public function makezipall(){
+		// 	$name = $this->M_Admin->getdirdownloadall();
+	 //    	foreach ($name->result_array() as $key ) {
+	 //    		$dirname='data/'.$key['nama_seniman'];
+	 //    		$name=$key['nama_seniman'];
+	 //    		$this->zip->read_dir($dirname, FALSE);
+		//     	//$this->zip->clear_data();
+		//     	$archieve=$this->zip->archive('zip/'.$name.'.zip');
+		//     	$this->zip->clear_data();
+	 //    	}
+	 //    	echo "sukses";
+		// }
+
+		public function makezipbyregion(){
+			$region = $this->M_Admin->getdirbyregion();
+			foreach ($region->result_array() as $key ) {
+				$regiondir = $key['region'];
+				$name = $this->M_Admin->getdirdownloadbyregion($regiondir);
+				$dirregion = 'zip/'.$regiondir;
+				mkdir($dirregion,0775);
+		    	foreach ($name->result_array() as $key ) {
+		    		$dirname='data/'.$key['nama_seniman'];
+		    		$name=$key['nama_seniman'];
+		    		$this->zip->read_dir($dirname, FALSE);
+			    	//$this->zip->clear_data();
+			    	$archieve=$this->zip->archive('zip/'.$regiondir.'/'.$name.'.zip');
+			    	$this->zip->clear_data();
+		    	}
+		    	echo "sukses<br>";
+			}
+		}
+
 		public function getcount(){
 			$countpeserta = $this->M_Admin->getcountpeserta();
 			// foreach ($countpeserta as $key ) {

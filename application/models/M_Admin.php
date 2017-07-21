@@ -94,8 +94,23 @@
 			return $region;
 		}
 
+		public function getdirbyregion(){
+			$region = $this->db->query("SELECT distinct region from peserta ");
+			return $region;
+		}
+
+		public function getdirdownloadbyregion($regiondir){
+			$name = $this->db->query("SELECT nama_seniman from peserta where region = '$regiondir'");
+			return $name;
+		}
+
 		public function getdirdownload($email){
 			$query=$this->db->query("SELECT nama_seniman FROM peserta WHERE email = '$email'");
+			return $query;
+		}
+
+		public function getdirdownloadall(){
+			$query=$this->db->query("SELECT nama_seniman FROM peserta ");
 			return $query;
 		}
 
