@@ -97,11 +97,13 @@
 		public function getdirbyregion($regions){
 			$region = $this->db->query("SELECT distinct region from peserta where region like '%$regions%'");
 			return $region;
+			$this->db->save_queries = false;
 		}
 
 		public function getdirdownloadbyregion($regiondir){
 			$name = $this->db->query("SELECT nama_seniman from peserta where region = '$regiondir'");
 			return $name;
+			$this->db->save_queries = false;
 		}
 
 		public function getdirdownload($email){

@@ -143,6 +143,7 @@
 			    	$archieve=$this->zip->archive('zip/'.$regiondir.'/'.$name.'.zip');
 			    	$this->zip->clear_data();
 			    	//ob_end_clean();
+			    	ob_clean();
 		    	}
 		    	echo "sukses<br>";
 			}
