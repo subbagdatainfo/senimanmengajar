@@ -129,6 +129,9 @@
                         <a class="page-scroll" href="#timeline">Timeline</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="#pengumuman">Pengumuman</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="#daftar">Daftar</a>
                     </li>
                     <li>
@@ -267,6 +270,19 @@
                         </li>
                     </ul>
             </div>
+        </div>
+    </section>
+
+    <section id="pengumuman">
+        <div class="row-lg-6">
+            <div class="text-center">
+                <h2>Pengumuman</h2>
+            </div>
+        </div>
+        <div class="row-lg-6 text-center">
+            <h4>
+                Pengumuman hasil seleksi Seniman Mengajar Gelombang 2 tahun 2017 dapat di unduh <a href="<?=site_url('assets/attachment.pdf'); ?>"> di sini</a>
+            </h4>
         </div>
     </section>
 

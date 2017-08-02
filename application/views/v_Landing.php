@@ -129,7 +129,10 @@
                         <a class="page-scroll" href="#timeline">Timeline</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#daftar">Daftar</a>
+                        <a class="page-scroll" href="#hubungi">Hubungi Kami</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#pengumuman">Pengumuman</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#hubungi">Hubungi Kami</a>
@@ -267,6 +270,19 @@
                         </li>
                     </ul>
             </div>
+        </div>
+    </section>
+
+    <section id="pengumuman">
+        <div class="row-lg-6">
+            <div class="text-center">
+                <h2>Pengumuman</h2>
+            </div>
+        </div>
+        <div class="row-lg-6">
+            <p>
+                
+            </p>
         </div>
     </section>
 
