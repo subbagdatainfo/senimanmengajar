@@ -273,8 +273,8 @@
 		public function sendtoaddress($detail_email){
 			$this->load->library('email');
 			 $this->email->clear(TRUE);
-			$this->email->from('pembinaantenaga.kesenian', 'Panitia Seniman Mengajar');
-			$this->email->to('karyana.abdhadi@gmail.com');
+			$this->email->from('senimanmengajar.kemdikbud@gmail.com', 'Panitia Seniman Mengajar');
+			//$this->email->to('karyana.abdhadi@gmail.com');
 			$this->email->bcc($detail_email['address'],10);
 			$this->email->set_newline("\r\n");
 			$this->email->subject($detail_email['subject']);
@@ -294,8 +294,6 @@
 			// echo smtp_user();
 		}
 
-		public function createzip(){
-			
-		}
+		
 
 	}
