@@ -153,7 +153,7 @@
         <div class="container-fluid">
             <div class="intro-text">
                 <div class="intro-lead-in">Seniman Mengajar</div>
-                <div class="intro-heading">Gelombang 2</div>
+                <div class="intro-heading">Coming Soon</div>
                 <a href="#daftar" class="page-scroll btn btn-xl">Daftar</a>
             </div>
             
@@ -167,109 +167,11 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Tempat Pelaksanaan</h2>
-                    <h3 class="section-subheading">Tempat Pelaksanaan Seniman Mengajar Gelombang 2.</h3>
+                    <h1 class="section-subheading">Coming Soon</h1>
                 </div>
             </div>
-            <div class ="row text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/bulungan.png" alt="bulungan"  height="128" width="90"><br><h4>Kabupaten Bulungan,<br>Kalimantan Utara</h4><br><br>
-                                <a href="#bulungan" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/bengkulutengah.png" alt="bengkulutengah"  height="128" width="90" align ="center"><br><h4>Kabupaten Bengkulu Tengah,<br>Bengkulu</h4><br><br>
-                                <a href="#bengkulutengah" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/wakatobi.png" alt="wakatobi"  height="128" width="90"><br><h4>Kabupaten Wakatobi,<br>Sulawesi Tenggara</h4><br><br>
-                                <a href="#wakatobi" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/mandalika.jpg" alt="mandalika"  height="128" width="90"><br><h4>Mandalika,<br>Nusa Tenggara Barat</h4><br><br>
-                                <a href="#mandalika" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                        
-                    </ul>
-            </div>
-            <div class ="row text-center">
-                    <ul class="list-inline">
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/morotai.jpg" alt="morotai"  height="128" width="90"><br><h4>Morotai,<br>Maluku Utara</h4><br><br>
-                                <a href="#morotai" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/pandeglang.jpg" alt="tanjunglesung"  height="128" width="90" align ="center"><br><h4>Tanjung Lesung,<br>Banten</h4><br><br>
-                                <a href="#tanjunglesung" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="col-md-4">
-                                <img src="assets/img/danautoba.jpg" alt=""  height="128" width="90"><br><h4>Danau Toba,<br>Sumatera Utara</h4><br><br>
-                                <a href="#danautoba" class="portfolio-link btn btn-xl" data-toggle="modal">
-                                    <!-- <div class="portfolio-hover">
-                                        <div class="portfolio-hover-content">
-                                            <i class="fa fa-plus fa-3x"></i>
-                                        </div>
-                                    </div> -->
-                                    DETAIL
-                                </a>
-                            </div>
-                        </li>
-                    </ul>
-            </div>
+            
+           
         </div>
     </section>
 
@@ -291,86 +193,11 @@
         <div class="container ">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Tentang Kegiatan Seniman Mengajar</h2>   
+                    <h2 class="section-heading">Coming Soon</h2>   
                 </div>
             </div>
-            <div class="row-lg-12">
-                <p allign="left">
-                    Seniman Mengajar adalah program yang diselenggarakan Direktorat Kesenian, Direktorat Jenderal Kebudayaan, Kementerian Pendidikan dan Kebudayaan, yaitu program seniman mengajar kesenian kepada masyarakat/ komunitas/ sanggar yang berada di daerah dengan predikat 3T yang berada di Indonesia. <br><br>
-                    Program ini pada prinsipnya mendorong para seniman berbagi ilmu dan pengalamannya kepada masyarakat yang berada daerah 3T dan menjunjung kearifan lokal. Dengan program ini masyarakat di daerah 3T dapat terbuka wawasannya dan dapat menjalin kerjasama dengan para seniman sehingga dapat meningkatkan kualitas ekspresi seni dan penguatan identitas budaya di daerah 3T. Pada akhir masa belajar, para seniman dapat mempresentasikan apa yang telah dikerjakannya di daerah pelaksanaan kegiatan. <br><br>
-                    Dalam melaksanakan program Seniman Mengajar ditekankan prinsip – prinsip : partisipatif, dialogis, dan transformasi. Format kegiatan residensi seniman dalam kurun waktu yang ditentukan dengan target paket kegiatan selesai. Seniman berbagi ilmu dan keahlian dengan  seniman lokal yang mewakili sanggar/ komunitas.
-
-                </p>
-            </div>
-            <div class="row">
-                <div class="col-lg-3">
-                    <div class="team-member" style="text-align:left;">
-                        <h4 style="text-align:center;">Syarat Pendaftar</h4>
-                        <!-- <p class="text-muted">Lead Designer</p> -->
-                       
-                            <ul>
-                                <li>  Warga Negara Indonesia</li>
-                                <li>  Usia 30 – 60 tahun</li>
-                                <li>  Non PNS</li>
-                                <li>  Profesional dan berdedikasi tinggi terhadap seni</li>
-                                <li>  Memiliki pengalaman minimal 5 tahun dalam berkesenian</li>
-                                <li>  Mampu beradaptasi dengan lingkungan di lokasi tempat mengajar</li>
-                                <li>  Dapat berkomunikasi dengan baik dan aktif</li>
-                                <li>  Sehat jasmani dan rohani</li>
-                                <li>  menguasai management seni, pengemasan seni dan penggalian kesenian lokal.</li>
-                                <li>  Belum pernah mengikuti kegiatan Seniman Mengajar</li>
-                            </ul>
-                          
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="team-member" style="text-align:left;">
-                        <h4 style="text-align:center;">Hak Seniman</h4>
-                        <p align="left">
-                            <ul>    
-                                <li>  Mendapatkan insentif</li> 
-                                <li>  Sertifikat</li>
-                                <li>  Sarana pendukung/ keperluan belajar</li> 
-                                <li>  Akomodasi (tinggal bersama masyarakat setempat) dan konsumsi</li>
-                                <li>  Transportasi dari daerah asal ke lokasi kegiatan dan transportasi di lokasi kegiatan</li>
-                            </ul>
-                        </p>                        
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="team-member" style="text-align:left;">
-                        <h4 style="text-align:center;">Kewajiban Seniman</h4>
-                        <p align="left">
-                            <ul>
-                                <li>  Membuat rancangan bahan ajar</li>
-                                <li>  Membuat materi ajar</li>
-                                <li>  Melaksanakan aktivitas harian sesuai dengan rancangan bahan ajar (mengikuti lampiran 2 pada Juknis.)</li>
-                                <li>  Mempresentasikan materi ajar</li>
-                                <li>  Berkoordinasi dengan Dinas Kebudayaan/Instansi terkait</li>
-                                <li>  Menandatangani kontrak kerja sama</li>
-                                <li>  Wajib melaksanakan proses kegiatan dari awal sampai akhir</li>
-                                <li>  Membuat dokumentasi (audio visual) selama kegiatan monitoring dan evaluasi</li>
-                                <li>  Menyusun laporan teknis dan administrasi kegiatan</li>
-                                <li>  Seniman mengajar per kelas antara 10-30 orang</li>
-                            </ul>  
-                        </p>   
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <div class="team-member" style="text-align:left;">
-                        <h4 style="text-align:center;">Berkas Kelengkapan</h4>
-                        <p align="left">
-                            <ul>
-                                <li>  Mengisi daftar riwayat hidup </li>
-                                <li>  Surat keterangan sehat dari dokter</li>
-                                <li>  Foto diri </li>
-                                <li>  Foto karya atau video karya</li>
-                                <li>  Motivation Letter (max : 300 kata)</li>
-                            </ul>
-                        </p>
-                    </div>
-                </div>
-            </div>
+            
+            
             
         </div>
     </section>
@@ -382,75 +209,10 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Timeline</h2>
-                    <h3 class="section-subheading text-muted">Jadwal Pelaksaan Seniman Mengajar Gelombang 2</h3>
+                    <h1 class="section-subheading text-muted">Coming Soon</h1>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-12">
-                    <ul class="timeline">
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/daftar.jpg" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Pendaftaran</h4>
-                                    <h4 class="subheading">5 Juli 2017- 20 Juli 2017</h4>
-                                </div>
-                            </div>
-                        </li>
-                        
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/pengumuman.png" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Pengumuman Hasil Seleksi</h4>
-                                    <h4 class="subheading">27 Juli 2017</h4>
-                                </div>
-                               
-                            </div>
-                        </li>
-                        <li >
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/seleksi.jpg" alt="" height="200" width="200">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Daftar Ulang</h4>
-                                    <h4 class="subheading">27 Juli 2017 - 29 Juli 2017</h4>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="timeline-inverted">
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Pembekalan</h4>
-                                    <h4 class="subheading">1 Agustus 2017 - 3 Agustus 2017</h4>
-                                </div>
-                                
-                            </div>
-                        </li>
-                        <li>
-                            <div class="timeline-image">
-                                <img class="img-circle img-responsive" src="assets/img/timeline/pelaksanaan.jpg" alt="">
-                            </div>
-                            <div class="timeline-panel">
-                                <div class="timeline-heading">
-                                    <h4>Pelaksanaan Kegiatan</h4>
-                                    <h4 class="subheading">4 Agustus -7 September 2017</h4>
-                                </div>
-                                
-                            </div>
-                        </li>
-                        
-                    </ul>
-                </div>
-            </div>
+            
         </div>
     </section>    
 
@@ -460,10 +222,7 @@
             <div clas ="row">
                 <!-- <h1><span class="label label-success"> Pendaftaran sudah Ditutup</span><h1> -->
                 <div class ="col-lg-12 text-center">
-                    <h2 class="intro-text ">Pendaftaran Telah
-                        <strong>Ditutup</strong>
-                        <br>Terima Kasih Atas Partisipasinya
-
+                    <h2 class="intro-text ">Pendaftaran 
                     </h2>
                 </div>
             </div>

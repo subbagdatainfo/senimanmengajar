@@ -15,7 +15,7 @@ class C_Landing extends CI_Controller {
 
 		//$this->load->view('view_file', $data);
 		//$this->load->view('template/header');
-		$this->load->view('v_Landing2', $data);
+		$this->load->view('v_Landing', $data);
 		
 	}
 
