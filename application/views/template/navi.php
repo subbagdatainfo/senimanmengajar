@@ -17,13 +17,14 @@
 
     <!-- Custom Fonts -->
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
+    <link href='https://fonts.googleapis.com/css?family=Futura+Black:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- Theme CSS -->
     <link href="<?php echo HTTP_CSS_PATH;?>agency.css" rel="stylesheet">
+    <link href="<?php echo HTTP_CSS_PATH;?>slide.css" rel="stylesheet">
     <!-- load google maps library -->
     <?php echo $map['js']?>
 
@@ -47,7 +48,7 @@
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                     <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
                 </button>
-                <a class="navbar-brand page-scroll" href="<?=site_url('#page-top');?>">Seniman Mengajar</a>
+                <a class="navbar-brand page-scroll" href="<?=site_url();?>">Seniman Mengajar</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->

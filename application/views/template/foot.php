@@ -44,6 +44,7 @@
 
     <!-- Theme JavaScript -->
     <script src="<?php echo HTTP_JS_PATH;?>agency.min.js"></script>
+    <script src="<?php echo HTTP_JS_PATH;?>slide.js"></script>
     
 
 </body>
