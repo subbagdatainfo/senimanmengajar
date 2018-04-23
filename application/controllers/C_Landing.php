@@ -14,8 +14,8 @@ class C_Landing extends CI_Controller {
 		$data['provinsi']=$this->M_Peserta->getprovinsi();
 
 		//$this->load->view('view_file', $data);
-		//$this->load->view('template/header');
-		$this->load->view('v_Landing', $data);
+		$this->load->view('template/navi',$data);
+		$this->load->view('v_Landing');
 		
 	}
 

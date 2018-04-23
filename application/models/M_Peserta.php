@@ -4,9 +4,9 @@
 		//insert data pendaftar ke dalam database
 		public function create($data){
 			$result=$this->db->insert('peserta',$data);
-			$emailinsert=$data['email'];
+			//$emailinsert=$data['email'];
 			
-			$path = 'data/'.$data['nama'];
+			//$path = 'data/'.$data['nama'];
 			if ($result) {
 				//$query=$this->db->query("insert INTO portofolio (email,jenis,path) VALUES('$emailinsert','profpict', $path),('$emailinsert','sks', $path),('$emailinsert','drh', $path),('$emailinsert','video', $path)");
 				return TRUE;
