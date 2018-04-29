@@ -18,7 +18,7 @@
                 'valid_email'	=>'Format email tidak sesuai'
                 
         	));
-        	$this->form_validation->set_rules('no_telpon', 'Nomor Telpon', 'required|is_natural',array(
+        	$this->form_validation->set_rules('no_telpon', 'Nomor Telpon', 'required|numeric',array(
                 'required'      => 'Nomor Telpon harus diisi.',
                 'is_natural'	=>'Format no telpon tidak sesuai, hanya boleh menggunakan angka'
                 
