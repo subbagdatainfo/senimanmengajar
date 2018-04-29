@@ -42,7 +42,7 @@ class Page extends CI_Controller {
 	public function daftar(){
 		$data = $this->map();
 		$this->load->view('template/navi',$data);
-		$this->load->view('Daftar');
+		$this->load->view('daftar');
 		$this->load->view('template/foot');
 	}
 	public function contact(){
