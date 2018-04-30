@@ -5,6 +5,7 @@
                     <img class="img-responsive img-full" src="<?php echo HTTP_IMAGES_PATH;?>header-bg.jpg" alt="">
                 </div>
                 <div class="col-lg-7">
+                    <h3 class="section-heading"> Seniman Mengajar</h3>
                     <p>
                         Seniman mengajar adalah program kegiatan yang dilaksanakan oleh Direktorat Kesenian, Direktorat Jenderal Kebudayaan, Kementerian Pendidikan dan Kebudayaan, berupa kegiatan residensi seniman di 10 (sepuluh) lokasi yang berdurasi selama 30 (tiga puluh) hari. Seniman dituntut untuk berbaur dan berinteraksi dengan masyarakat setempat untuk membangun jejaring dan ekosistem seni di tempat tersebut dengan cara membuat program seni bersama masyarakat/memberikan workshop singkat tentang kesenian /membuat karya yang bernafaskan tradisi dan kesenian lokal dengan melibatkan masyarakat setempat/membuat riset seni dari tradisi setempat, dengan melibatkan komunitas seni/komunitas kemasyarakatan, seniman lokal, dan masyarakat setempat. Dampak yang diharapkan dalam kegiatan seniman mengajar adalah munculnya kesadaran akan seni dimasyarakat melalui keterlibatan masyarakat dalam praktik seni.
                     </p>

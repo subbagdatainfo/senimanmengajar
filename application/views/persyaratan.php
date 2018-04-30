@@ -53,8 +53,7 @@ Proposal ajuan seniman dapat berupa:
                             </li>
                         </ul>
                     <p>
-                        Petunjuk teknis dan pedoman pendaftaran kegiatan Seniman Mengajar dapat diunduh disini*
-*) DOWNLOAD PETUNJUK TEKNIS DAN PEDOMAN PENDAFTARAN SENIMAN MENGAJAR
+                        Petunjuk teknis dan pedoman pendaftaran kegiatan Seniman Mengajar dapat diunduh
 <a href="<?php echo HTTP_ASSETS_PATH_ADMIN;?>PETUNJUK TEKNIS DAN PEDOMAN PENDAFTARA SENIMAN MENGAJAR 2018.pdf">di sini</a>
                     </p>
                     
