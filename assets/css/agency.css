@@ -6,6 +6,7 @@
 body {
   overflow-x: hidden;
   font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  background-image: url("../img/background 2.png");
 }
 .text-muted {
   color: #777777;
