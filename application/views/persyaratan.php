@@ -20,7 +20,7 @@
                         <h3 class="section-heading">PROPOSAL KEGIATAN</h3>
                         <p>
                             Proposal kegiatan adalah rancangan kerja dalam bentuk kegiatan yang dibuat oleh masing-masing peserta Seniman Mengajar selama 30 (tiga puluh) hari. Proposal digunakan sebagai acuan peserta untuk bekerja yang nantinya dapat disesuaikan secara teknis dengan kondisi lapangan pada saat orientasi lapangan berlangsung.
-Proposal ajuan seniman dapat berupa:
+                            Proposal ajuan seniman dapat berupa:
 
                         </p>
                         <ul>
