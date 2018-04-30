@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-lg-2">    
                     <a href="#mandalika" class="portfolio-link " data-toggle="modal">
-                        <img src="<?php echo HTTP_IMAGES_PATH;?>blank.jpg" alt="mandalika"  height="128" width="90"><h4>Banjarmasin</h4>
+                        <img src="<?php echo HTTP_IMAGES_PATH;?>blank.jpg" alt="mandalika"  height="128" width="90"><h4>Hulu Sungai Tengah</h4>
                     </a>
                 </div>
             </div>
