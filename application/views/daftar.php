@@ -37,15 +37,15 @@
                                     <h4>Lokasi Pilihan</h4>
                                     <select id="lokasi" name="lokasi" class ="form-control">
                                         <option name="sabang" value="sabang">Sabang</option>
-                                        <option name="pesisir selatan" value="Pesisir Selatan">Pesisir Selatan</option>
-                                        <option name="bintan" value="Bintan">Bintan</option>
+                                        <option name="pesisir selatan" value="pesisir_selatan">Pesisir Selatan</option>
+                                        <option name="bintan" value="bintan">Bintan</option>
                                         <option name="belitung" value="Belitng">Belitung</option>
-                                        <option name="banjarmasin" value="Banjarmasin">Banjarmasin</option>
+                                        <option name="hulu sungai tengah" value="hulu_sungai_tengah">Banjarmasin</option>
                                         <option name="sumedang" value="sumedang">Sumedang</option>
-                                        <option name="karimun jawa" value="Karimun Jawa">Karimun Jawa</option>
-                                        <option name="sumenep" value="Sumenep">Sumenep</option>
-                                        <option name="toraja" value="Toraja">Toraja</option>
-                                        <option name="lembata" value="Lembata">Lembata</option>
+                                        <option name="karimun jawa" value="karimun_jawa">Karimun Jawa</option>
+                                        <option name="sumenep" value="sumenep">Sumenep</option>
+                                        <option name="toraja" value="toraja">Toraja</option>
+                                        <option name="lembata" value="lembata">Lembata</option>
                                     </select>
                                     <p class ="help-block text-danger"></p>
                                 </div>
