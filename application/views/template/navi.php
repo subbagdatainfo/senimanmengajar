@@ -20,7 +20,7 @@
     <!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'> -->
-    <link href='https://fonts.googleapis.com/css?family=Futura+Black:400,100,300,700' rel='stylesheet' type='text/css'>
+   <!--  <link href='https://fonts.googleapis.com/css?family=Futura+Black:400,100,300,700' rel='stylesheet' type='text/css'> -->
 
     <!-- Theme CSS -->
     <link href="<?php echo HTTP_CSS_PATH;?>agency.css" rel="stylesheet">

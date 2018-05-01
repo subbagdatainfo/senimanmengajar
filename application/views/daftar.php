@@ -1,4 +1,4 @@
-<section id="daftar"   >
+<section id="daftar"  class="container-gray" >
         <div class="container text-center">
             <div clas ="row">
                 <!-- <h1><span class="label label-success"> Pendaftaran sudah Ditutup</span><h1> -->

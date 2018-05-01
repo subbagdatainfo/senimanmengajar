@@ -1,5 +1,5 @@
-<section id="about" >
-        <div class="container ">
+<section id="about" class="container-gray" >
+        <div class="container">
             <div class="row">
                 <div class="col-lg-5">
                     <img class="img-responsive img-full" src="<?php echo HTTP_IMAGES_PATH;?>header-bg.jpg" alt="">

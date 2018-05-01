@@ -5,8 +5,19 @@
  */
 body {
   overflow-x: hidden;
-  font-family: Futura, Trebuchet MS, Arial, sans-serif;
+  font-family: 'Futura';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Futura Bold'), local('Futura-Bol'), url(https://fonts.gstatic.com/l/font?kit=-W_8XJn5VyXFzgiC2_8IZGMuQ5Q&skey=d46fe7911eaea679&v=v8) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+  
+   text-align: justify;
+}
+.container-orange{
   background-image: url("../img/background 2.png");
+}
+.container-gray{
+  background-image: url("../img/background 1.png");
 }
 .text-muted {
   color: #777777;
@@ -52,9 +63,10 @@ h6 {
 }
 .img-centered {
   display: block;
+  margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    
+    margin-top: 20px;
 }
 .bg-light-gray {
   background-color: #eeeeee;
