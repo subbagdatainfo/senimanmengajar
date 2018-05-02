@@ -63,6 +63,9 @@ class Page extends CI_Controller {
 		$data['provinsi']=$this->M_Peserta->getprovinsi();
 		return $data;
 	}
+	public function accord(){
+		$this->load->view('accordion');
+	}
 
 }
 	
