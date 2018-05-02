@@ -208,7 +208,7 @@
                 </div>
                 <div class= "row img-centered">
                     <div class="col-md-2">
-                        <img src="<?php echo HTTP_IMAGES_PATH;?>LOKASI HST.png" alt="hulu_sungai_tengah"  height="256" width="180">
+                        <img src="<?php echo HTTP_IMAGES_PATH;?>LOKASI PESISIR SELATAN.png" alt="pesisir_selatan"  height="256" width="180">
                     </div>
                     <div class="col-md-10">
                         <h4 class="section-heading">PAINAN, PESISIR SELATAN, SUMATERA BARAT</h4>
@@ -240,7 +240,7 @@
                 </div>
                 <div class= "row img-centered">
                     <div class="col-md-2">
-                        <img src="<?php echo HTTP_IMAGES_PATH;?>LOKASI BINTAN.png" alt="bintan"  height="256" width="180">
+                        <img src="<?php echo HTTP_IMAGES_PATH;?>LOKASI BINTAN TIMUR.png" alt="bintan"  height="256" width="180">
                     </div>
                     <div class="col-md-10">
                         <h4 class="section-heading">KIJANG DAN SUNGAI ENAM, BINTAN TIMUR, KEPULAUAN RIAU</h4>
