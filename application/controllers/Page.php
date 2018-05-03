@@ -52,7 +52,7 @@ class Page extends CI_Controller {
 		$this->load->view('template/foot');
 	}
 
-	public function admin(){
+	public function adminlogin(){
 		$this->load->view('template/header');
 		$this->load->view('v_loginadmin');
 		$this->load->view('template/footer');

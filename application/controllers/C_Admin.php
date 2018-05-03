@@ -7,7 +7,7 @@
 		}
 		public function admin(){
 			if ($this->session->userdata('logged')['logged'] ) {
-				ob_end_clean();
+				
 				$data['count']=$this->getcount();
 				$config = array();
 				$config["base_url"] = base_url() . "C_Admin/admin";
