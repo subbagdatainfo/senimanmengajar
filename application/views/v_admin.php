@@ -56,15 +56,7 @@
                                 <th>Nama</th>
                                 <th>Nomor Kontak</th>
                                 <th>Daerah Pilihan</th>
-                                <th>Bidang Seni</th>
-                                <th>Daerah Asal</th>
-                                <th>Foto Profil</th>
-                                <th>Dafyar Riwayat Hidup</th>
-                                <th>KTP</th>
-                                <th>Surat Keterangan Sehat</th>
-                                <th>Motivation Motivation Letter</th>
-                                <th>Foto</th>
-                                <th>Video</th>
+                                
                                 <th>Download</th>
                                 <!-- <th>Action</th> -->
                             </tr>
@@ -76,88 +68,10 @@
                                     <td><?php echo $row->email;?></td>
                                     <td><?php echo $row->nama_seniman;?></td>
                                     <td><?php echo $row->no_telpon;?></td>
-                                    <td><?php echo $row->region;?></td>
-                                    <td><?php echo $row->jenis_seni;?></td>
-                                    <td><?php echo $row->provinsi;?></td>
+                                    <td><?php echo $row->lokasi;?></td>
+                                    
                                     <td>
-                                        <?php
-                                            if ($profpict[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                            if ($drh[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                            if ($ktp[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                            if ($sks[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                            if ($essai[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                            if ($fk[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <?php
-                                            if ($video[$email]) {
-                                                ?><i class="fa fa-check" style="font-size:26px;color:green"></i><?php
-                                            } else {
-                                                ?><i class="fa fa-remove" style="font-size:26px;color:red"></i><?php
-                                            }
-                                            
-                                            
-                                        ?>
-                                    </td>
-                                    <td>
-                                        <a href="<?php echo site_url('C_Admin/download/'. $row->email) ;?>"><i class="fa fa-download" style="font-size:24px"></i></a>
+                                        <a href="<?php echo site_url( $row->path_upload) ;?>"><i class="fa fa-download" style="font-size:24px"></i></a>
                                     </td>
                                 </tr><?php
                             }?>

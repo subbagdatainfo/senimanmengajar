@@ -11,7 +11,7 @@
 				$data['count']=$this->getcount();
 				$config = array();
 				$config["base_url"] = base_url() . "C_Admin/admin";
-				$total_row = $this->M_Admin->getcountpeserta();
+				$total_row = $data['count'];
 				$config["total_rows"] = $total_row;
 				$config["per_page"] = 25;
 				$config['use_page_numbers'] = TRUE;
@@ -33,15 +33,7 @@
 				$page = ($this->uri->segment(3)) ? $this->uri->segment(3) : 0;
         		$offset = $page == 0 ? 0 : ($page - 1) * $config["per_page"];
 				$data['peserta'] = $this->M_Admin->getallpeserta($config["per_page"], $offset);
-				foreach ($data['peserta'] as $key ) {
-					$data['profpict'][$key->email]= $this->M_Admin->getstatusprofpict($key->email);
-					$data['sks'][$key->email]= $this->M_Admin->getstatussks($key->email);
-					$data['drh'][$key->email]= $this->M_Admin->getstatusdrh($key->email);
-					$data['essai'][$key->email]= $this->M_Admin->getstatusessai($key->email);
-					$data['fk'][$key->email]= $this->M_Admin->getstatusfk($key->email);
-					$data['ktp'][$key->email]= $this->M_Admin->getstatusktp($key->email);
-					$data['video'][$key->email]= $this->M_Admin->getstatusvideo($key->email);
-				}
+				
 				
 				$str_links = $this->pagination->create_links();
 				$data["links"] = explode('&nbsp;',$str_links );
@@ -202,14 +194,11 @@
 				redirect(base_url().'C_Admin/admin','refresh');
 			} else {
 				$this->session->set_flashdata('message', 'Username atau Password Salah');
-				redirect(base_url().'C_Admin/loginadmin','refresh');
+				redirect(base_url().'Page/admin','refresh');
 			}	
 		}
 
-		public function loginadmin(){
-			// $this->load->view('template/header');
-			$this->load->view('v_loginadmin');
-		}
+		
 
 		public function adminlogout(){
 			$this->session->sess_destroy();

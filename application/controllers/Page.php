@@ -51,6 +51,14 @@ class Page extends CI_Controller {
 		$this->load->view('contact');
 		$this->load->view('template/foot');
 	}
+
+	public function admin(){
+		$this->load->view('template/header');
+		$this->load->view('v_loginadmin');
+		$this->load->view('template/footer');
+		
+	}
+
 	public function map(){
 		$config['center'] = '-6.225025, 106.802974';
 		$config['zoom'] = '18';
@@ -62,9 +70,6 @@ class Page extends CI_Controller {
 		$data['map'] = $this->googlemaps->create_map();
 		$data['provinsi']=$this->M_Peserta->getprovinsi();
 		return $data;
-	}
-	public function accord(){
-		$this->load->view('accordion');
 	}
 
 }
