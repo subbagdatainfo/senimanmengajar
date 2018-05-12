@@ -7,9 +7,9 @@
                     
                     <div class="col-md-6">
                         <ul class="list-inline quicklinks">
-                            <li><a href="http://kebudayaan.kemdikbud.go.id/ditsejarah" class=" btn btn-primary">Website Ditjen Kebudayaan</a>
+                            <li><a href="http://kebudayaan.kemdikbud.go.id/ditkesenian" class=" btn btn-primary">Website Dit Kesenian</a>
                             </li>
-                            <li><a href="http://kebudayaanindonesia.net" class="btn btn-primary">Website Kebudayaan</a>
+                            <li><a href="http://kebudayaan.kemdikbud.go.id" class="btn btn-primary">Website Ditjen Kebudayaan</a>
                             </li>
                         </ul>
                     </div>

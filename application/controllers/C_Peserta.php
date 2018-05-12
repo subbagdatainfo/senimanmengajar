@@ -46,7 +46,7 @@
 				if ($result) {
 					$message1=$this->session->set_flashdata('message','Pendaftaran Anda Berhasil');
 					$message2=$this->session->set_flashdata('status', 'success');
-					mkdir('data/'.$data['username'],0775);
+					mkdir('data/'.$data['nama_seniman'],0775);
 				} else {
 					$message1=$this->session->set_flashdata('message','Email Yang Anda Masukan Sudah Terdaftar');
 					$message2=$this->session->set_flashdata('status', 'danger');

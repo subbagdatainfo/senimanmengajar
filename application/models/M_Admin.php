@@ -33,60 +33,10 @@
 			return $query;
 		}
 
-		public function getstatusprofpict($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'profpict')");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'profpict')"];
-			}
-		}
-
-		public function getstatussks($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sks')");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sks')"];
-			}
-		}
-
-		public function getstatussr($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sr')");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'sr')"];
-			}
-		}
-
-		public function getstatusdrh($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'drh')");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'drh')"];
-			}
-		}
-
-		public function getstatusfk($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from foto where email = '$email' )");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from foto where email = '$email' )"];
-			}
-		}
-
-		public function getstatusktp($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'ktp')");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'ktp')"];
-			}
-		}
-
-		public function getstatusessai($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from konten where email = '$email' and JENIS = 'essai')");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from konten where email = '$email' and JENIS = 'essai')"];
-			}
-		}
-
-		public function getstatusvideo($email){
-			$query = $this->db->query("SELECT EXISTS (SELECT email from video where email = '$email' )");
-			foreach ($query->result_array() as $key ) {
-				return $key["EXISTS (SELECT email from video where email = '$email' )"];
-			}
+		function del_data($email){
+			// $query = $this->db->query("DELETE FROM peserta where email='$email'");
+			$this->db->where('email', $email);
+			$this->db->delete('peserta');
 		}
 
 		public function getcountbyregion(){

@@ -70,9 +70,38 @@
 			}
 		}
 
-		public function info(){
-			echo phpinfo();
+		public function del_data(){
+			$nama = $this->input->post("nama");
+			$email = $this->input->post("email");
+			$del_dir = $this->delete_files("data/".$nama);
+			if (!$del_dir) {
+				$del_db = $this->M_Admin->del_data($email);
+				if (!$del_db) {
+					echo "Data Berhasil Di Hapus";
+				} else {
+					echo "file peserta berhasil dihapus, tapi data peserta masih tercatat";
+				}
+				
+			} else {
+				echo "data gagal untuk dihapus";
+			}
+			
+			
 		}
+
+		function delete_files($path) {
+		    // Open the source directory to read in files
+	        $i = new DirectoryIterator($path);
+	        foreach($i as $f) {
+	            if($f->isFile()) {
+	                unlink($f->getRealPath());
+	            } else if(!$f->isDot() && $f->isDir()) {
+	                rrmdir($f->getRealPath());
+	            }
+	        }
+	        rmdir($path);
+		}
+
 
 		public function download($email)
 	    {

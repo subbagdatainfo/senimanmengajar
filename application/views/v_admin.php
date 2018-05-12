@@ -74,7 +74,11 @@
                                     <td>
                                         <a href="<?php echo site_url( $row->path_upload) ;?>"><i class="fa fa-download" style="font-size:24px"></i></a>
                                     </td>
-                                </tr><?php
+                                    <td>
+                                        <span id="change_provinsi" onclick="del_data('<?php echo $row->email;?>','<?php echo $row->nama_seniman;?>');" class="btn btn-xl fa fa-times"></span><br>
+                                    </td>
+                                </tr>
+                                <?php
                             }?>
                             </table>
                             <div class="pagination pagination-sm">
@@ -117,33 +121,7 @@
     </div>
 </div>
 
-<script type="text/javascript">
-    $('.image-floating').click(function(e){
-        $('#myModal img').attr('src', $(this).attr('data-img-url'));
-    });
 
-    $('.changestatus').click(function(e){
-        e.preventDefault();
-        var caper_id = $(this).data('id');
-        $.ajax({
-            type: 'POST',
-            url: '/calonpeserta/status',
-            data: {caper_id: caper_id},
-            success: function(response) {
-                // alert(response);
-                if(response == 'success') {
-                    location.reload();
-                } else {
-                    alert('Ada masalah di server');
-                }
-            }
-        });
-    });
-
-    $(function () {
-        $('[data-toggle="tooltip"]').tooltip()
-    })
-</script>
 
     <!-- Bootstrap Core JavaScript -->
     
@@ -167,7 +145,7 @@
 
     <!-- Custom Theme JavaScript -->
     <script src="<?php echo HTTP_JS_PATH; ?>sb-admin-2.js"></script>
-
+    <script src="<?php echo HTTP_JS_PATH; ?>script.js"></script>
 </body>
 
 </html>

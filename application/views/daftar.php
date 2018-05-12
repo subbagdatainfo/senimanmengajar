@@ -37,10 +37,10 @@
                                     <h4>Lokasi Pilihan</h4>
                                     <select id="lokasi" name="lokasi" class ="form-control">
                                         <option name="sabang" value="Sabang">Sabang</option>
-                                        <option name="pesisir selatan" value="pesisir Selatan">Pesisir Selatan</option>
+                                        <option name="pesisir selatan" value="Pesisir Selatan">Pesisir Selatan</option>
                                         <option name="bintan" value="Bintan">Bintan</option>
                                         <option name="belitung" value="Belitung">Belitung</option>
-                                        <option name="hulu sungai tengah" value="Hulu Sungai Tengah">Banjarmasin</option>
+                                        <option name="hulu sungai tengah" value="Hulu Sungai Tengah">Hulu Sungai Tengah</option>
                                         <option name="sumedang" value="Sumedang">Sumedang</option>
                                         <option name="karimun jawa" value="Karimun Jawa">Karimun Jawa</option>
                                         <option name="sumenep" value="Sumenep">Sumenep</option>
