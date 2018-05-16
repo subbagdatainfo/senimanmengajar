@@ -45,19 +45,11 @@
                        masih hidup dan yang sudah punah...<button class="accordion">detail</button>
                         <div class="panel">
                             <p>
-                                Pada masa awal kemerdekaan Sabang menjadi pusat pertahanan Republik Indonesia Serikat (RIS). 
-                                Pernah ditetapkan menjadi Kawasan Perdagangan Bebas dan Pelabuhan Bebas. 
-                                Sejak pemerintah memilih memajukan Batam,  kejayaannya  memudar.
+                                Kesenian yang masih hidup antara lain: Seni calung (perpaduan antara senimusik/nyanyian dan humor). Seni Kecapi suling (sebuah sastra tutur yang berisikan pesan atau doa yang ditembangkan), Tari jaipong, kesenian yang  nyaris punah antara lain: Seni beluk (sejenis sastra tutur yang ditembangkan  berisikan doa-doa dan mantra biasanya untuk acara ritual tertentu), Reog wanita (sejenis  komedi musikal yang diperankan oleh empat orang wanita dengan masing masing  membawa gendang dok-dok. Seni lesung (biasa dimainkan untuk memberi tanda sebagai undangan untuk acara  tertentu), Tari topeng (seni pertunjukan tari tradisional  yang dimainkan oleh satu atau beberapa orang),  dan Sandiwara sunda (Seni pertunjukan teater rakyat, Biasanya membawakan cerita rakyat atau legenda), Seni Jeprut  (Seni pertunjukan yang dimainkan oleh seseorang  dengan mengeluarkan  suara bunyi dari  anggota  tubuhnya sendiri)
+Jenis kesenian yang sudah meredup  masih menyisahkan beberapa pelakunya yang masih hidup.
+
                             </p>
-                            <p>
-                                Kota Sabang, banyak menyimpan jejak sejarah kolonial lengkap dengan artefak dan situsnya. 
-                                Selain itu banyak pula menyimpan warisan tradisi, adat istiadat, mitos, hingga ritus bernuansa Islami. 
-                                Masa lampau yang kini masih terpelihara dan menjadi memori kolektif masyarakat Sabang, kini jadi 
-                                aset wisata, sumber devisa, sumber ide seniman setempat untuk berekspresi seni, yang sering digelar di dalam dan di luar Sabang dan Aceh. 
-                                Tantangan yang dihadapi pekerja seni saat ini antara lain, ada Gedung Kesenian warisan kolonial tapi telantar. 
-                                "Gedung" film misbar Bekraf, hanya dipakai sekali pada event Sail Sabang, setelah itu tak pernah dipakai memutar film lagi. 
-                                Ada Dewan Kesenian Sabang, tapi tidak bisa berkegiatan, karena terkendala dana dan kebijakan.
-                            </p>
+                            
                         </div>
                     </div>                            
                 </div>
