@@ -3,11 +3,12 @@
             <div clas ="row">
                 <!-- <h1><span class="label label-success"> Pendaftaran sudah Ditutup</span><h1> -->
                 <div class ="col-lg-12 text-center">
-                    <h2 class="intro-text ">Pendaftaran 
-                    </h2>
+                    <h1 class="intro-text ">Pendaftaran Sudah Ditutup<br>Terima Kasih Kepada yang Sudah Mendaftar. 
+                        <br>Untuk Informasi Selanjutnya Dapat Dilihat <a href="https://kebudayaan.kemdikbud.go.id/ditkesenian">Di Sini</a>
+                    </h1>
                 </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div style="text-align:left; color:red; font-size: 0.875em;"><?php echo validation_errors(); ?> </div>
                         <?php if($this->session->flashdata('status')=="success"){ ?>
                 <p><h3><?php echo $this->session->flashdata('message'); ?></h3></p>
@@ -63,7 +64,7 @@
                         </div>
                     </form>
                 </div>
-            </div>
+            </div> -->
 
             </div>
     </section>

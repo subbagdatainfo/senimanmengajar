@@ -37,7 +37,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6">
-                    <div class="row-lg-3">
+                    <div class="row-md-3">
                         <h3 class="section-heading">Kriteria proposal</h3>
                         <p>
                             <ul>
@@ -63,7 +63,7 @@
                             <a href="<?php echo HTTP_ASSETS_PATH_ADMIN;?>petunjuk_teknis_senimanmengajar_2018.pdf">di sini</a>
                         </p>
                     </div>
-                    <div class="row-lg-3">
+                    <div class="row-md-3">
                         <h3 class="section-heading">PENDAFTARAN PESEREORANGAN</h3>
                         <p>Untuk pendaftaran perseorangan harus mencantumkan sebagai berikut:</p>
                         <ul>
@@ -71,7 +71,7 @@
                             <li>2. Mengirimkan 1(satu) file dengan format (PDF/.doc/.docx) </li>
                         </ul>
                     </div>
-                    <div class="row-lg-3">
+                    <div class="row-md-3">
                         <h3 class="class-section-heading">PENDAFTARAN KELOMPOK</h3>
                         <p>Untuk pendaftaran kelompok harus mencantumkan sebagai berikut:</p>
                         <ul>
@@ -84,13 +84,15 @@
                             Contoh proposal pendaftaran dapat diunduh <a href="<?php echo HTTP_ASSETS_PATH_ADMIN;?>contoh_proposal.pdf">(di sini)</a>
                         </p>
                     </div>
-                    <div class="row-lg-3">
+                    <div class="row-md-3">
                         <h3 class="section-heading">TATA CARA PENDAFTARAN</h3>
                         <p>Pendaftaran Seniman Mengajar dapat dilakukan dengan 2(dua) cara yaitu:</p>
+                        <p>
                         <ul>
-                            <li>1. Melalui website senimanmengajar.kemdikbud.go.id</li>
-                            <li>2. Mengirimkan berkas proposal yang telah dikompilasi kedalam 1(satu) dokumen dengan file dengan format (PDF/.doc/.docx) ke alamat email senimanmengajar@kemdikbud.go.id</li>
+                            <li>1.Melalui website senimanmengajar.kemdikbud.go.id</li>
+                            <li>2.Mengirimkan berkas proposal yang telah dikompilasi kedalam 1(satu) dokumen dengan file dengan format (PDF/.doc/.docx) ke alamat email senimanmengajar@kemdikbud.go.id</li>
                         </ul>
+                    </p>
                     </div>                
                 </div>
             </div>

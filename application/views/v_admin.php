@@ -52,14 +52,18 @@
                             <table class="table ">
                             <tr>
                                 <th>#</th>
-                                <th>Email</th>
+                                <th>
+                                    Email
+                                    <input type="text" id="email_address">
+                                    <span id ="search_email" onclick="searchEmail" lass="btn btn-xl fa fa-times"></span>
+                                </th>
                                 <th>Nama</th>
                                 <th>Nomor Kontak</th>
                                 <th>Daerah Pilihan</th>
                                 
                                 <th>Download</th>
                                 <th>Action</th>
-                                <!-- <th>Action</th> -->
+                                
                             </tr>
                             <?php $nom=($page-1) * 25;foreach ($peserta as $row) {
                                 $nom++;
