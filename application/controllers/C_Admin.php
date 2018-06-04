@@ -136,18 +136,18 @@
 	        //exit;		  		  
 		}
 
-		// public function makezipall(){
-		// 	$name = $this->M_Admin->getdirdownloadall();
-	 //    	foreach ($name->result_array() as $key ) {
-	 //    		$dirname='data/'.$key['nama_seniman'];
-	 //    		$name=$key['nama_seniman'];
-	 //    		$this->zip->read_dir($dirname, FALSE);
-		//     	//$this->zip->clear_data();
-		//     	$archieve=$this->zip->archive('zip/'.$name.'.zip');
-		//     	$this->zip->clear_data();
-	 //    	}
-	 //    	echo "sukses";
-		// }
+		public function makezipall(){
+			$name = $this->M_Admin->getdirdownloadall();
+	    	foreach ($name->result_array() as $key ) {
+	    		$dirname='data/'.$key['nama_seniman'];
+	    		$name=$key['nama_seniman'];
+	    		$this->zip->read_dir($dirname, FALSE);
+		    	//$this->zip->clear_data();
+		    	$archieve=$this->zip->archive('zip/'.$name.'.zip');
+		    	$this->zip->clear_data();
+	    	}
+	    	echo "sukses";
+		}
 
 		public function makezipbyregion($regions){
 			$region = $this->M_Admin->getdirbyregion($regions);
@@ -181,16 +181,23 @@
 		    		$dirname='data/'.$key['nama_seniman'];
 		    		copy($dirname.'/*', $dirregion.'/'.$key['nama_seniman']);
 
-		    		// $name=$key['nama_seniman'];
-		    		// $this->zip->read_dir($dirname, FALSE);
-			    	// //$this->zip->clear_data();
-			    	// $archieve=$this->zip->archive('zip/'.$regiondir.'/'.$name.'.zip');
-			    	// $this->zip->clear_data();
-		    	}
+		    			    	}
 		    	echo "sukses<br>";
 			}
 		}
 
+		public function copyall(){
+			$lokasi = $this->M_Admin->getregion();
+			foreach ($lokasi->result_array() as $key_lokasi ) {
+				$dirregion = 'zip/'.$key_lokasi['lokasi'];
+				mkdir($dirregion,0775);
+				$list_peserta = $this->M_Admin->getdirdownloadbyregion($key_lokasi['lokasi']);
+				foreach ($list_peserta->result_array() as $key_file ) {
+					$dirname='data/'.$key_file['nama_seniman'];
+		    		copy($dirname.'/*', $dirregion.'/'.$key_file['nama_seniman']);
+				}
+			}
+		}
 		public function getcount(){
 			$countpeserta = $this->M_Admin->getcountpeserta();
 			// foreach ($countpeserta as $key ) {

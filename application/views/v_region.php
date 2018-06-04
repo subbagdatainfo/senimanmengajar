@@ -39,17 +39,17 @@
                             <tr>
                                 <th>Region</th>
                                 <th>Jumlah Pendaftar</th>
-                                <th>Download</th>
+                                <!-- <th>Download</th> -->
                                 
                                 <!-- <th>Action</th> -->
                             </tr>
                             <?php foreach ($maestro->result_array() as $row) {
                                 ?><tr>
-                                    <td><?php echo $row['region'];?></td>
-                                    <td><?php echo $row['COUNT(region)'];?></td>
-                                    <td>
-                                        <a href="<?php echo site_url('C_Admin/downloadmaestro/'. $row['region']) ;?>"><i class="fa fa-download" style="font-size:24px"></i></a>
-                                    </td>
+                                    <td><?php echo $row['lokasi'];?></td>
+                                    <td><?php echo $row['COUNT(lokasi)'];?></td>
+                                    <!-- <td>
+                                        <a href="<?php echo site_url('C_Admin/downloadmaestro/'. $row['lokasi']) ;?>"><i class="fa fa-download" style="font-size:24px"></i></a>
+                                    </td> -->
                                     
                                 </tr><?php
                             }?>

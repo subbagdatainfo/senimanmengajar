@@ -40,18 +40,22 @@
 		}
 
 		public function getcountbyregion(){
-			$region=$this->db->query("SELECT region,COUNT(region) FROM peserta GROUP BY region");
+			$region=$this->db->query("SELECT lokasi,COUNT(lokasi) FROM peserta GROUP BY lokasi");
 			return $region;
 		}
 
 		public function getdirbyregion($regions){
-			$region = $this->db->query("SELECT distinct region from peserta where region like '%$regions%'");
+			$region = $this->db->query("SELECT distinct lokasi from peserta where lokasi like '%$regions%'");
 			return $region;
 			$this->db->save_queries = false;
 		}
 
+		public function getregion(){
+			$lokasi = $this->db->query("SELECT DISTINCT lokasi from peserta");
+			return $lokasi;
+		}
 		public function getdirdownloadbyregion($regiondir){
-			$name = $this->db->query("SELECT nama_seniman from peserta where region = '$regiondir'");
+			$name = $this->db->query("SELECT nama_seniman from peserta where lokasi = '$regiondir'");
 			return $name;
 			$this->db->save_queries = false;
 		}
