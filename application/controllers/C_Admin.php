@@ -189,12 +189,12 @@
 		public function copyall(){
 			$lokasi = $this->M_Admin->getregion();
 			foreach ($lokasi->result_array() as $key_lokasi ) {
-				$dirregion = 'zip/'.$key_lokasi['lokasi'];
+				$dirregion = 'download/'.$key_lokasi['lokasi'];
 				mkdir($dirregion,0775);
 				$list_peserta = $this->M_Admin->getdirdownloadbyregion($key_lokasi['lokasi']);
 				foreach ($list_peserta->result_array() as $key_file ) {
-					$dirname='data/'.$key_file['nama_seniman'];
-		    		copy($dirname.'/'.$key_file['nama_seniman'], $dirregion.'/'.$key_file['nama_seniman']);
+					$dirname='zip';
+		    		copy($dirname.'/'.$key_file['nama_seniman'].'.zip', $dirregion.'/'.$key_file['nama_seniman'].'.zip');
 				}
 				echo "sukses ".$key_lokasi['lokasi']."<br>";
 			}
