@@ -194,9 +194,11 @@
 				$list_peserta = $this->M_Admin->getdirdownloadbyregion($key_lokasi['lokasi']);
 				foreach ($list_peserta->result_array() as $key_file ) {
 					$dirname='data/'.$key_file['nama_seniman'];
-		    		copy($dirname.'/*', $dirregion.'/'.$key_file['nama_seniman']);
+		    		copy($dirname.'/'.$key_file['nama_seniman'], $dirregion.'/'.$key_file['nama_seniman']);
 				}
+				echo "sukses ".$key_lokasi['lokasi']."<br>";
 			}
+
 		}
 		public function getcount(){
 			$countpeserta = $this->M_Admin->getcountpeserta();
