@@ -64,6 +64,9 @@
                         <a class="page-scroll" href="<?=site_url('Page/persyaratan');?>">Persyaratan</a>
                     </li>
                     <li>
+                        <a class="page-scroll" href="<?=site_url('Page/pengumuman');?>">Pengumuman</a>
+                    </li>
+                    <li>
                         <a class="page-scroll" href="<?=site_url('Page/lokasi');?>">Lokasi</a>
                     </li>
                     <li>

@@ -59,6 +59,13 @@ class Page extends CI_Controller {
 		
 	}
 
+	public function pengumuman(){
+		$data = $this->map();
+		$this->load->view('template/navi',$data);
+		$this->load->view('pengumuman');
+		$this->load->view('template/foot');
+	}
+
 	public function map(){
 		$config['center'] = '-6.225025, 106.802974';
 		$config['zoom'] = '18';
